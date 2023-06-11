@@ -49,17 +49,21 @@ $(document).ready(function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const imageElement = document.querySelector('.fullscreen-image');
-  let isFullscreen = false;
-
-  imageElement.addEventListener('click', () => {
-    if (!isFullscreen) {
-      imageElement.classList.add('fullscreen');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling on mobile
-    } else {
-      imageElement.classList.remove('fullscreen');
-      document.body.style.overflow = 'auto'; // Restore scrolling on mobile
-    }
-    isFullscreen = !isFullscreen;
+  const imageElements = document.querySelectorAll('.fullscreen-image');
+  
+  imageElements.forEach(imageElement => {
+    let isFullscreen = false;
+  
+    imageElement.addEventListener('click', () => {
+      if (!isFullscreen) {
+        imageElement.classList.add('fullscreen');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling on mobile
+      } else {
+        imageElement.classList.remove('fullscreen');
+        document.body.style.overflow = 'auto'; // Restore scrolling on mobile
+      }
+      isFullscreen = !isFullscreen;
+    });
   });
 });
+
