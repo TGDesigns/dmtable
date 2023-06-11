@@ -36,25 +36,31 @@
             </a></li>
         </ul>
         <div class="music-player">
-          <div class="info">
-            <audio controls loop>
-              <source src="horse.ogg" type="audio/ogg">
-              <source src="horse.mp3" type="audio/mpeg">
+            <h5>Ambience</h5>
+            <audio id="audio-player" controls loop>
+              Your browser does not support the audio element.
             </audio>
-          </div>
+        </div>
+        <div class="music-player">
+          <h5>Lore</h5>
+            <audio id="lore-audio-player" controls loop>
+              Your browser does not support the audio element.
+            </audio>
         </div>
     </nav>
     <div class="content">
       <!-- STORY SECTION -->
-      <div id="story-anchor" class="story-container">
+      <div id="story-anchor" class="story container">
         <h1>Story</h1>
+        <button class="detail-accordion">Session 1</button>
+        <div class="accordion-info">
         <h2>Session 1</h2>
-        <div class="synopsis">
+        <p>details</p>
         </div>
       </div>
       <!-- -------- -->
       <!-- PLAYERS -->
-      <div id="players-anchor" class="character-container">
+      <div id="players-anchor" class="characters container">
         <h1>Players</h1>
         <!-- ANTHONY -->
         <div class="character">
@@ -138,16 +144,16 @@
         </div>
         <!-- ALEC -->
         <div class="character">
-          <img class="fullscreen-image"  src="/icons/Artificer.png" width="100%" />
+          <img class="fullscreen-image"  src="/images/yelton.png" width="100%" />
           <div class="char-info">
             <div class="char-title">
-              <h3>Character</h3>
+              <h3>Yelton</h3>
               <h4>Alec</h4>
             </div>
             <div class="char-traits">
               <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong></strong></p>
-              <p>Race: <strong></strong></p>
+              <p>Class: <strong>Wizard</strong></p>
+              <p>Race: <strong>Gnome</strong></p>
             </div>
             <div class="perception">
               <p class="number"></p>
@@ -541,14 +547,166 @@
     </div>
     <!-- -------- -->
     <!-- NPC's -->
-    <div id="npcs-anchor" class="npc-container">
+    <div id="npcs-anchor" class="npc container">
       <h1>NPC's</h1>
-      <ul class="main-npc">
-        <li>Ember Tweetings</li>
-        <li>Father Acuna</li>
-        <li>Garrick Stoneheart</li>
-        <li>Isabella Thronwood</li>
-      </ul>
+      <!-- Ember -->
+      <div class="character">
+        <img class="fullscreen-image"  src="/images/ember.png" width="100%" />
+        <div class="char-info">
+          <div class="char-title">
+            <h3>Ember Tweetings</h3>
+          </div>
+          <div class="char-traits">
+            <p>Level: <strong><span class="level">1</span></strong></p>
+            <p>Class: <strong>Ranger</strong></p>
+            <p>Race: <strong>Half-Elf</strong></p>
+          </div>
+          <div class="perception">
+            <p class="number">15</p>
+            <p>Passive Percepetion</p>
+          </div>
+        </div>
+        <button class="detail-accordion">Character Details</button>
+        <div class="accordion-info">
+          <div class="ability-scores">
+            <div class="score-box">
+              <h5>Strength</h5>
+              <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="11"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Dexterity</h5>
+              <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="16"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Constitution</h5>
+              <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="14"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Intelligence</h5>
+              <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="11"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Wisdom</h5>
+              <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="16"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Charisma</h5>
+              <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="9"></input>
+              <!---------------------->
+            </div>
+          </div>
+          <div class="char-lists">
+            <div class="list">
+              <h3>Character Features</h3>
+              <ul>
+                <li>No features Yet</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h3>Important Details</h3>
+              <ul>
+                <li>No Details Yet</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Garrick -->
+      <div class="character">
+        <img class="fullscreen-image"  src="/images/ember.png" width="100%" />
+        <div class="char-info">
+          <div class="char-title">
+            <h3>Garrick Stoneheart</h3>
+          </div>
+          <div class="char-traits">
+            <p>Level: <strong><span class="level">1</span></strong></p>
+            <p>Class: <strong>Ranger</strong></p>
+            <p>Race: <strong>Half-Elf</strong></p>
+          </div>
+          <div class="perception">
+            <p class="number">15</p>
+            <p>Passive Percepetion</p>
+          </div>
+        </div>
+        <button class="detail-accordion">Character Details</button>
+        <div class="accordion-info">
+          <div class="ability-scores">
+            <div class="score-box">
+              <h5>Strength</h5>
+              <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="11"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Dexterity</h5>
+              <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="16"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Constitution</h5>
+              <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="14"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Intelligence</h5>
+              <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="11"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Wisdom</h5>
+              <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="16"></input>
+              <!---------------------->
+            </div>
+            <div class="score-box">
+              <h5>Charisma</h5>
+              <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+              <!-- Change This Only -->
+              <input class="score" value="9"></input>
+              <!---------------------->
+            </div>
+          </div>
+          <div class="char-lists">
+            <div class="list">
+              <h3>Character Features</h3>
+              <ul>
+                <li>No features Yet</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h3>Important Details</h3>
+              <ul>
+                <li>No Details Yet</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="name-container">
         <h5>Male Names</h5>
         <ul class="name-list">
@@ -655,54 +813,77 @@
         </ul>
       </div>
     </div>
+    <br/>  
     <!-- -------- -->
     <!-- MUSIC -->
-    <div id="music-anchor" class="music-container">
+    <div id="music-anchor" class="music container">
       <h1>Music</h1>
       <ul class="two-col music-list">
         <li class="category">
-          <img src="/icons/Fighter.png" width="100%" />
-          <p>Battle</p>
+          <img src="/icons/Artificer.png" width="100%" />
+          <p>Travel</p>
           <ul>
-            <li>Goblins</li>
-            <li>Giants</li>
-            <li>Orcs</li>
-            <li>Dragons</li>
+            <li class="song-button" data-src="/music/caves.mp3">Caves</li>
+            <li class="song-button" data-src="/music/dungeon.mp3">Dungeon</li>
+            <li class="song-button" data-src="/music/caves.mp3">Cold</li>
+            <li class="song-button" data-src="/music/caves.mp3">Forest</li>
+            <li class="song-button" data-src="/music/caves.mp3">Night</li>
+            <li class="song-button" data-src="/music/caves.mp3">Sky</li>
+            <li class="song-button" data-src="/music/caves.mp3">Sea</li>
+            <li class="song-button" data-src="/music/caves.mp3">Underwater</li>
           </ul>
         </li>
         <li class="category">
           <img src="/icons/Bard.png" width="100%" />
-          <p>Tavern: Happy Loud</p>
+          <p>Tavern</p>
+          <ul>
+            <li class="song-button" data-src="/music/caves.mp3">Quaint</li>
+            <li class="song-button" data-src="/music/caves.mp3">Busy</li>
+            <li class="song-button" data-src="/music/caves.mp3">Creepy</li>
+          </ul>
         </li>
         <li class="category">
-          <img src="/icons/Bard.png" width="100%" />
-          <p>Tavern: Quiet Quaint</p>
+          <img src="/icons/Fighter.png" width="100%" />
+          <p>Battle</p>
+          <ul>
+            <li class="song-button" data-src="/music/caves.mp3">Goblins</li>
+            <li class="song-button" data-src="/music/caves.mp3">Giants</li>
+            <li class="song-button" data-src="/music/caves.mp3">Orcs</li>
+            <li class="song-button" data-src="/music/caves.mp3">Dragons</li>
+            <li class="song-button" data-src="/music/caves.mp3">Bandits</li>
+            <li class="song-button" data-src="/music/caves.mp3">Bandits</li>
+          </ul>
         </li>
         <li class="category">
           <img src="/icons/Artificer.png" width="100%" />
-          <p>Town: Ghost, Destroyed</p>
-        </li>
-        <li class="category">
-          <img src="/icons/Artificer.png" width="100%" />
-          <p>Town: Large Loud</p>
-        </li>
-        <li class="category">
-          <img src="/icons/Artificer.png" width="100%" />
-          <p>Cold Travel</p>
-        </li>
-        <li class="category">
-          <img src="/icons/Druid.png" width="100%" />
-          <p>Forest</p>
-        </li>
-        <li class="category">
-          <img src="/icons/cleric.png" width="100%" />
-          <p>The North</p>
+          <p>Town</p>
+          <ul>
+            <li class="song-button" data-src="/music/caves.mp3">Large</li>
+            <li class="song-button" data-src="/music/caves.mp3">Quaint</li>
+            <li class="song-button" data-src="/music/caves.mp3">North</li>
+            <li class="song-button" data-src="/music/caves.mp3">Abandoned</li>
+          </ul>
         </li>
       </ul>
+      <hr/>
+      <ul class="music-list">
+        <li class="category">
+          <img src="/icons/Artificer.png" width="100%" />
+          <p>Lore</p>
+          <ul class="four-col lore">
+            <li class="loresong-button" data-src="/music/arctic.mp3">Arctic Wild</li>
+            <li class="loresong-button" data-src="/music/dungeon.mp3">Dungeon</li>
+            <li class="loresong-button" data-src="/music/caves.mp3">Cold</li>
+            <li class="loresong-button" data-src="/music/caves.mp3">Forest</li>
+            <li class="loresong-button" data-src="/music/caves.mp3">Night</li>
+            <li class="loresong-button" data-src="/music/caves.mp3">Sky</li>
+            <li class="loresong-button" data-src="/music/caves.mp3">Sea</li>
+            <li class="loresong-button" data-src="/music/caves.mp3">Underwater</li>
+          </ul>
+        </li>
     </div>
     </div>
   </main>
   <script src="script.js"></script>
 </body>
-
 </html>
