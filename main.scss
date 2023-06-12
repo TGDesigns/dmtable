@@ -24,6 +24,7 @@ $font-b: 'Roboto Slab', serif;
 body {
   font-family: $font-a;
   color: $alt2;
+  transition: all 1s ease-in-out;
 }
 h1, h2 {
   text-transform: uppercase;
@@ -32,9 +33,21 @@ h1, h2 {
 h1 {
   font-family: $font-b;
   margin-bottom: 2rem;
+  background-color: #752626;
+  width: 100%;
+  padding: 1rem;
 }
 h2 {
   font-weight: 200;
+}
+dt {
+  color: $alt1;
+  font-family:$font-b;
+  font-weight: 800;
+  margin: 1rem 0 .5rem;
+}
+dd {
+  margin-bottom: 1rem;
 }
 main {
   display: grid;  
@@ -47,6 +60,18 @@ hr {
   opacity: .4;
   width: 80%;
   margin: 3rem auto 2rem;
+}
+.color-main {
+  color: $main;
+}
+.color-support {
+  color: $support;
+}
+.color-alt1 {
+  color: $alt1;
+}
+.color-alt2 {
+  color: $alt2;
 }
 .content {
   grid-area: main-content;
@@ -104,13 +129,69 @@ hr {
   margin-bottom: 8rem;
 }
 /* STORY */
-
-.synopsis {
-  margin-top: 1rem;
+.story {
+  .detail-accordion {
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    &::after {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
   p {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.campaign-checklist {
+    margin-top: 1em;
+  .checked {
+    text-decoration: line-through;
+  }
+  label {
+    display: block;
+    padding: .3rem;
+    input[type="checkbox"] {
+      appearance: none;
+      background-color: transparent;
+      margin: 0 1rem 0 0;
+      color: $alt1;
+      width: 1rem;
+      height: 1rem;
+      border: .2rem solid $support;
+      border-radius: 0;
+      vertical-align: middle;
+      place-content: center;
+    }
+    input[type="checkbox"]:checked {
+      background-color: $support;
+    }
+  }
+}
+.sessions {
+  h2 {
+    margin-top: 1rem;
+  }
+  h3 {
+    font-family: $font-b;
+    margin: 1rem 0;
+  }
+  h4 {
+    text-transform: uppercase;
+  }
+  p{
     line-height: 1.6;
-    letter-spacing: .05rem;
+    letter-spacing: .02rem;
+  }
+  .session-notes {
+    background-color: rgba($color: $alt1, $alpha: 0.1);
+    padding: 0.2rem 1rem;
+    margin-bottom: .5rem;
+  }
+  .setting-notes {
+    background-color: rgba($color: $support, $alpha: 0.3);
+    padding: 0.2rem 1rem;
+    margin-bottom: .5rem;
   }
 }
 
@@ -195,23 +276,25 @@ hr {
 }
 .detail-accordion {
   grid-area: button;
-  background-color: transparent;
+  background-color: rgba($color: $alt2, $alpha: .1);
   border: none;
-  border-bottom: .15rem $alt2 solid;
   color: $alt2;
-  padding: 1rem 0 .2rem;
+  display: block;
+  padding: 1rem;
   text-transform: uppercase;
   font-weight: 800;
-  width: fit-content;
+  width: 100%;
   &::after {
     content: "\f078";
     font-family: 'FontAwesome';
-    margin-left: 10px;
+    margin-left: 1rem;
   }
+}
+.details {
+  grid-area: details;
 }
 // ability-scores
 .accordion-info {
-  grid-area: details;
   display: none;
   margin-bottom: 3rem;
   width: 100%;
@@ -296,6 +379,8 @@ grid-template-columns: 50% 50%;
   padding: .5rem;
   h5 {
     color: $alt1;
+    font-size: 1.5rem;
+    font-family: $font-b;
     margin-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
@@ -305,20 +390,13 @@ grid-template-columns: 50% 50%;
     width: 100%;
     margin: auto;
   }
-  #lore-audio-player {
-    &::-webkit-media-controls-panel{
-      background-color: $alt1;
-      color: $alt2;
-    }
-  }
  }
-.two-col {
-  columns: 2 ;
-}
 .music-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
    ul {
     padding-left: 2rem;
-    color: aliceblue;
+    color: $alt2;
     display: block;
     width: fit-content;
     list-style-type: none;
@@ -339,14 +417,10 @@ grid-template-columns: 50% 50%;
         opacity: 1;
       }
     }
-  }
-  .lore {
-    li {
-    background-color: $alt1;
+    .active {
+      background-color: $alt1;
+      opacity: 1;
     }
-  }
-  .four-col {
-    columns: 4;
   }
 }
 li.category {
@@ -359,4 +433,5 @@ li.category {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .2rem;
+  height: fit-content;
 }

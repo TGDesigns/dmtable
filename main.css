@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #D5D3D3;
+  transition: all 1s ease-in-out;
 }
 
 h1, h2 {
@@ -19,10 +20,24 @@ h1, h2 {
 h1 {
   font-family: "Roboto Slab", serif;
   margin-bottom: 2rem;
+  background-color: #752626;
+  width: 100%;
+  padding: 1rem;
 }
 
 h2 {
   font-weight: 200;
+}
+
+dt {
+  color: #008F88;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  margin: 1rem 0 0.5rem;
+}
+
+dd {
+  margin-bottom: 1rem;
 }
 
 main {
@@ -37,6 +52,22 @@ hr {
   opacity: 0.4;
   width: 80%;
   margin: 3rem auto 2rem;
+}
+
+.color-main {
+  color: #131C25;
+}
+
+.color-support {
+  color: #752626;
+}
+
+.color-alt1 {
+  color: #008F88;
+}
+
+.color-alt2 {
+  color: #D5D3D3;
 }
 
 .content {
@@ -99,13 +130,68 @@ hr {
 }
 
 /* STORY */
-.synopsis {
+.story .detail-accordion {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.story .detail-accordion::after {
+  display: block;
   margin-top: 1rem;
 }
-.synopsis p {
-  margin-bottom: 1rem;
+.story p {
+  padding-bottom: 1rem;
+}
+
+.campaign-checklist {
+  margin-top: 1em;
+}
+.campaign-checklist .checked {
+  text-decoration: line-through;
+}
+.campaign-checklist label {
+  display: block;
+  padding: 0.3rem;
+}
+.campaign-checklist label input[type=checkbox] {
+  appearance: none;
+  background-color: transparent;
+  margin: 0 1rem 0 0;
+  color: #008F88;
+  width: 1rem;
+  height: 1rem;
+  border: 0.2rem solid #752626;
+  border-radius: 0;
+  vertical-align: middle;
+  place-content: center;
+}
+.campaign-checklist label input[type=checkbox]:checked {
+  background-color: #752626;
+}
+
+.sessions h2 {
+  margin-top: 1rem;
+}
+.sessions h3 {
+  font-family: "Roboto Slab", serif;
+  margin: 1rem 0;
+}
+.sessions h4 {
+  text-transform: uppercase;
+}
+.sessions p {
   line-height: 1.6;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.02rem;
+}
+.sessions .session-notes {
+  background-color: rgba(0, 143, 136, 0.1);
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
+}
+.sessions .setting-notes {
+  background-color: rgba(117, 38, 38, 0.3);
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* PLAYERS */
@@ -186,23 +272,26 @@ hr {
 
 .detail-accordion {
   grid-area: button;
-  background-color: transparent;
+  background-color: rgba(213, 211, 211, 0.1);
   border: none;
-  border-bottom: 0.15rem #D5D3D3 solid;
   color: #D5D3D3;
-  padding: 1rem 0 0.2rem;
+  display: block;
+  padding: 1rem;
   text-transform: uppercase;
   font-weight: 800;
-  width: fit-content;
+  width: 100%;
 }
 .detail-accordion::after {
   content: "\f078";
   font-family: "FontAwesome";
-  margin-left: 10px;
+  margin-left: 1rem;
+}
+
+.details {
+  grid-area: details;
 }
 
 .accordion-info {
-  grid-area: details;
   display: none;
   margin-bottom: 3rem;
   width: 100%;
@@ -290,6 +379,8 @@ hr {
 }
 .music-player h5 {
   color: #008F88;
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
   margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -299,18 +390,14 @@ hr {
   width: 100%;
   margin: auto;
 }
-.music-player #lore-audio-player::-webkit-media-controls-panel {
-  background-color: #008F88;
-  color: #D5D3D3;
-}
 
-.two-col {
-  columns: 2;
+.music-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-
 .music-list ul {
   padding-left: 2rem;
-  color: aliceblue;
+  color: #D5D3D3;
   display: block;
   width: fit-content;
   list-style-type: none;
@@ -332,11 +419,9 @@ hr {
 .music-list ul li:active {
   opacity: 1;
 }
-.music-list .lore li {
+.music-list ul .active {
   background-color: #008F88;
-}
-.music-list .four-col {
-  columns: 4;
+  opacity: 1;
 }
 
 li.category {
@@ -349,6 +434,7 @@ li.category {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  height: fit-content;
 }
 
 /*# sourceMappingURL=main.css.map */

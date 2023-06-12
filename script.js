@@ -71,29 +71,43 @@ imageElements.forEach(imageElement => {
 // Audio Player
 
 document.addEventListener('DOMContentLoaded', () => {
-const audioPlayer = document.getElementById('audio-player');
-const songButtons = document.querySelectorAll('.song-button');
+  const audioPlayer = document.getElementById('audio-player');
+  const songButtons = document.querySelectorAll('.song-button');
+  const songNameElement = document.getElementById('songName');
 
-songButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const songSrc = button.dataset.src;
-    audioPlayer.src = songSrc;
-    audioPlayer.play();
+  songButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const songSrc = button.dataset.src;
+      const songName = button.innerHTML;
+      
+      audioPlayer.src = songSrc;
+      audioPlayer.play();
+
+      // Replace the innerHTML of the element with ID "songName" with the songName
+      songNameElement.innerHTML = songName;
+
+      // Add "active" class to the clicked button
+      songButtons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+    });
   });
 });
-});
 
-// Lore Audio Player
+
+// checklist checked
 document.addEventListener('DOMContentLoaded', () => {
-const audioPlayer = document.getElementById('lore-audio-player');
-const songButtons = document.querySelectorAll('.loresong-button');
+  const checklistItems = document.querySelectorAll('.checklist-item');
 
-songButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const songSrc = button.dataset.src;
-    audioPlayer.src = songSrc;
-    audioPlayer.play();
+  checklistItems.forEach(item => {
+    const input = item.querySelector('input[type="checkbox"]');
+    input.addEventListener('change', () => {
+      if (input.checked) {
+        item.classList.add('checked');
+      } else {
+        item.classList.remove('checked');
+      }
+    });
   });
 });
-});
-
