@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -20,7 +20,7 @@ h1, h2 {
 h1 {
   font-family: "Roboto Slab", serif;
   margin-bottom: 2rem;
-  background-color: #752626;
+  border-bottom: 0.2rem solid #752626;
   width: 100%;
   padding: 1rem;
 }
@@ -41,9 +41,6 @@ dd {
 }
 
 main {
-  display: grid;
-  grid-template-areas: "main-content main-nav";
-  grid-template-columns: 70% 30%;
   background-color: #131C25;
   color: #D5D3D3;
 }
@@ -71,54 +68,67 @@ hr {
 }
 
 .content {
-  grid-area: main-content;
+  padding-top: 4rem;
 }
 
 .top-nav {
-  grid-area: main-nav;
-  height: 100%;
   align-items: right;
-}
-
-#nav-fixed-box {
-  position: fixed;
-  height: 100%;
-  background-color: #131C25;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  border-left: 1px solid #263341;
+  width: 100%;
 }
 
 .dnd-links {
+  background-color: #752626;
+  position: fixed;
+  top: 0;
+  display: flex;
   list-style-type: none;
   margin: 0 auto;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
 }
 .dnd-links .active {
-  background-color: #752626;
-}
-.dnd-links li {
-  text-transform: uppercase;
-  opacity: 1;
-  transition: all ease-in-out 0.2s;
-  margin: 1rem auto;
+  background-color: #131C25;
 }
 .dnd-links li a {
-  display: grid;
-  grid-template-columns: 15% 85%;
   align-items: center;
   width: fit-content;
   text-decoration: none;
-  padding: 0;
+  padding: 1.2rem;
   margin: 0;
-}
-.dnd-links li p {
-  padding-left: 1rem;
   color: #D5D3D3;
   font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   letter-spacing: 0.2rem;
+  max-width: 100px;
+  text-transform: uppercase;
+}
+
+.music-player {
+  display: flex;
+  background-color: #131C25;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+.music-player h5 {
+  color: #008F88;
+  font-size: 1.5rem;
   font-family: "Roboto Slab", serif;
-  font-weight: 600;
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  vertical-align: middle;
+}
+.music-player audio {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .container {
@@ -372,25 +382,6 @@ hr {
 }
 
 /* MUSIC */
-.music-player {
-  width: 100%;
-  margin: 0.2rem auto;
-  padding: 0.5rem;
-}
-.music-player h5 {
-  color: #008F88;
-  font-size: 1.5rem;
-  font-family: "Roboto Slab", serif;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.music-player audio {
-  width: 100%;
-  margin: auto;
-}
-
 .music-list {
   display: grid;
   grid-template-columns: 50% 50%;
