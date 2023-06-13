@@ -18,8 +18,8 @@ $font-b: 'Roboto Slab', serif;
 
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: $font-a;
@@ -33,7 +33,7 @@ h1, h2 {
 h1 {
   font-family: $font-b;
   margin-bottom: 2rem;
-  background-color: #752626;
+  border-bottom: .2rem solid #752626;
   width: 100%;
   padding: 1rem;
 }
@@ -50,9 +50,9 @@ dd {
   margin-bottom: 1rem;
 }
 main {
-  display: grid;  
-  grid-template-areas: "main-content main-nav";
-  grid-template-columns: 70% 30%;
+  // display: grid;  
+  // grid-template-areas: "main-content main-nav";
+  // grid-template-columns: 70% 30%;
   background-color: $main;
   color: $alt2;
 }
@@ -74,52 +74,68 @@ hr {
   color: $alt2;
 }
 .content {
-  grid-area: main-content;
+ padding-top: 4rem;
 }
 .top-nav {
-  grid-area: main-nav;
-  height: 100%;
   align-items: right;
-}
-#nav-fixed-box {
-  position: fixed;
-  height: 100%;
-  background-color: $main;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  border-left: 1px solid #263341;
+  width: 100%;
 }
 .dnd-links {
+  background-color: $support;
+  position: fixed;
+  top: 0;
+  display: flex;
   list-style-type: none;
   margin: 0 auto;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
   .active {
-    background-color: $support;
+    background-color: $main;
   }
   li {
-    text-transform: uppercase;
-    opacity: 1;
-    transition: all ease-in-out .2s;
-    margin: 1rem auto;
     a {
-      display: grid;
-      grid-template-columns: 15% 85%;
       align-items: center;
       width: fit-content;
       text-decoration: none;
-      padding: 0;
+      padding: 1.2rem;
       margin: 0;
-    }
-    p {
-      padding-left: 1rem;
       color: $alt2;
       font-size: .8rem;
+      font-family: $font-a;
       font-weight: 600;
       letter-spacing: .2rem;
-      font-family: $font-b;
-      font-weight: 600;
-      font-size: 1.2rem;
+      max-width: 100px;
+      text-transform: uppercase;
     }
   }
 }
+
+.music-player {
+  display: flex;
+  background-color: $main;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: .5rem;
+  z-index: 1000;
+  h5 {
+    color: $alt1;
+    font-size: 1.5rem;
+    font-family: $font-b;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    vertical-align: middle;
+  }
+  audio {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+ }
 
 .container {
   margin: 1rem auto;
@@ -373,24 +389,6 @@ grid-template-columns: 50% 50%;
 }
 
 /* MUSIC */
-.music-player {
-  width: 100%;
-  margin: .2rem auto;
-  padding: .5rem;
-  h5 {
-    color: $alt1;
-    font-size: 1.5rem;
-    font-family: $font-b;
-    margin-bottom: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-  }
-  audio {
-    width: 100%;
-    margin: auto;
-  }
- }
 .music-list {
   display: grid;
   grid-template-columns: 50% 50%;
