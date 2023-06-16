@@ -1,480 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>DND Cheets</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-</head>
-
-<body>
-  <main>
-    <nav class="top-nav" id="top-nav">
-      <ul class="dnd-links">
-        <li><a class="active" href="#checklist-anchor">Checklist</a></li>
-        <li><a href="#story-anchor">Story</a></li>
-        <li><a href="#players-anchor">Players</a></li>
-        <li><a href="#npcs-anchor">NPC's</a></li>
-        <li><a href="#maps-anchor">Maps</a></li>
-        <li><a href="#monsters-anchor">Monsters</a></li>
-        <li><a href="#music-anchor">Music</a></li>
-      </ul>
-      <div class="music-player">
-        <h5 id="songName">No Song</h5>
-        <audio id="audio-player" controls loop>
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    </nav>
-    <div class="content">
-      <div id="checklist-anchor" class="checklist container">
-              <!-- Campaign Points -->
-              <h1>Campaign Checklist</h1>
-              <div class="campaign-checklist">
-                <h3>Waterdeep</h3>
-                <label class="checklist-item"><input type="checkbox" />Markham Southwell sends players to Nightstone. Check on his sister.</label>
-                <label class="checklist-item"><input type="checkbox" />Have Beldora ask for copper at the door. She stops durk, give him a wink and says - your parents must be proud.</label>
-                <h3>Nightstone</h3>
-                <label class="checklist-item"><input type="checkbox" /> Rid of goblins in Nightstone | <strong class="color-alt1">Level Up to 2!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Deal with Zhentarim | <strong class="color-alt1">Level Up to 3!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Survive and Save Town in Dripping Caves | <strong class="color-alt1">Level Up to 4!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Get Quest from Morak to tell Markham about Semile</strong></label>
-                <h3>Zepheros</h3>
-                <label class="checklist-item"><input type="checkbox" /> Meet Zepheros & get info King Hecketon and Annam the All-father shattering the Ordning</label>
-                <label class="checklist-item"><input type="checkbox" /> Fly with Zepheros to Triboar, as he had a vision of unrest</label>
-                <label class="checklist-item"><input type="checkbox" /> Fight Kraken Society on flying crabs</label>
-                <label class="checklist-item"><input type="checkbox" /> Survive Ilymrith’s Rage attack on the tower that crashes it | <strong class="color-alt1">Level Up to 5!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Zepheros bails. Points in direction of Triboar.</label>
-                <h3>Triboar</h3>
-                <label class="checklist-item"><input type="checkbox" /> Defeat Giant Attack at Triboar | <strong class="color-alt1">Level Up to 6!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Get Quest from Ember Tweetings (Visit Everlund)</label>
-                <label class="checklist-item"><input type="checkbox" /> Get Quest from Naxene Drathkala (Visit KryptGarden Forest)</label>
-                <h3>Everlund</h3>
-                <label class="checklist-item"><input type="checkbox" /> Run Beginning of Kraken's Gamble on the way once past Yartar</label>
-                <label class="checklist-item"><input type="checkbox" /> Get In contact with Harpers and access to Portals | <strong class="color-alt1">Level Up!</strong></label>
-                <h3>Yartar</h3>
-                <label class="checklist-item"><input type="checkbox" /> Run Kraken's Gamble | <strong class="color-alt1">Level Up!</strong></label>
-                <h3>The Forest</h3>
-                <label class="checklist-item"><input type="checkbox" /> Meet Old Gnawbone Find location of All father, in Khedrun and find Harshnag</label>
-                <h3>The North</h3>
-                <label class="checklist-item"><input type="checkbox" /> Meet Harshnag and Go to eye of the All father.</label>
-                <label class="checklist-item"><input type="checkbox" /> Meet Oracle, find Conch and find out about Gems</label>
-                <label class="checklist-item"><input type="checkbox" />Run Away from Imyrith who attacks. Harshnag Defend for characters to get away</label>
-                <h3>Giant Kingdoms</h3>
-                <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location A and do quest | <strong class="color-alt1">Level Up!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location B and do quest | <strong class="color-alt1">Level Up!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location C and do quest | <strong class="color-alt1">Level Up!</strong></label>
-                <h3>The Finale</h3>
-                <label class="checklist-item"><input type="checkbox" /> Go to the Storm Giant Hold, get coin from Serissa, Find out Imyrith sux butt. <strong class="color-alt1">Level Up!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Confront the Golden Goose, Find King Hekaton, Survive THE KRAKEN |  <strong class="color-alt1">Level Up!</strong></label>
-                <label class="checklist-item"><input type="checkbox" /> Confront Imyrith and Save all of Fae-run |  <strong class="color-alt1">Level Up!</strong></label>
-              </div>
-            </div>
-      <!-- STORY SECTION -->
-      <div id="story-anchor" class="story container">
-        <h1>Story</h1>
-        <!-- SESSION 0 -->
-        <div class="sessions">
-          <button class="detail-accordion">
-            <h2>Session 1 | <strong>Storm King's Thunder</strong></h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DND Cheets</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <nav class="top-nav" id="top-nav">
+        <ul class="dnd-links">
+          <li><a class="active" href="#checklist-anchor">Checklist</a></li>
+          <li><a href="#story-anchor">Story</a></li>
+          <li><a href="#players-anchor">Players</a></li>
+          <li><a href="#npcs-anchor">NPC's</a></li>
+          <li><a href="#maps-anchor">Maps</a></li>
+          <li><a href="#monsters-anchor">Monsters</a></li>
+          <li><a href="#Encounters-anchor">Encounters</a></li>
+          <li><a href="#Items-anchor">Items</a></li>
+          <li><a href="#music-anchor">Music</a></li>
+        </ul>
+        <div class="music-player">
+          <h5 id="songName">No Song</h5>
+          <audio id="audio-player" controls loop>
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </nav>
+      <div class="content">
+  <!-- Campaign Points -->
+        <div id="checklist-anchor" class="checklist container">
+          <h1>Campaign Checklist</h1>
+          <button class="detail-accordion" data-target="accord-checklist">
+            <h2>Checklist</h2>
           </button>
-          <div class="session accordion-info">
-            <h3>06.17.23</h3>
-            <div class="session-notes">
-              <h3>Notes - Rule updates</h3>
-              <dl>
-                <dt>Table Talk</dt>
-                <dd>Above table talk at a minimum please. Please try and keep all discussions in character if related to
-                  story and actions (not if its a rule question). 'Critical Role play' as much as possible. This WILL
-                  affect gameplay.
-                  <br /><br />For example, if your talking about whether you're going to attack someone or kill them
-                  after - you better whisper and roll stealth cause they may have heard you...<br /><br /><i>This is in
-                    an effort to produce individual character decisions and character development rather than herd
-                    mentality.</i>
-                </dd>
-                <dt>Long Rests</dt>
-                <dd>Long Rests are going to be more difficult. You need to have ample conditions to take a long rest.
-                  Otherwise, a short rest will be necessary. This means walls and lodging or guard shifts if in the
-                  wilderness with somewhere where you can get 8 hours of sleep. I will be having a difficulty level for where you choose to set up camp that you wont be aware of. The night brings interesting creatures. Also, if you choose to have someone stand guard, they dont get the benefits of a rest. If you choose to people to stand guard, they get the beneifts of a short rest only.<br /><br /><i>This is in an effort to
-                    bring awareness to surroundings and danger, make your headstrong pushes in to battle more critical,
-                    as well as add more critical decision making and bring short rests and those classes/races with resting perks value up.</i></dd>
-                <dt>Travel Time</dt>
-                <dd>Travel is going to be more vital. Depending on how you are going to get somewhere we will not just
-                  skip over weeks of travel. We may montage long travel periods but most travel will be in game ot an
-                  extent.<br /><br /><i>This is in an effort to add more random encounters have more interesting and
-                    unique situations with your surroundings happen. Lets learn more about the Sword Coast together!</i>
-                </dd>
-                <dt>Birthday Crit</dt>
-                <dd>When its your birthday you have one critical roll to use within the next two sessions.</li>
-              </dl>
-            </div>
-            <div class="setting-notes">
-              <h3>Notes - Setting Details</h3>
-              <p>We are in the same setting as our previous campaign but roughly 100 years in the future. Your former
-                characters were not much heard of as they dissapeared upon exploring wave echo cave and never returned
-                with the exception of stories past down from a few adventurers long before this time. About 400 years
-                ago, A Rudolph Van Richten and his protege, Ezmerelda, wrote a "guide to Ravenloft" which mentioned
-                individuals matching your missing adventurers but have not been heard from again.</p>
-              <p>In this beginning, I'm going to give a large intro to set the scene and get us started. It will give us a lot of details of fae'run and the lore within.</p>
-              <p>I will then illustrate a setting for your characters. When I give you the floor, please describe your character followed by a little role play of what your character does or says before I continue on.</p>
-            </div>
-            <h3>Prologue</h3>
-            <p>The Sword Coast, a land of vast beauty and diverse cultures, stretches along the western shores of Faerûn
-              in the Forgotten Realms. Its cities and towns teem with life, bustling with adventurers seeking glory,
-              riches, and the thrill of daring quests. Yet, beyond the surface, shadows stir, and the winds carry
-              whispers of impending change.</p>
-            <p>Rumors have begun to circulate, like ripples in a pond, speaking of mysterious rumblings in the depths of
-              the wilds. Hushed voices speak of colossal beings, their presence felt in the tremors of the earth and the
-              distant echoes of thunderous footsteps. But the nature and purpose of these massive figures remain
-              shrouded in uncertainty.</p>
-            <p>As these whispers spread, fear tinges the air, and the people of the Sword Coast find themselves on the
-              edge of anticipation. The ground quivers with each passing day, leaving villages and settlements on alert,
-              uncertain of what the future may hold.</p>
-            <p>Amidst this growing unease, the factions of the realm maneuver in the shadows, each with their own
-              agenda. The Lords' Alliance, a coalition of influential cities and leaders, seeks to uphold order and
-              rally the forces of good and justice. The Harpers, a clandestine organization with eyes and ears in every
-              corner, strive to uncover secrets and protect the innocent. The Zhentarim, enigmatic and inscrutable,
-              manipulate events for their own gain. And the Emerald Enclave, staunch defenders of nature, work to
-              maintain the delicate balance between civilization and the wild.</p>
-            <p>In the celestial realm, the gods watch over their domains with increasing concern. Temples and shrines
-              dedicated to these deities stand as beacons of hope, offering solace to those seeking divine intervention.
-              From the stalwart Helm, guardian of the innocent, to Tymora, lady luck herself, the gods'
-              influence shapes the destinies of mortals.</p>
-            <p>The Sword Coast, however, is not merely a realm of factions and divine influence. Mighty dragons,
-              majestic and fearsome, soar through the skies, their presence a testament to their power. Some dragons are
-              benevolent, bestowing wisdom and aid upon those they deem worthy. Others, driven by greed and aggression,
-              leave a trail of destruction in their wake. Legends speak of ancient artifacts forged in dragonfire,
-              imbued with extraordinary power, hidden within treacherous dungeons or guarded by formidable creatures.
-            </p>
-            <p>And so, as destiny weaves its tapestry, your paths converge. United by a common purpose, you find
-              yourselves drawn into a journey that will lead you across the breadth of the Sword Coast. From the
-              bustling streets of Waterdeep, the City of Splendors, to the ancient ruins of Neverwinter, and even to the
-              untamed wilderness of the Savage Frontier, your adventure will take you to both familiar and unknown
-              territories.</p>
-            <p>With each step you take, you will encounter allies and adversaries, face trials and tribulations, and
-              uncover the secrets that lie within the realm. The Sword Coast awaits, a canvas for your heroic exploits
-              and a crucible for your character's growth. The fate of the realms rests in your hands, and the choices
-              you make will shape the course of this world.</p>
-            <p>Prepare yourselves, valiant adventurers, for an extraordinary odyssey through the Sword Coast. The stage
-              is set, the curtain rises, and your epic quest begins.</p>
-            <hr />
-            <h3>Character Intros</h3>
-            <h4>Yeldon and Celeste</h4>
-            <p>As the sun dawns, casting a warm golden glow over the landscape, the High Road stretches south of Waterdeep, meandering through the northern reaches of the region. The road cuts a path through dense forests, where towering trees create a canopy overhead, dappling the path with patches of sunlight. A gentle breeze rustles through the leaves, carrying with it the earthy fragrance of moss and wildflowers.</p>
-            <p>In the growing light, a camp is set up by the roadside, nestled amidst the towering trees. A crackling campfire sends flickering flames into the decreasing darkness, casting dancing shadows upon the gnarled tree trunks. The surrounding forest comes alive with the symphony of chirping birds and the occasional rustle of unseen creatures moving through the underbrush.</p>
-            <p>A short stout man walks along the High Road, their eyes widen in surprise at the sight of the campsite and its lone inhabitant gathering their belongings. Standing tall and well-built, the figure exudes strength and resilience. Silver dreaded hair cascades down her back, contrasting with shaved sides, giving her a striking Viking-like appearance. Her honey-gold eyes hold a sense of determination and an unyielding spirit.</p>
-            <p>Curiosity piqued, the man stops in their tracks, studying the camp from a distance. The small glasses perched upon their nose amplify their inquisitive gaze. Their elegant red hat adds a touch of whimsy to their gnomish appearance, as if the wild nature of the surroundings has inspired their own sense of adventure.</p>
-            <p>The High Road becomes the crossroads where these two individuals' paths intersect, the gnome's journey momentarily halted by the presence of the solitary barbarian. It holds the promise of adventure, companionship, and the chance for these disparate souls to find their respective places in a world filled with mystery and possibilities.</p>
-            <p>Tristan and Alec, the floor is yours...</p>
-            <hr/>
-            <p>Will you both roll a perception check for me?</p>
-            <p>+ 10 - A sudden pause in your conversation arrives with a sense of worry and curiousity, as you notice in the tree tops a head of you a few small subtle smoke plumes. Not far down the road, towards your destination of waterdeep, a sense of danger and destruction appears in the sky.</p>
-            <hr/>
-            <h4>Althea and Anthony</h4>
-            <p>The Grey's Glory, known to the locals as "Old Glory", aptly named for the Frost Giant Harshnag's adventuring company who notoriously save the city a time or two, a renowned tavern nestled within the heart of Waterdeep, exudes warmth and
-              merriment.</p>
-            <p>As you step through its weathered wooden door, the aroma of spiced ale and hearth-cooked meals
-              wafts through the air, inviting you to indulge in the comforts of this bustling establishment.</p>
-            <p>Inside, the tavern is a symphony of sights and sounds. The crackling fire casts dancing shadows on the
-              rough-hewn stone walls, while the soft glow of flickering candles bathes the room in a warm, amber light.
-              The low hum of lively conversation and merry laughter fills the air, intermingling with the gentle
-              strumming of a bard's lute, creating an inviting melody that weaves through the tapestry of voices.</p>
-              <p>In the center of the tavern, an almost shrine of sorts. A fountain ordained with the statues of the Legendary Adventuring Company Force Grey, The namesake of this fine establishment, filled with many of copper tossed in at the hopes of luck from ol' Harshnag himself.</p>
-            <p>Amidst the boisterous crowd, you spot a venerable human woman adorned in black hooded robes, seated at a
-              corner table near the hearth. Her weathered face, etched with lines of experience, radiates an air of
-              quiet contemplation. She sits with a straight posture, her presence both serene and commanding. The
-              flickering candlelight catches the glint of her focused eyes, hinting at a hidden strength that lies
-              within her aging frame. Clad in simple yet well-worn robes, she emanates an aura of wisdom and resilience.</p>
-            <p>Her gaze drifts toward the bar, where she sees a large humanoid figure with blue-ish skin, ignoring an animated conversation with a group of patron to left of his barstool. Towering above the crowd, his impressive stature
-              bears the unmistakable traits of his orcish lineage, juxtaposed with an air of refinement and curiosity.
-              His deep, emerald eyes glimmer with a hunger for knowledge, betraying the depths of his intellect and the
-              endless pursuit of arcane mastery. Dressed in scholarly robes, he carries an air of grace that defies his
-              brutish origins.</p>
-              <p>Melissa and Anthony... the floor is yours.</p>
-              <hr/>
-              <p>A couple things happen in this surrounding bar that peak your interest. A small fight breaks out over a few coins and a cheated card but quickly gets handled. A begging woman with curly dirty brown hair [BELDORA] stumbles weakily around the tavern asking for a few coin - "can you spare just a copper or two sir, I dont ask for much". And a Tall dark skinned man comes briskly into the front door in urgency.</p>
-              <hr/>
-              <h3>Campaign Start</h3>
+          <div id="accord-checklist" class="campaign-checklist accordion-info">
+            <h3>Waterdeep</h3>
+            <label class="checklist-item"><input type="checkbox" />Markham Southwell sends players to Nightstone. Check on his sister.</label>
+            <label class="checklist-item"><input type="checkbox" />Have Beldora ask for copper at the door. She stops durk, give him a wink and says - your parents must be proud.</label>
+            <h3>Nightstone</h3>
+            <label class="checklist-item"><input type="checkbox" /> Rid of goblins in Nightstone | <strong class="color-alt1">Level Up to 2!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Deal with Zhentarim | <strong class="color-alt1">Level Up to 3!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Survive and Save Town in Dripping Caves | <strong class="color-alt1">Level Up to 4!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Get Quest from Morak to tell Markham about Semile</strong></label>
+            <h3>Zepheros</h3>
+            <label class="checklist-item"><input type="checkbox" /> Meet Zepheros & get info King Hecketon and Annam the All-father shattering the Ordning</label>
+            <label class="checklist-item"><input type="checkbox" /> Fly with Zepheros to Triboar, as he had a vision of unrest</label>
+            <label class="checklist-item"><input type="checkbox" /> Fight Kraken Society on flying crabs</label>
+            <label class="checklist-item"><input type="checkbox" /> Survive Ilymrith’s Rage attack on the tower that crashes it | <strong class="color-alt1">Level Up to 5!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Zepheros bails. Points in direction of Triboar.</label>
+            <h3>Triboar</h3>
+            <label class="checklist-item"><input type="checkbox" /> Defeat Giant Attack at Triboar | <strong class="color-alt1">Level Up to 6!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Get Quest from Ember Tweetings (Visit Everlund)</label>
+            <label class="checklist-item"><input type="checkbox" /> Get Quest from Naxene Drathkala (Visit Waterdeep Again ot see Beldora)</label>
+            <h3>Water Deep pt 2</h3>
+            <label class="checklist-item"><input type="checkbox" />Go Back to the Grey's Glory. The Statue has been removed and signs all over the tavern. Lord's Alliance offering reward of 500 Gold for every Giant's Head</label>
+            <label class="checklist-item"><input type="checkbox" />Speak to Beldora and get her quest + get location of Olf Gnawbone ( The Forest) </label>
+            <h3>Everlund</h3>
+            <label class="checklist-item"><input type="checkbox" /> Run Beginning of Kraken's Gamble on the way once past Yartar</label>
+            <label class="checklist-item"><input type="checkbox" /> Get In contact with Harpers and access to Portals | <strong class="color-alt1">Level Up!</strong></label>
+            <h3>Yartar</h3>
+            <label class="checklist-item"><input type="checkbox" /> Run Kraken's Gamble | <strong class="color-alt1">Level Up!</strong></label>
+            <h3>The Forest</h3>
+            <label class="checklist-item"><input type="checkbox" /> Meet Old Gnawbone Find location of All father, in Khedrun and find Harshnag</label>
+            <h3>The North</h3>
+            <label class="checklist-item"><input type="checkbox" /> Meet Harshnag and Go to eye of the All father.</label>
+            <label class="checklist-item"><input type="checkbox" /> Meet Oracle, find Conch and find out about Gems</label>
+            <label class="checklist-item"><input type="checkbox" />Run Away from Imyrith who attacks. Harshnag Defend for characters to get away</label>
+            <h3>Giant Kingdoms</h3>
+            <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location A and do quest | <strong class="color-alt1">Level Up!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location B and do quest | <strong class="color-alt1">Level Up!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location C and do quest | <strong class="color-alt1">Level Up!</strong></label>
+            <h3>The Finale</h3>
+            <label class="checklist-item"><input type="checkbox" /> Go to the Storm Giant Hold, get coin from Serissa, Find out Imyrith sux butt. <strong class="color-alt1">Level Up!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Confront the Golden Goose, Find King Hekaton, Survive THE KRAKEN |  <strong class="color-alt1">Level Up!</strong></label>
+            <label class="checklist-item"><input type="checkbox" /> Confront Imyrith and Save all of Fae-run |  <strong class="color-alt1">Level Up!</strong></label>
           </div>
         </div>
-    </div>
-          <!-- -------- -->
-      <!-- PLAYERS -->
-      <div id="players-anchor" class="characters container">
-        <h1>Players</h1>
-        <!-- ANTHONY -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/Durk.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Durk Whitlock</h3>
-              <h4>Anthony</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Wizard</strong></p>
-              <p>Race: <strong>Half Orc</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">10</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion">Character Details</button>
-            <div class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="17"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="10"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
+  <!-- -------- -->
+
+  <!-- STORY SECTION -->
+        <div id="story-anchor" class="story container">
+          <h1>Story</h1>
+          <!-- SESSION 0 -->
+          <div class="sessions">
+            <button class="detail-accordion" data-target="sesh1">
+              <h2>Session 1 | <strong>Storm King's Thunder</strong></h2>
+            </button>
+            <div id="sesh1" class="session accordion-info">
+              <h3>06.17.23</h3>
+              <div class="session-notes">
+                <h3>Notes - Rule updates</h3>
+                <dl>
+                  <dt>Table Talk</dt>
+                  <dd>Above table talk at a minimum please. Please try and keep all discussions in character if related to
+                    story and actions (not if its a rule question). 'Critical Role play' as much as possible. This WILL
+                    affect gameplay.
+                    <br /><br />For example, if your talking about whether you're going to attack someone or kill them
+                    after - you better whisper and roll stealth cause they may have heard you...<br /><br /><i>This is in
+                      an effort to produce individual character decisions and character development rather than herd
+                      mentality.</i>
+                  </dd>
+                  <dt>Long Rests</dt>
+                  <dd>Long Rests are going to be more difficult. You need to have ample conditions to take a long rest.
+                    Otherwise, a short rest will be necessary. This means walls and lodging or guard shifts if in the
+                    wilderness with somewhere where you can get 8 hours of sleep. I will be having a difficulty level for where you choose to set up camp that you wont be aware of. The night brings interesting creatures. Also, if you choose to have someone stand guard, they dont get the benefits of a rest. If you choose to people to stand guard, they get the beneifts of a short rest only.<br /><br /><i>This is in an effort to
+                      bring awareness to surroundings and danger, make your headstrong pushes in to battle more critical,
+                      as well as add more critical decision making and bring short rests and those classes/races with resting perks value up.</i></dd>
+                  <dt>Travel Time</dt>
+                  <dd>Travel is going to be more vital. Depending on how you are going to get somewhere we will not just
+                    skip over weeks of travel. We may montage long travel periods but most travel will be in game ot an
+                    extent.<br /><br /><i>This is in an effort to add more random encounters have more interesting and
+                      unique situations with your surroundings happen. Lets learn more about the Sword Coast together!</i>
+                  </dd>
+                  <dt>Birthday Crit</dt>
+                  <dd>When its your birthday you have one critical roll to use within the next two sessions.</li>
+                </dl>
               </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Important Features</h3>
-                  <ul>
-                    <li>Parents attacked by Imyrith</li>
-                    <li>Adoptive Parents James and Betty Whitlock</li>
-                    <li>Well-known among Members of the Harpers</li>
-                  </ul>
-                </div>
+              <div class="setting-notes">
+                <h3>Notes - Setting Details</h3>
+                <p>We are in the same setting as our previous campaign but roughly 100 years in the future. Your former
+                  characters were not much heard of as they dissapeared upon exploring wave echo cave and never returned
+                  with the exception of stories past down from a few adventurers long before this time. About 400 years
+                  ago, A Rudolph Van Richten and his protege, Ezmerelda, wrote a "guide to Ravenloft" which mentioned
+                  individuals matching your missing adventurers but have not been heard from again.</p>
+                <p>In this beginning, I'm going to give a large intro to set the scene and get us started. It will give us a lot of details of fae'run and the lore within.</p>
+                <p>I will then illustrate a setting for your characters. When I give you the floor, please describe your character followed by a little role play of what your character does or says before I continue on.</p>
+              </div>
+              <div class="prologue">
+                <h3>Prologue</h3>
+                <p>The Sword Coast, a land of vast beauty and diverse cultures, stretches along the western shores of Faerûn
+                  in the Forgotten Realms. Its cities and towns teem with life, bustling with adventurers seeking glory,
+                  riches, and the thrill of daring quests. Yet, beyond the surface, shadows stir, and the winds carry
+                  whispers of impending change.</p>
+                <p>Rumors have begun to circulate, like ripples in a pond, speaking of mysterious rumblings in the depths of
+                  the wilds. Hushed voices speak of colossal beings, their presence felt in the tremors of the earth and the
+                  distant echoes of thunderous footsteps. But the nature and purpose of these massive figures remain
+                  shrouded in uncertainty.</p>
+                <p>As these whispers spread, fear tinges the air, and the people of the Sword Coast find themselves on the
+                  edge of anticipation. The ground quivers with each passing day, leaving villages and settlements on alert,
+                  uncertain of what the future may hold.</p>
+                <p>Amidst this growing unease, the factions of the realm maneuver in the shadows, each with their own
+                  agenda. The Lords' Alliance, a coalition of influential cities and leaders, seeks to uphold order and
+                  rally the forces of good and justice. The Harpers, a clandestine organization with eyes and ears in every
+                  corner, strive to uncover secrets and protect the innocent. The Zhentarim, enigmatic and inscrutable,
+                  manipulate events for their own gain. And the Emerald Enclave, staunch defenders of nature, work to
+                  maintain the delicate balance between civilization and the wild.</p>
+                <p>In the celestial realm, the gods watch over their domains with increasing concern. Temples and shrines
+                  dedicated to these deities stand as beacons of hope, offering solace to those seeking divine intervention.
+                  From the stalwart Helm, guardian of the innocent, to Tymora, lady luck herself, the gods'
+                  influence shapes the destinies of mortals.</p>
+                <p>The Sword Coast, however, is not merely a realm of factions and divine influence. Mighty dragons,
+                  majestic and fearsome, soar through the skies, their presence a testament to their power. Some dragons are
+                  benevolent, bestowing wisdom and aid upon those they deem worthy. Others, driven by greed and aggression,
+                  leave a trail of destruction in their wake. Legends speak of ancient artifacts forged in dragonfire,
+                  imbued with extraordinary power, hidden within treacherous dungeons or guarded by formidable creatures.</p>
+                <p>And so, as destiny weaves its tapestry, your paths converge. United by a common purpose, you find
+                  yourselves drawn into a journey that will lead you across the breadth of the Sword Coast. From the
+                  bustling streets of Waterdeep, the City of Splendors, to the ancient ruins of Neverwinter, and even to the
+                  untamed wilderness of the Savage Frontier, your adventure will take you to both familiar and unknown
+                  territories.</p>
+                <p>With each step you take, you will encounter allies and adversaries, face trials and tribulations, and
+                  uncover the secrets that lie within the realm. The Sword Coast awaits, a canvas for your heroic exploits
+                  and a crucible for your character's growth. The fate of the realms rests in your hands, and the choices
+                  you make will shape the course of this world.</p>
+                <p>Prepare yourselves, valiant adventurers, for an extraordinary odyssey through the Sword Coast. The stage
+                  is set, the curtain rises, and your epic quest begins.</p>
+                <hr />
+                <h3>Character Intros</h3>
+                <h4>Yeldon and Celeste</h4>
+                <p>As the sun dawns, casting a warm golden glow over the landscape, the High Road stretches south of Waterdeep, meandering through the northern reaches of the region. The road cuts a path through dense forests, where towering trees create a canopy overhead, dappling the path with patches of sunlight. A gentle breeze rustles through the leaves, carrying with it the earthy fragrance of moss and wildflowers.</p>
+                <p>In the growing light, a camp is set up by the roadside, nestled amidst the towering trees. A crackling campfire sends flickering flames into the decreasing darkness, casting dancing shadows upon the gnarled tree trunks. The surrounding forest comes alive with the symphony of chirping birds and the occasional rustle of unseen creatures moving through the underbrush.</p>
+                <p>A short stout man walks along the High Road, their eyes widen in surprise at the sight of the campsite and its lone inhabitant gathering their belongings. Standing tall and well-built, the figure exudes strength and resilience. Silver dreaded hair cascades down her back, contrasting with shaved sides, giving her a striking Viking-like appearance. Her honey-gold eyes hold a sense of determination and an unyielding spirit.</p>
+                <p>Curiosity piqued, the man stops in their tracks, studying the camp from a distance. The small glasses perched upon their nose amplify their inquisitive gaze. Their elegant red hat adds a touch of whimsy to their gnomish appearance, as if the wild nature of the surroundings has inspired their own sense of adventure.</p>
+                <p>The High Road becomes the crossroads where these two individuals' paths intersect, the gnome's journey momentarily halted by the presence of the solitary barbarian. It holds the promise of adventure, companionship, and the chance for these disparate souls to find their respective places in a world filled with mystery and possibilities.</p>
+                <p>Tristan and Alec, the floor is yours...</p>
+                <hr/>
+                <p>Will you both roll a perception check for me?</p>
+                <p>+ 10 - A sudden pause in your conversation arrives with a sense of worry and curiousity, as you notice in the tree tops a head of you a few small subtle smoke plumes. Not far down the road, towards your destination of waterdeep, a sense of danger and destruction appears in the sky.</p>
+                <hr/>
+                <h4>Althea and Anthony</h4>
+                <p>The Grey's Glory, known to the locals as "Old Glory", aptly named for the Frost Giant Harshnag's adventuring company who notoriously save the city a time or two, a renowned tavern nestled within the heart of Waterdeep, exudes warmth and
+                  merriment.</p>
+                <p>As you step through its weathered wooden door, the aroma of spiced ale and hearth-cooked meals
+                  wafts through the air, inviting you to indulge in the comforts of this bustling establishment.</p>
+                <p>Inside, the tavern is a symphony of sights and sounds. The crackling fire casts dancing shadows on the
+                  rough-hewn stone walls, while the soft glow of flickering candles bathes the room in a warm, amber light.
+                  The low hum of lively conversation and merry laughter fills the air, intermingling with the gentle
+                  strumming of a bard's lute, creating an inviting melody that weaves through the tapestry of voices.</p>
+                <p>In the center of the tavern, an almost shrine of sorts. A fountain ordained with the statues of the Legendary Adventuring Company Force Grey, The namesake of this fine establishment, filled with many of copper tossed in at the hopes of luck from ol' Harshnag himself.</p>
+                <p>Amidst the boisterous crowd, you spot a venerable human woman adorned in black hooded robes, seated at a
+                  corner table near the hearth. Her weathered face, etched with lines of experience, radiates an air of
+                  quiet contemplation. She sits with a straight posture, her presence both serene and commanding. The
+                  flickering candlelight catches the glint of her focused eyes, hinting at a hidden strength that lies
+                  within her aging frame. Clad in simple yet well-worn robes, she emanates an aura of wisdom and resilience.</p>
+                <p>Her gaze drifts toward the bar, where she sees a large humanoid figure with blue-ish skin, ignoring an animated conversation with a group of patron to left of his barstool. Towering above the crowd, his impressive stature
+                  bears the unmistakable traits of his orcish lineage, juxtaposed with an air of refinement and curiosity.
+                  His deep, emerald eyes glimmer with a hunger for knowledge, betraying the depths of his intellect and the
+                  endless pursuit of arcane mastery. Dressed in scholarly robes, he carries an air of grace that defies his
+                  brutish origins.</p>
+                <p>Melissa and Anthony... the floor is yours.</p>
+                <hr/>
+                <p>A couple things happen in this surrounding bar that peak your interest. A small fight breaks out over a few coins and a cheated card but quickly gets handled. A begging woman with curly dirty brown hair [BELDORA] stumbles weakily around the tavern asking for a few coin - "can you spare just a copper or two sir, I dont ask for much". And a Tall dark skinned man comes briskly into the front door in urgency.</p>
+                <hr/>
               </div>
             </div>
           </div>
         </div>
-        <!-- ALEC -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/yelton.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Yelton</h3>
-              <h4>Alec</h4>
+  <!-- -------- -->
+
+  <!-- PLAYERS -->
+        <div id="players-anchor" class="characters container">
+          <h1>Players</h1>
+          <!-- ANTHONY -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/Durk.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Durk Whitlock</h3>
+                <h4>Anthony</h4>
+              </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Wizard</strong></p>
+                <p>Race: <strong>Half Orc</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">10</p>
+                <p>Passive Percepetion</p>
+              </div>
             </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Wizard</strong></p>
-              <p>Race: <strong>Gnome</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">11</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion">Character Details</button>
-            <div class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
+            <div class="details">
+              <button class="detail-accordion" data-target="details1">Character Details</button>
+              <div id="details1" class="accordion-info">
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Strength</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="17"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Dexterity</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Constitution</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Intelligence</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Wisdom</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="10"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Charisma</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
                 </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="16"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Important Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Important Features</h3>
+                    <ul>
+                      <li>Parents attacked by Imyrith</li>
+                      <li>Adoptive Parents James and Betty Whitlock</li>
+                      <li>Well-known among Members of the Harpers</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
+            </div>
+          </div>
+          <!-- ALEC -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/yelton.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Yelton</h3>
+                <h4>Alec</h4>
+              </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Wizard</strong></p>
+                <p>Race: <strong>Gnome</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">11</p>
+                <p>Passive Percepetion</p>
+              </div>
+            </div>
+            <div class="details">
+              <button class="detail-accordion" data-target="details2">Character Details</button>
+              <div id="details2" class="accordion-info">
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Strength</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Dexterity</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Constitution</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Intelligence</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Wisdom</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Charisma</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
                 </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>No features Yet</li>
-                  </ul>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Important Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Character Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- JOSH -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/aspari.jpg" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Aspari</h3>
+                <h4>Josh</h4>
+              </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Monk</strong></p>
+                <p>Race: <strong>Aasimar</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">13</p>
+                <p>Passive Percepetion</p>
+              </div>
+            </div>
+            <div class="details">
+              <button class="detail-accordion" data-target="details3">Character Details</button>
+              <div id="details3" class="accordion-info">
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Strength</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Dexterity</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Constitution</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="15"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Intelligence</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Wisdom</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Charisma</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                </div>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Important Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Character Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MELISSA -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/althea.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Sister Althea Aldure</h3>
+                <h4>Melissa</h4>
+              </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Monk</strong></p>
+                <p>Race: <strong>Human Variant</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">13</p>
+                <p>Passive Percepetion</p>
+              </div>
+            </div>
+            <div class="details">
+              <button class="detail-accordion" data-target="details4">Character Details</button>
+              <div id="details4" class="accordion-info">
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Strength</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="11"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Dexterity</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Constitution</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Intelligence</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="11"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Wisdom</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Charisma</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="9"></input>
+                    <!---------------------->
+                  </div>
+                </div>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Important Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Character Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TAMMY -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/tipp.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Tipp</h3>
+                <h4>Tammy</h4>
+              </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Druid</strong></p>
+                <p>Race: <strong>Human</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">15</p>
+                <p>Passive Percepetion</p>
+              </div>
+            </div>
+            <div class="details">
+              <button class="detail-accordion" data-target="details5">Character Details</button>
+              <div id="details5" class="accordion-info">
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Strength</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Dexterity</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="15"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Constitution</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Intelligence</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Wisdom</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="17"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Charisma</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                </div>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Important Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Character Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TRISTAN -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/celeste.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Celeste</h3>
+                <h4>Tristan</h4>
+              </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Barbarian</strong></p>
+                <p>Race: <strong>Aasimar</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">10</p>
+                <p>Passive Percepetion</p>
+              </div>
+            </div>
+            <div class="details">
+              <button class="detail-accordion" data-target="details6">Character Details</button>
+              <div id="details6" class="accordion-info">
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Strength</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="15"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Dexterity</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="13"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Constitution</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Intelligence</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="10"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Wisdom</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="10"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>Charisma</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="13"></input>
+                    <!---------------------->
+                  </div>
+                </div>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Important Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Character Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- JOSH -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/aspari.jpg" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Aspari</h3>
-              <h4>Josh</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Monk</strong></p>
-              <p>Race: <strong>Aasimar</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">13</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion">Character Details</button>
-            <div class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="15"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="16"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
+  <!-- -------- -->
+
+  <!-- NPC's -->
+        <div id="npcs-anchor" class="npc container">
+          <h1>NPC's</h1>
+          <!-- Ember -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/ember.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Ember Tweetings</h3>
               </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>No features Yet</li>
-                  </ul>
-                </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Ranger</strong></p>
+                <p>Race: <strong>Half-Elf</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">15</p>
+                <p>Passive Percepetion</p>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- MELISSA -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/althea.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Sister Althea Aldure</h3>
-              <h4>Melissa</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Monk</strong></p>
-              <p>Race: <strong>Human Variant</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">13</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion">Character Details</button>
-            <div class="accordion-info">
+            <button class="detail-accordion" data-target="npc1">Character Details</button>
+            <div id="npc1" class="accordion-info">
               <div class="ability-scores">
                 <div class="score-box">
                   <h5>Strength</h5>
@@ -521,137 +780,52 @@
               </div>
               <div class="char-lists">
                 <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
                   <h3>Character Features</h3>
                   <ul>
                     <li>No features Yet</li>
                   </ul>
                 </div>
+                <div class="list">
+                  <h3>Important Details</h3>
+                  <ul>
+                    <li>No Details Yet</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- TAMMY -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/tipp.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Tipp</h3>
-              <h4>Tammy</h4>
+          <!-- Garrick -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/ember.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Garrick Stoneheart</h3>
+              </div>
+              <div class="char-traits">
+                <p>Level: <strong><span class="level">1</span></strong></p>
+                <p>Class: <strong>Ranger</strong></p>
+                <p>Race: <strong>Half-Elf</strong></p>
+              </div>
+              <div class="perception">
+                <p class="number">15</p>
+                <p>Passive Percepetion</p>
+              </div>
             </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Druid</strong></p>
-              <p>Race: <strong>Human</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">15</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion">Character Details</button>
-            <div class="accordion-info">
+            <button class="detail-accordion" data-target="npc2">Character Details</button>
+            <div id="npc2" class="accordion-info">
               <div class="ability-scores">
                 <div class="score-box">
                   <h5>Strength</h5>
                   <p class="strength ability-modifier" data-target=".strength-skills">0</p>
                   <!-- Change This Only -->
-                  <input class="score" value="8"></input>
+                  <input class="score" value="11"></input>
                   <!---------------------->
                 </div>
                 <div class="score-box">
                   <h5>Dexterity</h5>
                   <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="15"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
                   <!-- Change This Only -->
                   <input class="score" value="16"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="17"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-              </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>No features Yet</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- TRISTAN -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/celeste.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Celeste</h3>
-              <h4>Tristan</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Barbarian</strong></p>
-              <p>Race: <strong>Aasimar</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">10</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion">Character Details</button>
-            <div class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="15"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="13"></input>
                   <!---------------------->
                 </div>
                 <div class="score-box">
@@ -665,388 +839,242 @@
                   <h5>Intelligence</h5>
                   <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
                   <!-- Change This Only -->
-                  <input class="score" value="10"></input>
+                  <input class="score" value="11"></input>
                   <!---------------------->
                 </div>
                 <div class="score-box">
                   <h5>Wisdom</h5>
                   <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
                   <!-- Change This Only -->
-                  <input class="score" value="10"></input>
+                  <input class="score" value="16"></input>
                   <!---------------------->
                 </div>
                 <div class="score-box">
                   <h5>Charisma</h5>
                   <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
                   <!-- Change This Only -->
-                  <input class="score" value="13"></input>
+                  <input class="score" value="9"></input>
                   <!---------------------->
                 </div>
               </div>
               <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
                 <div class="list">
                   <h3>Character Features</h3>
                   <ul>
                     <li>No features Yet</li>
                   </ul>
                 </div>
+                <div class="list">
+                  <h3>Important Details</h3>
+                  <ul>
+                    <li>No Details Yet</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+          <div class="names-buttons">
+            <button class="detail-accordion" data-target="names-male">Male Names</button>
+            <button class="detail-accordion" data-target="names-female">Female Names</button>
+          </div>
+          <div class="name-container">
+            <div id="names-male" class="accordion-info">
+            <ul class="name-list">
+              <li>Thoril Gladomain</li>
+              <li>Ethyn Gardener</li>
+              <li>Lyam Wooden</li>
+              <li>Ayden Singer</li>
+              <li>Gafjen Birch</li>
+              <li>Anton Groves</li>
+              <li>Lyuk Archer</li>
+              <li>Brandjen Woods</li>
+              <li>Yosef Byrch</li>
+              <li>Efan Foxx</li>
+              <li>Yfan Bloom</li>
+              <li>Benjen Grove</li>
+              <li>Gabrjel Flowers</li>
+              <li>Lukas Forrest</li>
+              <li>Miglus Woode</li>
+              <li>Bronn Sawyer</li>
+              <li>Lucjius Byrd</li>
+              <li>Nikolas Berry</li>
+              <li>Lyonus Hides</li>
+              <li>Domnik Harper</li>
+              <li>Elje Greene</li>
+              <li>Maks Deerman</li>
+              <li>Abel Stryder</li>
+              <li>Andrus Oaks</li>
+              <li>Yakob Walker</li>
+              <li>Gabrjel Birdett</li>
+              <li>Nom Singer</li>
+              <li>Alek</li>
+              <li>Andrej</li>
+              <li>Anton</li>
+              <li>Balthazar</li>
+              <li>Bogan</li>
+              <li>Boris</li>
+              <li>Dargos</li>
+              <li>Darzin</li>
+              <li>Franz</li>
+              <li>Gargosh</li>
+              <li>Gorek</li>
+              <li>Grygori</li>
+              <li>Hans</li>
+              <li>Harkus</li>
+              <li>Ivan</li>
+              <li>jirko</li>
+              <li>Kobal</li>
+              <li>Korga</li>
+              <li>Krystofor</li>
+              <li>Lazio</li>
+              <li>Livius</li>
+              <li>Marek</li>
+              <li>Miroslav</li>
+              <li>Nikolaj</li>
+              <li>Nimir</li>
+              <li>Oleg</li>
+              <li>Radovan</li>
+              <li>Radu</li>
+              <li>Seraz</li>
+              <li>Sergei</li>
+              <li>Stefan</li>
+              <li>Tural</li>
+              <li>Valentin</li>
+              <li>Vasily</li>
+              <li>Vladislav</li>
+              <li>Waltar</li>
+              <li>Yesper</li>
+              <li>Zsolt</li>
+              <li>Dragomir</li>
+              <li>Emeric</li>
+              <li>Falkon</li>
+              <li>Frederich</li>
+            </ul>
+            </div>
+            <div id="names-female" class="accordion-info">
+              <ul class="name-list">
+                <li>Janna Jack</li>
+                <li>Ryanna Lodges</li>
+                <li>Ysabel Tannerman</li>
+                <li>Bruka Hunter</li>
+                <li>Lona Byrdman</li>
+                <li>Andreja Pyne</li>
+                <li>Madjisa Wooden</li>
+                <li>Jemina Woodyn</li>
+                <li>Aryel Hydes</li>
+                <li>Oyara Hunter</li>
+                <li>Eva Woodyn</li>
+                <li>Arjana Greene</li>
+                <li>Katja Hunter</li>
+                <li>Adrjia Forrester</li>
+                <li>Valerya Gardner</li>
+                <li>Alisann Pines</li>
+                <li>Yenesa Forester</li>
+                <li>Yemina Hyde</li>
+                <li>Alysann Hyde</li>
+                <li>Amja Gardner</li>
+                <li>Brynn Wooden</li>
+                <li>Valya Silver</li>
+                <li>Yenesa Fletcher</li>
+                <li>Lilja Tanner</li>
+                <li>Selyne Wood</li>
+                <li>Natyan Forrester</li>
+              </ul>
+            </div>
+          </div>
         </div>
+  <!-- -------- -->
 
-      </div>
-    <!-- -------- -->
-    <!-- NPC's -->
-    <div id="npcs-anchor" class="npc container">
-      <h1>NPC's</h1>
-      <!-- Ember -->
-      <div class="character">
-        <img class="fullscreen-image" src="images/ember.png" width="100%" />
-        <div class="char-info">
-          <div class="char-title">
-            <h3>Ember Tweetings</h3>
-          </div>
-          <div class="char-traits">
-            <p>Level: <strong><span class="level">1</span></strong></p>
-            <p>Class: <strong>Ranger</strong></p>
-            <p>Race: <strong>Half-Elf</strong></p>
-          </div>
-          <div class="perception">
-            <p class="number">15</p>
-            <p>Passive Percepetion</p>
-          </div>
+  <!-- MAPS -->
+        <div id="maps-anchor" class="maps container">
+          <h1>Maps</h1>
+          <h2>The Sword Coast</h2>
+          <iframe src="https://www.aidedd.org/atlas/index.php?map=R&l=1"></iframe>
         </div>
-        <button class="detail-accordion">Character Details</button>
-        <div class="accordion-info">
-          <div class="ability-scores">
-            <div class="score-box">
-              <h5>Strength</h5>
-              <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="11"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Dexterity</h5>
-              <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="16"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Constitution</h5>
-              <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="14"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Intelligence</h5>
-              <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="11"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Wisdom</h5>
-              <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="16"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Charisma</h5>
-              <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="9"></input>
-              <!---------------------->
-            </div>
+  <!-- -------- -->
+
+  <!-- MUSIC -->
+        <div id="music-anchor" class="music container">
+          <h1>Music</h1>
+          <div class="music-list">
+            <ul class="lt-column">
+              <li class="category">
+                <div class="category-title">
+                <img src="icons/Artificer.png" width="100%" />
+                <p>Travel</p>
+                </div>
+                <ul>
+                  <li class="song-button" data-src="music/Camp at Night.mp3">Camp</li>
+                  <li class="song-button" data-src="music/DrippingCaves.mp3">Caves</li>
+                  <li class="song-button" data-src="music/dungeon.mp3">Dungeon</li>
+                  <li class="song-button" data-src="music/forest.mp3">Forest</li>
+                  <li class="song-button" data-src="music/high-road.mp3">High Road</li>
+                  <li class="song-button" data-src="music/thesea.mp3">Sea</li>
+                  <li class="song-button" data-src="music/Sky Castle.mp3">Sky</li>
+                  <li class="song-button" data-src="music/snow.mp3">Snow</li>
+                </ul>
+              </li>
+              <li class="category">
+                <div class="category-title">
+                <img src="icons/Fighter.png" width="100%" />
+                <p>Battle</p>
+                </div>
+                <ul>
+                  <li class="song-button" data-src="music/combat.mp3">Bandits</li>
+                  <li class="song-button" data-src="music/dragon.mp3">Dragons</li>
+                  <li class="song-button" data-src="music/Goblin Fight.mp3">Goblins</li>
+                  <li class="song-button" data-src="music/giants.mp3">Giants</li>
+                  <li class="song-button" data-src="music/water-battle.mp3">Water</li>
+                  <li class="song-button" data-src="music/Orcs.mp3">Orcs</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="rt-column">
+              <li class="category">
+                <div class="category-title">
+                <img src="icons/Bard.png" width="100%" />
+                <p>Tavern</p>
+                </div>
+                <ul>
+                  <li class="song-button" data-src="music/cozy-tavern.mp3">Old Glory</li>
+                  <li class="song-button" data-src="music/crowded-tavern.mp3">Busy</li>
+                  <li class="song-button" data-src="music/lonely-tavern.mp3">Lonely</li>
+                  <li class="song-button" data-src="music/cozy-tavern.mp3">Warm</li>
+                </ul>
+              </li>
+              <li class="category">
+                <div class="category-title">
+                <img src="icons/Artificer.png" width="100%" />
+                <p>Town</p>
+                </div>
+                <ul>
+                  <li class="song-button" data-src="music/abandoned-town.mp3">Abandoned</li>
+                  <li class="song-button" data-src="music/large-town.mp3">Large</li>
+                  <li class="song-button" data-src="music/north-village.mp3">North</li>
+                  <li class="song-button" data-src="music/quaint-town.mp3">Quaint</li>
+                </ul>
+              </li>
+              <li class="category">
+                <div class="category-title">
+                <img src="icons/Paladin.png" width="100%" />
+                <p>Story</p>
+                </div>
+                <ul>
+                  <li class="song-button" data-src="music/drooprook.mp3">Drook</li>
+                  <li class="song-button" data-src="music/story-lore.mp3">Epic Quests</li>
+                  <li class="song-button" data-src="music/adventures.mp3">Adventures</li>
+                  <li class="song-button" data-src="music/Alistaers Welcome.mp3">Alistaer</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="char-lists">
-            <div class="list">
-              <h3>Character Features</h3>
-              <ul>
-                <li>No features Yet</li>
-              </ul>
-            </div>
-            <div class="list">
-              <h3>Important Details</h3>
-              <ul>
-                <li>No Details Yet</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Garrick -->
-      <div class="character">
-        <img class="fullscreen-image" src="images/ember.png" width="100%" />
-        <div class="char-info">
-          <div class="char-title">
-            <h3>Garrick Stoneheart</h3>
-          </div>
-          <div class="char-traits">
-            <p>Level: <strong><span class="level">1</span></strong></p>
-            <p>Class: <strong>Ranger</strong></p>
-            <p>Race: <strong>Half-Elf</strong></p>
-          </div>
-          <div class="perception">
-            <p class="number">15</p>
-            <p>Passive Percepetion</p>
-          </div>
-        </div>
-        <button class="detail-accordion">Character Details</button>
-        <div class="accordion-info">
-          <div class="ability-scores">
-            <div class="score-box">
-              <h5>Strength</h5>
-              <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="11"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Dexterity</h5>
-              <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="16"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Constitution</h5>
-              <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="14"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Intelligence</h5>
-              <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="11"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Wisdom</h5>
-              <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="16"></input>
-              <!---------------------->
-            </div>
-            <div class="score-box">
-              <h5>Charisma</h5>
-              <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-              <!-- Change This Only -->
-              <input class="score" value="9"></input>
-              <!---------------------->
-            </div>
-          </div>
-          <div class="char-lists">
-            <div class="list">
-              <h3>Character Features</h3>
-              <ul>
-                <li>No features Yet</li>
-              </ul>
-            </div>
-            <div class="list">
-              <h3>Important Details</h3>
-              <ul>
-                <li>No Details Yet</li>
-              </ul>
-            </div>
-          </div>
+          <hr />
         </div>
       </div>
-      <div class="name-container">
-        <h5>Male Names</h5>
-        <ul class="name-list">
-          <li>Thoril Gladomain</li>
-          <li>Ethyn Gardener</li>
-          <li>Lyam Wooden</li>
-          <li>Ayden Singer</li>
-          <li>Gafjen Birch</li>
-          <li>Anton Groves</li>
-          <li>Lyuk Archer</li>
-          <li>Brandjen Woods</li>
-          <li>Yosef Byrch</li>
-          <li>Efan Foxx</li>
-          <li>Yfan Bloom</li>
-          <li>Benjen Grove</li>
-          <li>Gabrjel Flowers</li>
-          <li>Lukas Forrest</li>
-          <li>Miglus Woode</li>
-          <li>Bronn Sawyer</li>
-          <li>Lucjius Byrd</li>
-          <li>Nikolas Berry</li>
-          <li>Lyonus Hides</li>
-          <li>Domnik Harper</li>
-          <li>Elje Greene</li>
-          <li>Maks Deerman</li>
-          <li>Abel Stryder</li>
-          <li>Andrus Oaks</li>
-          <li>Yakob Walker</li>
-          <li>Gabrjel Birdett</li>
-          <li>Nom Singer</li>
-          <li>Alek</li>
-          <li>Andrej</li>
-          <li>Anton</li>
-          <li>Balthazar</li>
-          <li>Bogan</li>
-          <li>Boris</li>
-          <li>Dargos</li>
-          <li>Darzin</li>
-          <li>Franz</li>
-          <li>Gargosh</li>
-          <li>Gorek</li>
-          <li>Grygori</li>
-          <li>Hans</li>
-          <li>Harkus</li>
-          <li>Ivan</li>
-          <li>jirko</li>
-          <li>Kobal</li>
-          <li>Korga</li>
-          <li>Krystofor</li>
-          <li>Lazio</li>
-          <li>Livius</li>
-          <li>Marek</li>
-          <li>Miroslav</li>
-          <li>Nikolaj</li>
-          <li>Nimir</li>
-          <li>Oleg</li>
-          <li>Radovan</li>
-          <li>Radu</li>
-          <li>Seraz</li>
-          <li>Sergei</li>
-          <li>Stefan</li>
-          <li>Tural</li>
-          <li>Valentin</li>
-          <li>Vasily</li>
-          <li>Vladislav</li>
-          <li>Waltar</li>
-          <li>Yesper</li>
-          <li>Zsolt</li>
-          <li>Dragomir</li>
-          <li>Emeric</li>
-          <li>Falkon</li>
-          <li>Frederich</li>
-        </ul>
-      </div>
-      <div class="name-container">
-        <h5>Female Names</h5>
-        <ul class="name-list">
-          <li>Janna Jack</li>
-          <li>Ryanna Lodges</li>
-          <li>Ysabel Tannerman</li>
-          <li>Bruka Hunter</li>
-          <li>Lona Byrdman</li>
-          <li>Andreja Pyne</li>
-          <li>Madjisa Wooden</li>
-          <li>Jemina Woodyn</li>
-          <li>Aryel Hydes</li>
-          <li>Oyara Hunter</li>
-          <li>Eva Woodyn</li>
-          <li>Arjana Greene</li>
-          <li>Katja Hunter</li>
-          <li>Adrjia Forrester</li>
-          <li>Valerya Gardner</li>
-          <li>Alisann Pines</li>
-          <li>Yenesa Forester</li>
-          <li>Yemina Hyde</li>
-          <li>Alysann Hyde</li>
-          <li>Amja Gardner</li>
-          <li>Brynn Wooden</li>
-          <li>Valya Silver</li>
-          <li>Yenesa Fletcher</li>
-          <li>Lilja Tanner</li>
-          <li>Selyne Wood</li>
-          <li>Natyan Forrester</li>
-        </ul>
-      </div>
-    </div>
-    <!-- -------- -->
-    <!-- MAPS -->
-    <div id="maps-anchor" class="maps container">
-      <h1>Maps</h1>
-      <h2>The Sword Coast</h2>
-      <iframe src="https://www.aidedd.org/atlas/index.php?map=R&l=1"></iframe>
-    </div>
-     <!-- -------- -->
-    <!-- MUSIC -->
-    <div id="music-anchor" class="music container">
-      <h1>Music</h1>
-      <ul class="music-list">
-        <div class="lt-column">
-        <li class="category">
-          <img src="icons/Artificer.png" width="100%" />
-          <p>Travel</p>
-          <ul>
-            <li class="song-button" data-src="music/Camp at Night.mp3">Camp</li>
-            <li class="song-button" data-src="music/DrippingCaves.mp3">Caves</li>
-            <li class="song-button" data-src="music/dungeon.mp3">Dungeon</li>
-            <li class="song-button" data-src="music/forest.mp3">Forest</li>
-            <li class="song-button" data-src="music/high-road.mp3">High Road</li>
-            <li class="song-button" data-src="music/thesea.mp3">Sea</li>
-            <li class="song-button" data-src="music/Sky Castle.mp3">Sky</li>
-            <li class="song-button" data-src="music/snow.mp3">Snow</li>
-          </ul>
-        </li>
-        <li class="category">
-          <img src="icons/Fighter.png" width="100%" />
-          <p>Battle</p>
-          <ul>
-            <li class="song-button" data-src="music/combat.mp3">Bandits</li>
-            <li class="song-button" data-src="music/dragon.mp3">Dragons</li>
-            <li class="song-button" data-src="music/Goblin Fight.mp3">Goblins</li>
-            <li class="song-button" data-src="music/giants.mp3">Giants</li>
-            <li class="song-button" data-src="music/water-battle.mp3">Water</li>
-            <li class="song-button" data-src="music/Orcs.mp3">Orcs</li>
-          </ul>
-        </li>
-      </div>
-      <div class=rlt-column">
-        <li class="category">
-          <img src="icons/Bard.png" width="100%" />
-          <p>Tavern</p>
-          <ul>
-            <li class="song-button" data-src="music/crowded-tavern.mp3">Busy</li>
-            <li class="song-button" data-src="music/lonely-tavern.mp3">Lonely</li>
-            <li class="song-button" data-src="music/cozy-tavern.mp3">Warm</li>
-          </ul>
-        </li>
-        <li class="category">
-          <img src="icons/Artificer.png" width="100%" />
-          <p>Town</p>
-          <ul>
-            <li class="song-button" data-src="music/abandoned-town.mp3">Abandoned</li>
-            <li class="song-button" data-src="music/large-town.mp3">Large</li>
-            <li class="song-button" data-src="music/north-village.mp3">North</li>
-            <li class="song-button" data-src="music/quaint-town.mp3">Quaint</li>
-          </ul>
-        </li>
-        <li class="category">
-          <img src="icons/Paladin.png" width="100%" />
-          <p>Story</p>
-          <ul>
-            <li class="song-button" data-src="music/drooprook.mp3">Droop & Rook</li>
-            <li class="song-button" data-src="music/story-lore.mp3">Epic Quests</li>
-            <li class="song-button" data-src="music/adventures.mp3">Adventures</li>
-            <li class="song-button" data-src="music/Alistaers Welcome.mp3">Alistaer</li>
-          </ul>
-        </li>
-      </ul>
-      </div>
-      <hr />
-    </div>
-    </div>
-  </main>
+    </main>
+  <!-- -------- -->
+
+  <!-- Scripts -->
   <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

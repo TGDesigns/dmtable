@@ -2,14 +2,19 @@
 $(document).ready(function() {
   $("#top-nav ul li a").click(function () {
       $("#top-nav ul li a").removeClass("active");
-      // $(".tab").addClass("active"); // instead of this do the below 
       $(this).addClass("active");   
   });
 });
 
-// accordion trigger
-$( ".detail-accordion" ).on( "click", function() {
-$(this).next(".accordion-info").toggle( "fast" );
+$(".detail-accordion").on("click", function() {
+  var target = $(this).data("target");
+  var accordionInfo = $("#" + target);
+  
+  // Close all other accordions
+  $(".accordion-info").not(accordionInfo).slideUp("fast");
+
+  // Toggle the clicked accordion
+  accordionInfo.slideToggle("fast");
 });
 
 // Score increaser
@@ -82,11 +87,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
       audioPlayer.src = songSrc;
       audioPlayer.play();
-
-      // Replace the innerHTML of the element with ID "songName" with the songName
+      
       songNameElement.innerHTML = songName;
 
-      // Add "active" class to the clicked button
       songButtons.forEach(btn => {
         btn.classList.remove('active');
       });

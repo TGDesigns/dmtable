@@ -146,7 +146,6 @@ iframe {
   margin: 1rem auto;
   width: 90%;
   display: block;
-  min-height: 100vh;
   margin-bottom: 8rem;
 }
 /* STORY */
@@ -156,8 +155,7 @@ iframe {
     font-weight: 400;
     margin-bottom: 2rem;
     &::after {
-      display: block;
-      margin-top: 1rem;
+      margin-left: 1rem;
     }
   }
   p {
@@ -190,9 +188,6 @@ iframe {
   }
 }
 .sessions {
-  h2 {
-    margin-top: 1rem;
-  }
   h3 {
     font-family: $font-b;
     margin: 1rem 0;
@@ -225,7 +220,6 @@ iframe {
                         "button button"
                         "details details";
   padding: 4rem 0 3rem;
-  border-bottom: solid $support .2rem;
   img {
     grid-area: image;
     background-color: rgba(0,0,0,.5);
@@ -253,7 +247,6 @@ iframe {
     .char-title {
       grid-area: title;
       justify-content: space-between;
-      padding: 2rem 0;
       h3{
         color: $alt2;
         font-family: $font-b;
@@ -300,15 +293,19 @@ iframe {
   background-color: rgba($color: $alt2, $alpha: .1);
   border: none;
   color: $alt2;
-  display: block;
   padding: 1rem;
   text-transform: uppercase;
   font-weight: 800;
   width: 100%;
+  h2 {
+    display: inline-block;
+  }
   &::after {
     content: "\f078";
+    display: inline;
     font-family: 'FontAwesome';
     margin-left: 1rem;
+    vertical-align: text-top;
   }
 }
 .details {
@@ -403,44 +400,48 @@ grid-template-columns: 50% 50%;
 .music-list {
   display: grid;
   grid-template-columns: 50% 50%;
-   ul {
+   .lt-column, .rt-column {
     padding-left: 2rem;
     color: $alt2;
     display: block;
     width: fit-content;
     list-style-type: none;
-    columns: 2;
-    li {
-      font-size: .8rem;
-      padding: .4rem 1rem .3rem;
-      margin-bottom: .8rem;
-      background-color: $alt2;
-      color: $main;
-      border-radius: 50%;
-      text-align: center;
-      border-radius: 1rem;
-      vertical-align: middle;
-      opacity: .6;
-      width: 150px;
-      &:active {
-        opacity: 1;
+    .category {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      .category-title {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 10% 85%;
+        gap: 5%;
+        padding: .2rem 0;
+        margin-bottom: .5rem;
+        height: fit-content;
+      }
+      ul {
+        columns: 2;
+        .song-button {
+          font-size: .8rem;
+          padding: .4rem 1rem .3rem;
+          margin-bottom: .8rem;
+          background-color: $alt2;
+          color: $main;
+          border-radius: 50%;
+          text-align: center;
+          border-radius: 1rem;
+          vertical-align: middle;
+          opacity: .6;
+          width: 150px;
+          &:active {
+            opacity: 1;
+          }
+        }
+        .active {
+          background-color: $alt1;
+          opacity: 1;
+        }
       }
     }
-    .active {
-      background-color: $alt1;
-      opacity: 1;
-    }
   }
-}
-li.category {
-  padding: .2rem 0;
-  margin-bottom: .5rem;
-  display: grid;
-  grid-template-columns: 10% 85%;
-  gap: 5%;
-  align-items: center;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  height: fit-content;
 }
