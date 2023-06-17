@@ -374,9 +374,38 @@ grid-template-columns: 50% 50%;
 }
 
 /* NPCS */
+.npc-list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 5%;
+  margin-bottom: 3rem;
+}
+.npc-character {
+ h3{
+  font-family: $font-b;
+  font-weight: 800;
+  margin-bottom: .4rem;
+  font-size: 1.8rem;
+ }
+ h4{
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: .6rem;
+ }
+}
+.npc-desc-list {
+ p {
+  margin-bottom: .5rem;
+  line-height: 1.4;
+ }
+}
 .name-container {
   width: 90%;
   margin: 2rem 0 2rem 4rem;
+  .detail-accordion{
+    margin-bottom: 1rem;
+    background-color: transparent;
+  }
   h5 {
     font-size: 1.4rem;
     text-transform: uppercase;
