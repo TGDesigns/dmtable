@@ -411,9 +411,34 @@ iframe {
   padding-bottom: 1rem;
 }
 
-/* NPCS */
+/* MAPS */
 .maps h2 {
   margin-bottom: 2rem;
+}
+
+/* MONSTERS */
+.monster-list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 5%;
+  margin-bottom: 3rem;
+}
+
+.monster h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  font-size: 1.8rem;
+}
+.monster h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.monster-desc-list p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
 
 /* MUSIC */
