@@ -1,10 +1,11 @@
 // Active class
 $(document).ready(function() {
-  $("#top-nav ul li a").click(function () {
+  $("#top-nav ul lia ").click(function () {
       $("#top-nav ul li a").removeClass("active");
       $(this).addClass("active");   
   });
 });
+
 
 $(".detail-accordion").on("click", function() {
   var target = $(this).data("target");
@@ -16,6 +17,7 @@ $(".detail-accordion").on("click", function() {
   // Toggle the clicked accordion
   accordionInfo.slideToggle("fast");
 });
+
 
 // Score increaser
 $(document).ready(function() {

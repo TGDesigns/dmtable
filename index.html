@@ -14,8 +14,8 @@
 <body>
   <main>
     <nav class="top-nav" id="top-nav">
-      <ul class="dnd-links">
-        <li><a class="active" href="#checklist-anchor">Checklist</a></li>
+     <ul id="dnd-links">
+        <li class="active" ><a href="#checklist-anchor">Checklist</a></li>
         <li><a href="#story-anchor">Story</a></li>
         <li><a href="#players-anchor">Players</a></li>
         <li><a href="#npcs-anchor">NPC's</a></li>
@@ -36,10 +36,7 @@
       <!-- Campaign Points -->
       <div id="checklist-anchor" class="checklist container">
         <h1>Campaign Checklist</h1>
-        <button class="detail-accordion" data-target="accord-checklist">
-          <h2>Checklist</h2>
-        </button>
-        <div id="accord-checklist" class="campaign-checklist accordion-info">
+        <div id="accord-checklist" class="campaign-checklist">
           <h3>Waterdeep</h3>
           <label class="checklist-item"><input type="checkbox" />Markham Southwell sends players to Nightstone. Check on
             his sister.</label>
@@ -1096,6 +1093,7 @@
       
       <!-- MONSTERS -->
       <div id="monsters-anchor" class="monsters container">
+        <h1>Monsters</h1>
         <div class="monster-list">
           <!-- Perphanadon -->
           <div class="monster">
@@ -1112,6 +1110,30 @@
           </div>
         </div>
       </div>
+      <!-- -------- -->
+
+      <!-- Encounters -->
+          <div id="Encounters-anchor" class="encounters container">
+            <h1>Encounters</h1>
+          </div>
+      <!-- -------- -->
+
+      <!-- Items -->
+      <div id="Items-anchor" class="items container">
+        <h1>Items</h1>
+        <div class="drooks-list">
+          <h2>Droop & Rook</h2>
+          <h3>Traveling Merchants of Curiousities</h3>
+          <iframe src="https://docs.google.com/spreadsheets/d/1SK7yCc-DNCd0qNrX4FNupyOCsEgH7N6y6io3w8NsIuU/edit"></iframe>
+        </div>
+        <div class="vereks-list">
+          <h2>Verek</h2>
+          <h3>Peculiar Wares and Essentric Oddities</h3>
+          <iframe src="https://docs.google.com/spreadsheets/d/1-ebS8B3YbTMTr5zShTtb69G-bzS_PLKoSfX7yyRtu8g"></iframe>
+        </div>
+      </div>
+      <!-- -------- -->
+
       <!-- MUSIC -->
       <div id="music-anchor" class="music container">
         <h1>Music</h1>
