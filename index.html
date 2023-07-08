@@ -15,7 +15,8 @@
   <main>
     <nav class="top-nav" id="top-nav">
      <ul id="dnd-links">
-        <li class="active"><a href="#story-anchor">Story</a></li>
+        <li class="active" ><a href="#checklist-anchor">Checklist</a></li>
+        <li><a href="#story-anchor">Story</a></li>
         <li><a href="#players-anchor">Players</a></li>
         <li><a href="#npcs-anchor">NPC's</a></li>
         <li><a href="#maps-anchor">Maps</a></li>
@@ -32,91 +33,93 @@
       </div>
     </nav>
     <div class="content">
+      <!-- Campaign Points -->
+      <div id="checklist-anchor" class="checklist container">
+        <h1>Campaign Checklist</h1>
+        <div id="accord-checklist" class="campaign-checklist">
+          <h3>Waterdeep</h3>
+          <label class="checklist-item"><input type="checkbox" />Markham Southwell sends players to Nightstone. Check on
+            his sister.</label>
+          <label class="checklist-item"><input type="checkbox" />Have Beldora ask for copper at the door. She stops
+            durk, give him a wink and says - your parents must be proud.</label>
+          <h3>Nightstone</h3>
+          <label class="checklist-item"><input type="checkbox" /> Rid of goblins in Nightstone | <strong
+              class="color-alt1">Level Up!</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Deal with Zhentarim and Orcs</label>
+          <label class="checklist-item"><input type="checkbox" /> Survive and Save Town in Dripping Caves | <strong
+              class="color-alt1">Level Up</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Get Quest from Markham to visit Ember in Triboar. Warn her of what maybe coming.</strong></label>
+          <h3>Zepheros</h3>
+          <label class="checklist-item"><input type="checkbox" /> Meet Zepheros & get info King Hecketon and Annam the
+            All-father shattering the Ordning</label>
+          <label class="checklist-item"><input type="checkbox" /> Fly with Zepheros to Triboar, as he had a vision of
+            unrest</label>
+          <label class="checklist-item"><input type="checkbox" /> Fight Kraken Society on flying crabs</label>
+          <label class="checklist-item"><input type="checkbox" /> Survive Ilymrith’s Rage attack on the tower that
+            crashes it | <strong class="color-alt1">Level Up to 5!</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Zepheros bails. Points in direction of
+            Triboar.</label>
+          <label class="checklist-item"><input type="checkbox" />Meet Droop and Rook and their Walking Boat</label>
+          <h3>Triboar</h3>
+          <label class="checklist-item"><input type="checkbox" /> Defeat Giant Attack at Triboar | <strong
+              class="color-alt1">Level Up to 6!</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Get Quest from Ember Tweetings (Visit
+            Everlund)</label>
+          <label class="checklist-item"><input type="checkbox" /> Get Quest from Naxene Drathkala (Visit Waterdeep Again
+            ot see Beldora)</label>
+          <h3>Water Deep pt 2</h3>
+          <label class="checklist-item"><input type="checkbox" />Go Back to the Grey's Glory. The Statue has been
+            removed and signs all over the tavern. Lord's Alliance offering reward of 500 Gold for every Giant's
+            Head</label>
+          <label class="checklist-item"><input type="checkbox" />Speak to Beldora and get her quest + get location of
+            Old Gnawbone (The Forest, near a shore) </label>
+          <h3>Everlund</h3>
+          <label class="checklist-item"><input type="checkbox" /> Run Beginning of Kraken's Gamble on the way once past
+            Yartar</label>
+          <label class="checklist-item"><input type="checkbox" /> Get In contact with Harpers and access to Portals |
+            <strong class="color-alt1">Level Up!</strong></label>
+          <h3>Yartar</h3>
+          <label class="checklist-item"><input type="checkbox" /> Run Kraken's Gamble | <strong class="color-alt1">Level
+              Up!</strong></label>
+          <h3>The Forest</h3>
+          <label class="checklist-item"><input type="checkbox" /> Meet Old Gnawbone Find location of All father, in
+            Khedrun and find Harshnag</label>
+          <label class="checklist-item"><input type="checkbox" />Fight with a Pernaphadon for the characters to fight with the dragon.</label>
+            
+          <h3>The North</h3>
+          <label class="checklist-item"><input type="checkbox" /> Meet Harshnag and Go to eye of the All father.</label>
+          <label class="checklist-item"><input type="checkbox" /> Meet Oracle, find Conch and find out about
+            Gems</label>
+          <label class="checklist-item"><input type="checkbox" />Run Away from Imyrith who attacks. Harshnag Defend for
+            characters to get away</label>
+          <h3>Giant Kingdoms</h3>
+          <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location A and do quest | <strong
+              class="color-alt1">Level Up!</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location B and do quest | <strong
+              class="color-alt1">Level Up!</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location C and do quest | <strong
+              class="color-alt1">Level Up!</strong></label>
+          <h3>The Finale</h3>
+          <label class="checklist-item"><input type="checkbox" /> Go to the Storm Giant Hold, get coin from Serissa,
+            Find out Imyrith sux butt. <strong class="color-alt1">Level Up!</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Confront the Golden Goose, Find King Hekaton, Survive
+            THE KRAKEN | <strong class="color-alt1">Level Up!</strong></label>
+          <label class="checklist-item"><input type="checkbox" /> Confront Imyrith and Save all of Fae-run | <strong
+              class="color-alt1">Level Up!</strong></label>
+        </div>
+      </div>
+      <!-- -------- -->
 
       <!-- STORY SECTION -->
       <div id="story-anchor" class="story container">
         <h1>Story</h1>
-        <div class="checklist container">
-          <button class="detail-accordion" data-target="accord-checklist"><h2>Campaign Checklist</h2></button>
-          <div id="accord-checklist" class="campaign-checklist">
-            <h3>Waterdeep</h3>
-            <label class="checklist-item checked"><input type="checkbox" checked />Markham Southwell sends players to Nightstone. Check on
-              his sister.</label>
-            <label class="checklist-item checked"><input type="checkbox" checked/>Have Beldora ask for copper at the door. She stops
-              durk, give him a wink and says - your parents must be proud.</label>
-            <h3>Nightstone</h3>
-            <label class="checklist-item"><input type="checkbox" /> Rid of goblins in Nightstone | <strong
-                class="color-alt1">Level Up!</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Deal with Zhentarim and Orcs</label>
-            <label class="checklist-item"><input type="checkbox" /> Survive and Save Town in Dripping Caves | <strong
-                class="color-alt1">Level Up</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Get Quest from Markham to visit Ember in Triboar. Warn her of what maybe coming.</strong></label>
-            <h3>Zepheros</h3>
-            <label class="checklist-item"><input type="checkbox" /> Meet Zepheros & get info King Hecketon and Annam the
-              All-father shattering the Ordning</label>
-            <label class="checklist-item"><input type="checkbox" /> Fly with Zepheros to Triboar, as he had a vision of
-              unrest</label>
-            <label class="checklist-item"><input type="checkbox" /> Fight Kraken Society on flying crabs</label>
-            <label class="checklist-item"><input type="checkbox" /> Survive Ilymrith’s Rage attack on the tower that
-              crashes it | <strong class="color-alt1">Level Up to 5!</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Zepheros bails. Points in direction of
-              Triboar.</label>
-            <label class="checklist-item"><input type="checkbox" />Meet Droop and Rook and their Walking Boat</label>
-            <h3>Triboar</h3>
-            <label class="checklist-item"><input type="checkbox" /> Defeat Giant Attack at Triboar | <strong
-                class="color-alt1">Level Up to 6!</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Get Quest from Ember Tweetings (Visit
-              Everlund)</label>
-            <label class="checklist-item"><input type="checkbox" /> Get Quest from Naxene Drathkala (Visit Waterdeep Again
-              ot see Beldora)</label>
-            <h3>Water Deep pt 2</h3>
-            <label class="checklist-item"><input type="checkbox" />Go Back to the Grey's Glory. The Statue has been
-              removed and signs all over the tavern. Lord's Alliance offering reward of 500 Gold for every Giant's
-              Head</label>
-            <label class="checklist-item"><input type="checkbox" />Speak to Beldora and get her quest + get location of
-              Old Gnawbone (The Forest, near a shore) </label>
-            <h3>Everlund</h3>
-            <label class="checklist-item"><input type="checkbox" /> Run Beginning of Kraken's Gamble on the way once past
-              Yartar</label>
-            <label class="checklist-item"><input type="checkbox" /> Get In contact with Harpers and access to Portals |
-              <strong class="color-alt1">Level Up!</strong></label>
-            <h3>Yartar</h3>
-            <label class="checklist-item"><input type="checkbox" /> Run Kraken's Gamble | <strong class="color-alt1">Level
-                Up!</strong></label>
-            <h3>The Forest</h3>
-            <label class="checklist-item"><input type="checkbox" /> Meet Old Gnawbone Find location of All father, in
-              Khedrun and find Harshnag</label>
-            <label class="checklist-item"><input type="checkbox" />Fight with a Pernaphadon for the characters to fight with the dragon.</label>
-              
-            <h3>The North</h3>
-            <label class="checklist-item"><input type="checkbox" /> Meet Harshnag and Go to eye of the All father.</label>
-            <label class="checklist-item"><input type="checkbox" /> Meet Oracle, find Conch and find out about
-              Gems</label>
-            <label class="checklist-item"><input type="checkbox" />Run Away from Imyrith who attacks. Harshnag Defend for
-              characters to get away</label>
-            <h3>Giant Kingdoms</h3>
-            <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location A and do quest | <strong
-                class="color-alt1">Level Up!</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location B and do quest | <strong
-                class="color-alt1">Level Up!</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Go to Giant Lord Location C and do quest | <strong
-                class="color-alt1">Level Up!</strong></label>
-            <h3>The Finale</h3>
-            <label class="checklist-item"><input type="checkbox" /> Go to the Storm Giant Hold, get coin from Serissa,
-              Find out Imyrith sux butt. <strong class="color-alt1">Level Up!</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Confront the Golden Goose, Find King Hekaton, Survive
-              THE KRAKEN | <strong class="color-alt1">Level Up!</strong></label>
-            <label class="checklist-item"><input type="checkbox" /> Confront Imyrith and Save all of Fae-run | <strong
-                class="color-alt1">Level Up!</strong></label>
-          </div>
-        </div>
+        <!-- SESSION 0 -->
         <div class="sessions">
-          <!-- SESSION 1 -->
           <button class="detail-accordion" data-target="sesh1">
             <h2>Session 1 | <strong>Storm King's Thunder</strong></h2>
           </button>
           <div id="sesh1" class="session accordion-info">
-            <h3>06.24.23</h3>
+            <h3>06.17.23</h3>
             <div class="session-notes">
               <h3>Notes - Rule updates</h3>
               <dl>
@@ -318,34 +321,6 @@
                 village's recent destruction and the challenges that lie ahead.</p>
             </div>
           </div>
-          <!-- SESSION 2 -->
-          <button class="detail-accordion" data-target="sesh2">
-            <h2>Session 2 | <strong>Guardians for Nightstone</strong></h2>
-          </button>
-          <div id="sesh2" class="session accordion-info">
-            <h3>07.09.23</h3>
-            <div class="session-notes">
-              <h3>Notes</h3>
-              <p>Anthony... I'm Sorry but Alec was right. I looked over the campaign and had to reevaluate coinage here. Barovia was different because of the made up loot was based on my prices but here I need to be true to DND economy. RETCON: Markham offered you 6 Gold for the journey. 12 for talking him up. (thats roughly, 1200 bucks) </p>
-            </div>
-              <div>
-                <h3>Previously on DND...</h3>
-                <p>In our latest session, our adventurers found themselves on the High Road, a path leading from Nightstone to Waterdeep. Yelton, a clever and curious gnome wizard, crossed paths with Celeste, a formidable and enigmatic aasimar barbarian. Intrigued by a plume of smoke in the distance, they decided to investigate its source.</p>
-                <p>Meanwhile, in the renowned Grey's Glory Tavern in Waterdeep, named after the famous Harshnag's Adventuring Company Force Grey, Durk, a half-orc wizard, and Sister Althea, a wise and compassionate old human monk, overheard a conversation between Liam Fallbright, the Dragonborn bartender, and Markham Southwell, the Sheriff of Triboar. Markham sought assistance in exploring the troubled village of Nightstone, which housed his sister Semile. A group was to convene at the tavern's central fountain the next morning to embark on this perilous journey.</p>
-                <p>As night fell, Durk and Althea departed the tavern, with Althea extending an act of kindness by providing a nourishing meal to a homeless woman. The following morning, they met Markham at the fountain, where negotiations ensued. Durk requested payment, Althea sought an escort for their travels, and Markham agreed to a fee of 8 gold after the completion of the task.</p>
-                <p>The group converged at the entrance to Nightstone, joined by Celeste and Yelton, and under Markham's lead, ventured into the abandoned village. The devastating aftermath of giant attacks became evident, with boulders strewn about, wreaking havoc upon the once-peaceful settlement. A quiet eeiry vibe filled the air of this destroyed village only broken by the sound of a incessant ringing bell coming from the assumed village temple. However, their attention was quickly drawn to the sight of two worgs feasting on a lifeless dog.</p>
-                <p>With newfound determination, our heroes engaged in their first combat encounter, valiantly fighting the worgs and attracting the attention of goblins, who emerged from the ransacked houses. The skirmish was intense, with weapons clashing and spells crackling through the air.</p> 
-                <p>The worgs bit and clawed their way into those that struck them. Markham was mostly able to fend off their attacks while Celeste lost the upperhand (Quite litterally) after falling into a recent excavation site in the middle of the town square. Fighting at a lower vantage point with success, by cutting off the toes of her foe, put her in harm's way as a worg threw her like a ragdoll across the square, knocking her unconcious.</p>
-                <p>Yelton, Durk, and Althea tried their hand at besting the wave of goblin attackers. Yelton held back a goblin with a ray of frost, slowing its approach into the fray. Durk and Althea charged two others and quickly eviscerated the two foes as if they were worthless meat sacks.</p>
-                <p>In the end, two worgs and two goblins fell, while one goblin was captured for further interrogation.</p>
-                <p>Undeterred by the battle's toll, minus a few scratches and a little health potion from Markham to alleviate some of Celeste's ailments, the group continued to explore Nightstone, seeking any sign of evil and hoping to locate Semile, Markham's sister. Sadly, their search led them to Semile's house, where they discovered her lifeless body crushed under a massive boulder. Althea, with the inert goblin in toe, remained by Markham's side as he took a minute to himself, while the rest of the group proceeded to investigate the local inn.</p>
-                <p>Peeking through a dust covered window in the back of the inn, Durk found the kitchen in disarray with another vile creature wreaking havoc in the room. He sent a vocal projection in the room that confused the goblin, he didnt know who or what it was but only that it frightened him and forced him to flee into the awaiting ambush of the adventurers. Trying to make a daring escape, Durk tossed the Gnome Yelton like a sack of flour in an effort to stop his pursuit. Although, sustaining some cuts and bruises on the tumble, Yelton annihilated the poor fleeing monstrosity.</p>
-                <p>Inside the inn, Celeste's keen senses guided her to a dining room, where she discovered a large rock jutting through the ceiling and an ominous crossbow bolt sticking from a goblin's chest pinned to a broken table. As she pondered its origin with curiosity piqued, Celeste called out, and a woman above revealed herself.</p>
-                <p>Returning to the Late Southwell's Residence, Durk presented Althea with belongings recovered from the kitchen goblin's ransacking finding the unconcious goblin returning to the waking world. While Althea attempted to calm the captive goblin, Durk's presence compelled the creature to speak. The goblin, sent by his boss Hark, admitted to pillaging the village on the orders of their leader. He revealed that the villagers sought refuge in nearby caves after a supposed giant attack, giving the goblins free reign to pillage the abandoned settlement.</p>
-                <p>Back upstairs, Celeste and Yelton discovered a barricaded door obstructed by debris. Working together, they cleared the path and encountered Kella Darkhope, accompanied by her loyal flying snake pet, trapped in the bedroom. Yelton's revelation of his own familiar, a whimsical unirabbit struck a chord of familiarity between them.</p>
-                <p>With Kella's rescue and the goblin's revelations, our adventurers reached a momentary pause in their quest. The mysteries of Nightstone deepened, and their determination to uncover the truth grew.</p>
-              </div>
-        </div>
         </div>
       </div>
       <!-- -------- -->
@@ -512,7 +487,7 @@
                 <div class="list">
                   <h3>Character Features</h3>
                   <ul>
-                    <li>Looking for a lost Artifact that is inscribed with Abyssal Runes</li>
+                    <li>No features Yet</li>
                   </ul>
                 </div>
               </div>
@@ -676,9 +651,7 @@
                 <div class="list">
                   <h3>Character Features</h3>
                   <ul>
-                    <li>Demon possessed</li>
-                    <li>From the Church of Suni</li>
-                    <li>Brews her own beer</li>
+                    <li>No features Yet</li>
                   </ul>
                 </div>
               </div>
@@ -867,10 +840,10 @@
           </div>
           <!-- Droop and Rook -->
           <div class="npc-character">
-            <img class="fullscreen-image" src="images/drook.png" width="100%" />
+            <img class="fullscreen-image" src="images/goblins.png" width="100%" />
             <div class="char-info">
               <h3>Droop & Rook</h3>
-              <h4>Traveling Merchants of Curiousities</h4>
+              <h4>Traveling Oddities and </h4>
               <button class="detail-accordion" data-target="drook">Character Details</button>
             </div>
           </div>
@@ -915,41 +888,54 @@
           <div id="ember" class="accordion-info">
             <h2>Ember Tweetings</h2>
             <p><strong>Appearance:</strong> Ember is a striking young woman with a vibrant presence. Her most notable
-              feature is her lustrous blue hair, reminiscent of her famous father, Flint Tweetings. Despite her age, her half-elf
+              feature is her
+              lustrous blue hair, reminiscent of her famous father, Flint Tweetings. Despite her age, her half-elf
               lineage gives her a timeless beauty that captivates those who meet her. Ember's youthful visage may make
               her look younger than her actual age, but her commanding presence and strength reveal a maturity beyond
               her years.</p>
 
             <p><strong>Attire:</strong> Ember proudly wears her father's old blue denim vest, a treasured heirloom that
-              she has meticulously tailored to fit her form. The vest carries the weight of her family's legacy and symbolizes
+              she has
+              meticulously tailored to fit her form. The vest carries the weight of her family's legacy and symbolizes
               her commitment to carrying on her father's spirit. Beneath the vest, she dons practical yet stylish
               clothing befitting a leader. Her attire reflects her confidence and practicality, allowing her to move
               freely while still commanding respect.</p>
 
             <p><strong>Personality:</strong> Ember exudes strength, confidence, and determination. Her upbringing as the
-              daughter of a renowned NPC has shaped her into a natural leader. She carries herself with authority, earning the
-              respect and loyalty of those around her. Ember is known for her unwavering dedication to protecting Triboar, and
+              daughter of a
+              renowned NPC has shaped her into a natural leader. She carries herself with authority, earning the
+              respect
+              and loyalty of those around her. Ember is known for her unwavering dedication to protecting Triboar, and
               she takes her responsibilities as Lord Protector seriously. Despite her strong demeanor, she has a
               compassionate heart and strives to bring justice and prosperity to her people.</p>
 
             <p><strong>Abilities:</strong> Ember possesses physical and mental prowess, blending the grace and agility
-              of her elven heritage with the resilience and endurance of her human lineage. Her training as a leader and warrior
-              has honed her combat skills, making her a formidable opponent on the battlefield. Additionally, she
-              possesses a sharp intellect and strategic mind, enabling her to make wise decisions in times of crisis.</p>
+              of her elven
+              heritage with the resilience and endurance of her human lineage. Her training as a leader and warrior
+              has
+              honed her combat skills, making her a formidable opponent on the battlefield. Additionally, she
+              possesses
+              a sharp intellect and strategic mind, enabling her to make wise decisions in times of crisis.</p>
 
             <p><strong>Background:</strong> As the daughter of the legendary NPC Flint Tweetings, Ember grew up in the
-              shadow of her father's reputation. From an early age, she was exposed to tales of his heroic deeds, and she aspired to
+              shadow of her
+              father's reputation. From an early age, she was exposed to tales of his heroic deeds, and she aspired to
               follow in his footsteps. As she came of age, Ember embraced her destiny and dedicated herself to
               protecting the town of Triboar. Through rigorous training and her inherent abilities, she earned the
-              trust of the town's inhabitants and was eventually appointed as their Lord Protector.</p>
+              trust
+              of the town's inhabitants and was eventually appointed as their Lord Protector.</p>
 
             <p><strong>Motivation:</strong> Ember's primary motivation is to honor her father's legacy and protect the
-              people of Triboar. She is driven by a deep sense of justice and the desire to ensure the town's prosperity and safety. Her
+              people of
+              Triboar.
+              She is driven by a deep sense of justice and the desire to ensure the town's prosperity and safety. Her
               devotion to her role as Lord Protector is unwavering, and she constantly seeks ways to improve the
-              town's defenses, maintain order, and foster growth.</p>
+              town's
+              defenses, maintain order, and foster growth.</p>
 
             <p>With her blue hair, tailored denim vest, and an air of strength and confidence, Ember Tweetings
-              commandsattention wherever she goes. Her dedication, leadership, and beauty make her an inspiring figure and a
+              commands
+              attention wherever she goes. Her dedication, leadership, and beauty make her an inspiring figure and a
               formidable force to be reckoned with as the Lord Protector of Triboar.</p>
           </div>
           <div id="markham" class="accordion-info">
@@ -1109,62 +1095,6 @@
       <div id="monsters-anchor" class="monsters container">
         <h1>Monsters</h1>
         <div class="monster-list">
-          <div class="monster">
-            <img class="fullscreen-image" src="images/iymrith.png" width="100%" />
-            <div class="char-info">
-              <h3>Iymrith</h3>
-              <button class="detail-accordion" data-target="iymrith">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/goblins.png" width="100%" />
-            <div class="char-info">
-              <h3>Goblins</h3>
-              <button class="detail-accordion" data-target="goblins">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/goblins.png" width="100%" />
-            <div class="char-info">
-              <h3>Goblin Boss</h3>
-              <button class="detail-accordion" data-target="goblinboss">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/giants.png" width="100%" />
-            <div class="char-info">
-              <h3>Giants</h3>
-              <button class="detail-accordion" data-target="giants">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/orcs.png" width="100%" />
-            <div class="char-info">
-              <h3>Orcs</h3>
-              <button class="detail-accordion" data-target="orcs">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/orcs.png" width="100%" />
-            <div class="char-info">
-              <h3>Black Pudding</h3>
-              <button class="detail-accordion" data-target="orcs">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/orcs.png" width="100%" />
-            <div class="char-info">
-              <h3>----</h3>
-              <button class="detail-accordion" data-target="orcs">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/orcs.png" width="100%" />
-            <div class="char-info">
-              <h3>----</h3>
-              <button class="detail-accordion" data-target="orcs">Monster Stats</button>
-            </div>
-          </div>
           <!-- Perphanadon -->
           <div class="monster">
             <img class="fullscreen-image" src="images/pernaphadon.jpg" width="100%" />
@@ -1173,183 +1103,7 @@
               <button class="detail-accordion" data-target="pernaphadon">Monster Stats</button>
             </div>
           </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/ogre.png" width="100%" />
-            <div class="char-info">
-              <h3>Ogres</h3>
-              <button class="detail-accordion" data-target="trolls">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/bandits.png" width="100%" />
-            <div class="char-info">
-              <h3>Bandits</h3>
-              <button class="detail-accordion" data-target="bandits">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/bandits.png" width="100%" />
-            <div class="char-info">
-              <h3>Bandit Captain</h3>
-              <button class="detail-accordion" data-target="bandits">Monster Stats</button>
-            </div>
-          </div>
         </div> 
-        <div class="monster-desc-list">
-          <div id="iymrith" class="accordion-info">
-            <div class="stat-block">
-                <h2>Iymrith</h2>
-                <p class="description">A mighty and fearsome dragon that rules the skies.</p>
-                <div class="ability-scores">
-                  <div class="score-box">
-                    <h5>Armor Class</h5>
-                    <p class="flat-number">22</p>
-                    <p>Natural Armor</p>
-                  </div>
-                  <div class="score-box">
-                    <h5>Hit Points</h5>
-                    <p class="flat-number">481</p>
-                    <p>(26d20 + 208)</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="ability-container">
-                  <div>
-                    <p><span class="section-title">STR</span> 27 (+9)</p>
-                    <p><span class="section-title">DEX</span> 10 (+0)</p>
-                    <p><span class="section-title">CON</span> 27 (+8)</p>
-                    <p><span class="section-title">INT</span> 18 (+4)</p>
-                    <p><span class="section-title">WIS</span> 17 (+3)</p>
-                    <p><span class="section-title">CHA</span> 21 (+5)</p>
-                  </div>
-                  <div>
-                    <p><span class="attribute">Speed:</span> 40 ft., burrow 40 ft., fly 80 ft.</p>
-                    <p><span class="attribute">Saving Throws:</span> Dex +7, Con +15, Wis +10, Cha +12</p>
-                    <p><span class="attribute">Skills:</span> Perception +17, Stealth +7</p>
-                    <p><span class="attribute">Damage Immunities:</span> lightning</p>
-                    <p><span class="attribute">Senses:</span> blindsight 60 ft., darkvision 120 ft., passive Perception 27</p>
-                    <p><span class="attribute">Languages:</span> Common, Draconic, Giant, Terran</p>
-                    <p><span class="attribute">Challenge:</span> 23 (50,000 XP)</p>
-                  </div>
-                </div>
-                <hr>
-                <h3>Actions</h3>
-                <p><span class="name">Multiattack:</span> The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.</p>
-                <p><span class="name">Bite:</span> Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) piercing damage + 11 (2d10) lightning damage.</p>
-                <p><span class="name">Claw:</span> Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.</p>
-                <p><span class="name">Tail:</span> Melee Weapon Attach: +16 to hit, reach 20 feet., one target. Hit: 18 (2d8 +9) bludgeoning damage.</p>
-                <p><span class="name">Frightful Presence:</span> Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Id  a creature's saving throw is succesful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.</p>
-                <p><span class="name">Lightning Breath (Recharge 5-6):</span> The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.</p>
-                <p><span class="name">Change Shape</span> Iymrith magically polymorths into a female storm giant or back into her true form. She reverts to her true form if she dies. ANy equipment she is wearing or carrying is absored or borne by the new form (the dragon's choice). In storm giant form, Iymrith retains her alignment, hit points, HIt Dice, ability to speak, proficiencies, Legendary Resistancs and actions, Intellegence, Wisdom, and Charisma scores, as well as this action. Her statistics are otherwise replaced by those of the new form.</p>
-                <hr>
-                <h3>Innate Spellcasting</h3>
-                <p>Iymrith's Spellcasting ability is Charisma (spell save DC 20). She can innately cast the following spells requiring no material components.</p>
-                <ul>
-                  <li>Counterspell</li>
-                  <li>Detect Magic</li>
-                  <li>Ice Storm</li>
-                  <li>Stone Shape*</li>
-                  <li>Teleport</li>
-                </ul>
-                <p>When she casts stone shape. Iymrith can shape the targeted stone into a living gargoyle instead of altering the stone as described in the spell's description. This transformationis permanent and can't be reversed or dispelled.</p>
-                <hr>
-                <h3>Legendary Resisistances (3/Day) </h3>
-                  <p>If the Dragon Fails a saving throw, it can choose to succeed instead.</p>
-                  <h3>Legendary Actions</h3>
-                  <p>The dragon can take 3 Legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon reagains spent legendary actions at the start of its turn.</p>
-                  <p><span class="name">Detect:</span> The Dragon makes a Wisdom (Percepetion) check.</p>
-                  <p><span class="name">Tail Attack:</span> The dragon makes a tail attack.</p>
-                  <p><span class="name">Wing Attack (Costs 2 Actions):</span> The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 +9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</p>
-              </div> 
-          </div>
-          <div id="goblins" class="accordion-info">
-            <div class="stat-block">
-                <h2>Goblin</h2>
-                <p class="description">Small humanoid (goblinoid), neutral evil</p>
-                <div class="ability-scores">
-                  <div class="score-box">
-                    <h5>Armor Class</h5>
-                    <p class="flat-number">15</p>
-                    <p>Leather Armor, Shield</p>
-                  </div>
-                  <div class="score-box">
-                    <h5>Hit Points</h5>
-                    <p class="flat-number">7</p>
-                    <p>(2d6)</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="ability-container">
-                  <div>
-                    <p><span class="section-title">STR</span> 8 (-1)</p>
-                    <p><span class="section-title">DEX</span> 14 (+2)</p>
-                    <p><span class="section-title">CON</span> 10 (0)</p>
-                    <p><span class="section-title">INT</span> 10 (0)</p>
-                    <p><span class="section-title">WIS</span> 8 (-1)</p>
-                    <p><span class="section-title">CHA</span> 8 (-1)</p>
-                  </div>
-                  <div>
-                    <p><span class="attribute">Speed:</span> 30 ft.</p>
-                    <p><span class="attribute">Skills:</span> Stealth +6</p>
-                    <p><span class="attribute">Senses:</span> darkvision 60 ft., passive Perception 9</p>
-                    <p><span class="attribute">Languages:</span> Common, Goblin</p>
-                    <p><span class="attribute">Challenge:</span> 1/4 (50xp)</p>
-                  </div>
-                </div>
-                <hr>
-                <p><span>Nimble Escape:</span> The goblin can take the disengage or hide action as a bonus action on each of its turns.</p>
-                <hr>
-                <h3>Actions</h3>
-                <p><span class="name">Scimitar:</span>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 +2) slashing damage.</p>
-                <p><span class="name">Shortbow:</span> Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 +2) piercing damage.</p>
-              </div> 
-          </div>
-          <div id="goblinboss" class="accordion-info">
-            <div class="stat-block">
-                <h2>Goblin Boss</h2>
-                <p class="description">Small humanoid (goblinoid), neutral evil</p>
-                <div class="ability-scores">
-                  <div class="score-box">
-                    <h5>Armor Class</h5>
-                    <p class="flat-number">17</p>
-                    <p>Chain Shirt, Shield</p>
-                  </div>
-                  <div class="score-box">
-                    <h5>Hit Points</h5>
-                    <p class="flat-number">21</p>
-                    <p>(6d6)</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="ability-container">
-                  <div>
-                    <p><span class="section-title">STR</span> 10 (0)</p>
-                    <p><span class="section-title">DEX</span> 14 (+2)</p>
-                    <p><span class="section-title">CON</span> 10 (0)</p>
-                    <p><span class="section-title">INT</span> 10 (0)</p>
-                    <p><span class="section-title">WIS</span> 8 (-1)</p>
-                    <p><span class="section-title">CHA</span> 10 (0)</p>
-                  </div>
-                  <div>
-                    <p><span class="attribute">Speed:</span> 30 ft.</p>
-                    <p><span class="attribute">Skills:</span> Stealth +6</p>
-                    <p><span class="attribute">Senses:</span> darkvision 60 ft., passive Perception 9</p>
-                    <p><span class="attribute">Languages:</span> Common, Goblin</p>
-                    <p><span class="attribute">Challenge:</span> 1 (200xp)</p>
-                  </div>
-                </div>
-                <hr>
-                <p><span>Multiattack:</span> The goblin makes two attacks with it's scimitar. The second attack has disadvantage.</p>
-                <p><span>Nimble Escape:</span> The goblin can take the disengage or hide action as a bonus action on each of its turns.</p>
-                <hr>
-                <h3>Actions</h3>
-                <p><span class="name">Scimitar:</span>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 +2) slashing damage.</p>
-                <p><span class="name">Javalin:</span> Melee or Ranged Weapon Attack: +2 to hit, reach 5ft., or range 30/120 ft., one target. Hit: 3 (1d6) piercing damage.</p>
-                <h3>Reactions</h3>
-                <p><span class="name">Redirect Attack:</span> When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places , and the chosen goblin becomes the target instead.</p>
-              </div> 
-          </div>
-        </div>
         <div class="monster-desc-list">
           <div id="pernaphadon" class="accordion-info">
             <p>The Pernaphadon can breathe water and air. It can jump and catch its prey in the air and water. Its prey is Sharks and Dragons. Its tail is dangerous and it can use it as a whip. Its so big that it can carry a shipwreck.</p>

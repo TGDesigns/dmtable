@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
 
 // COLORS
@@ -12,8 +12,8 @@ $alt2: #D5D3D3;
 
 // FONTS
 
-$sofia: 'Sofia Sans', sans-serif;
-$roboto: 'Roboto Slab', serif;
+$font-a: 'Roboto', sans-serif;
+$font-b: 'Roboto Slab', serif;
 
 
 * {
@@ -22,7 +22,7 @@ $roboto: 'Roboto Slab', serif;
   padding: 0;
 }
 body {
-  font-family: $sofia;
+  font-family: $font-a;
   color: $alt2;
   transition: all 1s ease-in-out;
 }
@@ -31,7 +31,7 @@ h1, h2 {
   letter-spacing: .4rem;
 }
 h1 {
-  font-family: $roboto;
+  font-family: $font-b;
   margin-bottom: 2rem;
   border-bottom: .2rem solid #752626;
   width: 100%;
@@ -43,7 +43,7 @@ h2 {
 }
 dt {
   color: $alt1;
-  font-family:$roboto;
+  font-family:$font-b;
   font-weight: 800;
   margin: 1rem 0 .5rem;
 }
@@ -106,7 +106,7 @@ iframe {
       margin: 0;
       color: $alt2;
       font-size: .8rem;
-      font-family: $sofia;
+      font-family: $font-a;
       font-weight: 600;
       letter-spacing: .2rem;
       max-width: 100px;
@@ -128,7 +128,7 @@ iframe {
   h5 {
     color: $alt1;
     font-size: 1.5rem;
-    font-family: $roboto;
+    font-family: $font-b;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -161,7 +161,6 @@ iframe {
   }
 }
 .campaign-checklist {
-  display: none;
     margin-top: 1em;
     h3{
       margin: 1rem 0;
@@ -191,7 +190,7 @@ iframe {
 }
 .sessions {
   h3 {
-    font-family: $roboto;
+    font-family: $font-b;
     margin: 1rem 0;
   }
   h4 {
@@ -251,7 +250,7 @@ iframe {
       justify-content: space-between;
       h3{
         color: $alt2;
-        font-family: $roboto;
+        font-family: $font-b;
         font-size: 2.5rem !important;
       }
       h4 {
@@ -335,7 +334,7 @@ iframe {
     padding: .5rem;
   }
   .ability-modifier {
-    font-family: $roboto;
+    font-family: $font-b;
     font-size: 2rem;
     font-weight: 800;
     padding: 1rem;
@@ -344,7 +343,7 @@ iframe {
     background-color: $support;
     border: none;
     color: $alt2;
-    font-family: $sofia;
+    font-family: $font-a;
     font-size: 1.3rem;
     font-weight: 600;
     padding: .4rem;
@@ -384,7 +383,7 @@ grid-template-columns: 50% 50%;
 }
 .npc-character {
  h3{
-  font-family: $roboto;
+  font-family: $font-b;
   font-weight: 800;
   margin-bottom: .4rem;
   font-size: 1.8rem;
@@ -439,74 +438,23 @@ grid-template-columns: 50% 50%;
   margin-bottom: 3rem;
 }
 .monster {
- h3 {
-  font-family: $roboto;
+ h3{
+  font-family: $font-b;
   font-weight: 800;
   margin-bottom: .4rem;
   font-size: 1.8rem;
  }
- h4 {
+ h4{
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: .6rem;
  }
 }
 .monster-desc-list {
-  p {
-    margin-bottom: .5rem;
-    line-height: 1.4;
-  }
-  .stat-block {
-    background-color: rgba($color: $alt2, $alpha: 0.1);
-    padding: 2rem;
-    width: 100%;
-    .ability-scores {
-      justify-content: space-around;
-      .score-box {
-        width: 200px;
-        p { margin-bottom: 0.1rem;}
-      }
-      .flat-number {
-        font-size: 2rem;
-        font-weight: 600;
-      }
-    }
-    .ability-container {
-      display: grid;
-      grid-template-columns: 50% 50%;
-    }
-    .legendary-callout {
-      background-color: rgba($color: $alt2, $alpha: 0.1);
-      padding: 2rem;
-    }
-    h2 {
-      font-family: $roboto;
-      font-weight: 700;
-      letter-spacing: .4;
-    }
-    h3{
-      margin-bottom: 1rem;
-    }
-    p {
-      margin: 0;
-      margin-bottom: 1rem;
-    }
-    .attribute {
-      font-weight: bold;
-    }
-    .name {
-      font-style: italic;
-      font-weight: bold;
-    }
-    .description {
-      margin-bottom: 10px;
-    }
-    .section-title {
-      font-weight: bold;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-  }
+ p {
+  margin-bottom: .5rem;
+  line-height: 1.4;
+ }
 }
 
 /* ITEMS */
