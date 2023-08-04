@@ -1166,25 +1166,17 @@
           <div class="monster">
             <img class="fullscreen-image" src="images/orcs.png" width="100%" />
             <div class="char-info">
+              <h3>Gurrash</h3>
+              <button class="detail-accordion" data-target="orcwc">Monster Stats</button>
+            </div>
+          </div>
+          <div class="monster">
+            <img class="fullscreen-image" src="images/orcs.png" width="100%" />
+            <div class="char-info">
               <h3>Black Pudding</h3>
               <button class="detail-accordion" data-target="orcs">Monster Stats</button>
             </div>
           </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/orcs.png" width="100%" />
-            <div class="char-info">
-              <h3>----</h3>
-              <button class="detail-accordion" data-target="orcs">Monster Stats</button>
-            </div>
-          </div>
-          <div class="monster">
-            <img class="fullscreen-image" src="images/orcs.png" width="100%" />
-            <div class="char-info">
-              <h3>----</h3>
-              <button class="detail-accordion" data-target="orcs">Monster Stats</button>
-            </div>
-          </div>
-          <!-- Perphanadon -->
           <div class="monster">
             <img class="fullscreen-image" src="images/pernaphadon.jpg" width="100%" />
             <div class="char-info">
@@ -1210,7 +1202,7 @@
             <img class="fullscreen-image" src="images/bandits.png" width="100%" />
             <div class="char-info">
               <h3>Bandit Captain</h3>
-              <button class="detail-accordion" data-target="bandits">Monster Stats</button>
+              <button class="detail-accordion" data-target="banditcap">Monster Stats</button>
             </div>
           </div>
         </div> 
@@ -1279,6 +1271,92 @@
                   <p><span class="name">Detect:</span> The Dragon makes a Wisdom (Percepetion) check.</p>
                   <p><span class="name">Tail Attack:</span> The dragon makes a tail attack.</p>
                   <p><span class="name">Wing Attack (Costs 2 Actions):</span> The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 +9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</p>
+              </div> 
+          </div>
+          <div id="bandits" class="accordion-info">
+            <div class="stat-block">
+                <h2>Bandits (Zhentarim)</h2>
+                <p class="description">Medium humanoid (any race), lawful Evil</p>
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Armor Class</h5>
+                    <p class="flat-number">12</p>
+                    <p>Leather Armor</p>
+                  </div>
+                  <div class="score-box">
+                    <h5>Hit Points</h5>
+                    <p class="flat-number">11</p>
+                    <p>(2d8+2)</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="ability-container">
+                  <div>
+                    <p><span class="section-title">STR</span> 11 (0)</p>
+                    <p><span class="section-title">DEX</span> 12 (+1)</p>
+                    <p><span class="section-title">CON</span> 12 (+1)</p>
+                    <p><span class="section-title">INT</span> 10 (0)</p>
+                    <p><span class="section-title">WIS</span> 10 (0)</p>
+                    <p><span class="section-title">CHA</span> 10 (0)</p>
+                  </div>
+                  <div>
+                    <p><span class="attribute">Speed:</span> 30 ft.</p>
+                    <p><span class="attribute">Skills:</span> Stealth +6</p>
+                    <p><span class="attribute">Senses:</span>Passive Perception 10</p>
+                    <p><span class="attribute">Languages:</span>Common</p>
+                    <p><span class="attribute">Challenge:</span> 1/8 (25xp)</p>
+                  </div>
+                </div>
+                <hr>
+                <h3>Actions</h3>
+                <p><span class="name">Scimitar:</span>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d6 +1) slashing damage.</p>
+                <p><span class="name">Light Crossbow:</span> Ranged Weapon Attack: +3 to hit, reach 80/320 ft., one target. Hit: (1d8 + 1) piercing damage.</p>
+              </div> 
+          </div>
+          <div id="banditcap" class="accordion-info">
+            <div class="stat-block">
+                <h2>Bandit Captain (Zhentarim)</h2>
+                <p class="description">Medium humanoid (any race), lawful Evil</p>
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Armor Class</h5>
+                    <p class="flat-number">15</p>
+                    <p>Studded Leather</p>
+                  </div>
+                  <div class="score-box">
+                    <h5>Hit Points</h5>
+                    <p class="flat-number">65</p>
+                    <p>(10d8+20)</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="ability-container">
+                  <div>
+                    <p><span class="section-title">STR</span> 15 (+2)</p>
+                    <p><span class="section-title">DEX</span> 16 (+3)</p>
+                    <p><span class="section-title">CON</span> 14 (+2)</p>
+                    <p><span class="section-title">INT</span> 14 (2)</p>
+                    <p><span class="section-title">WIS</span> 11 (0)</p>
+                    <p><span class="section-title">CHA</span> 14 (0+2)</p>
+                  </div>
+                  <div>
+                    <p><span class="attribute">Speed:</span> 30 ft.</p>
+                    <p><span class="attribute">Saving Throws:</span>Str +4, Dex +5, Wis +2</p>
+                    <p><span class="attribute">Skills:</span> Athletics +4, Deception +4</p>
+                    <p><span class="attribute">Senses:</span>Passive Perception 10</p>
+                    <p><span class="attribute">Languages:</span>Common & Theives Cant</p>
+                    <p><span class="attribute">Challenge:</span> 2 (450xp)</p>
+                  </div>
+                </div>
+                <hr>
+                <h3>Actions</h3>
+                <p><span class="name">Multiattack:</span> The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.</p>
+                <p><span class="name">Scimitar:</span> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d6 + 3) slashing damage.</p>
+                <p><span class="name">Dagger:</span> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d4 + 3) piercing damage.</p>
+                <p><span class="name">Dagger:</span> Ranged Weapon Attack: +5 to hit, reach 20/60 ft., one target. Hit: (1d4 + 3) piercing damage.</p>
+                <hr>
+                <h3>Actions</h3>
+                <p><span class="name">Parry:</span> The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.</p>
               </div> 
           </div>
           <div id="goblins" class="accordion-info">
@@ -1366,6 +1444,94 @@
                 <p><span class="name">Javalin:</span> Melee or Ranged Weapon Attack: +2 to hit, reach 5ft., or range 30/120 ft., one target. Hit: 3 (1d6) piercing damage.</p>
                 <h3>Reactions</h3>
                 <p><span class="name">Redirect Attack:</span> When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places , and the chosen goblin becomes the target instead.</p>
+              </div> 
+          </div>
+          <div id="orc" class="accordion-info">
+            <div class="stat-block">
+                <h2>Orc</h2>
+                <p class="description">Medium humanoid (orc), chaotic evil</p>
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Armor Class</h5>
+                    <p class="flat-number">13</p>
+                    <p>Hide Armor</p>
+                  </div>
+                  <div class="score-box">
+                    <h5>Hit Points</h5>
+                    <p class="flat-number">15</p>
+                    <p>(2d8 + 6)</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="ability-container">
+                  <div>
+                    <p><span class="section-title">STR</span> 16 (+3)</p>
+                    <p><span class="section-title">DEX</span> 12 (+1)</p>
+                    <p><span class="section-title">CON</span> 16 (+3)</p>
+                    <p><span class="section-title">INT</span> 7 (0)</p>
+                    <p><span class="section-title">WIS</span> 11 (0)</p>
+                    <p><span class="section-title">CHA</span> 10 (0)</p>
+                  </div>
+                  <div>
+                    <p><span class="attribute">Speed:</span> 30 ft.</p>
+                    <p><span class="attribute">Skills:</span> Intimidation +2</p>
+                    <p><span class="attribute">Senses:</span> darkvision 60 ft., passive Perception 10</p>
+                    <p><span class="attribute">Languages:</span> Common, Orc</p>
+                    <p><span class="attribute">Challenge:</span> 1/2 (100xp)</p>
+                  </div>
+                </div>
+                <hr>
+                <p><span>Aggressive:</span> As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.</p>
+                <hr>
+                <h3>Actions</h3>
+                <p><span class="name">Greataxe:</span> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d12 + 3) slashing damage.</p>
+                <p><span class="name">Javelin:</span> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d6 + 3) piercing damage.</p>
+                <p><span class="name">Javelin:</span> Ranged Weapon Attack: +5 to hit, reach 30/120 ft., one target. Hit: (1d6 + 3) piercing damage.</p>
+              </div> 
+          </div>
+          <div id="orcwc" class="accordion-info">
+            <div class="stat-block">
+                <h2>Gurrash, Orc War Chief</h2>
+                <p class="description">Medium humanoid (orc), chaotic evil</p>
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>Armor Class</h5>
+                    <p class="flat-number">16</p>
+                    <p>Chain Mail</p>
+                  </div>
+                  <div class="score-box">
+                    <h5>Hit Points</h5>
+                    <p class="flat-number">60</p>
+                    <p>(11d8 + 44)</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="ability-container">
+                  <div>
+                    <p><span class="section-title">STR</span> 18 (+4)</p>
+                    <p><span class="section-title">DEX</span> 12 (+1)</p>
+                    <p><span class="section-title">CON</span> 18 (+4)</p>
+                    <p><span class="section-title">INT</span> 11 (0)</p>
+                    <p><span class="section-title">WIS</span> 11 (0)</p>
+                    <p><span class="section-title">CHA</span> 16 (+3)</p>
+                  </div>
+                  <div>
+                    <p><span class="attribute">Speed:</span> 30 ft.</p>
+                    <p><span class="attribute">Skills:</span> Intimidation +5</p>
+                    <p><span class="attribute">Senses:</span> darkvision 60 ft., passive Perception 10</p>
+                    <p><span class="attribute">Languages:</span> Common, Orc</p>
+                    <p><span class="attribute">Challenge:</span> 4 (1100xp)</p>
+                  </div>
+                </div>
+                <hr>
+                <p><span>Aggressive:</span> As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.</p>
+                <p><span>Gruumsh's Fury:</span> The orc deals an extra 4 (1d8) damage when it hits with a weapon attack (included in the attacks).</p>
+                <hr>
+                <h3>Actions</h3>
+                <p><span class="name">Multiattack:</span> The orc makes two attacks with its greataxe or its spear.</p>
+                <p><span class="name">Greataxe:</span> Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (1d12 + 4 plus 1d8) slashing damage.</p>
+                <p><span class="name">Spear:</span> Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 12 (1d6 + 4 plus 1d8) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack.</p>
+                <p><span class="name">Battle Cry (1/Day):</span> Each creature of the war chief's choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of the war chief's next turn. The war chief can then make one attack as a bonus action.</p>
               </div> 
           </div>
         </div>
