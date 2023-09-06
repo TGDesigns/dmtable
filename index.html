@@ -18,25 +18,100 @@
         <li class="active"><a href="#story-anchor">Story</a></li>
         <li><a href="#players-anchor">Players</a></li>
         <li><a href="#npcs-anchor">NPC's</a></li>
-        <li><a href="#maps-anchor">Maps</a></li>
+        <li><a href="#maps-anchor">Locations</a></li>
         <li><a href="#monsters-anchor">Monsters</a></li>
         <li><a href="#Encounters-anchor">Encounters</a></li>
         <li><a href="#Items-anchor">Items</a></li>
-        <li><a href="#music-anchor">Music</a></li>
       </ul>
-      <div class="music-player">
-        <h5 id="songName">No Song</h5>
-        <audio id="audio-player" controls loop>
-          Your browser does not support the audio element.
-        </audio>
-      </div>
+      <div class="music-container">
+        <div class="music-player">
+            <button id="songName" class="detail-accordion" data-target="musiclist">No Song</button>
+            <audio id="audio-player" controls loop>
+                Your browser does not support the audio element.
+            </audio>
+       </div>
+       <div class="accordion-info" id="musiclist">
+        <div class="music-list">
+         <ul class="lt-column">
+           <li class="category">
+             <div class="category-title">
+               <img src="icons/Artificer.png" width="100%" />
+               <p>Travel</p>
+             </div>
+             <ul>
+               <li class="song-button" data-src="music/Camp at Night.mp3">Camp</li>
+               <li class="song-button" data-src="music/DrippingCaves.mp3">Caves</li>
+               <li class="song-button" data-src="music/dungeon.mp3">Dungeon</li>
+               <li class="song-button" data-src="music/forest.mp3">Forest</li>
+               <li class="song-button" data-src="music/high-road.mp3">High Road</li>
+               <li class="song-button" data-src="music/thesea.mp3">Sea</li>
+               <li class="song-button" data-src="music/Sky Castle.mp3">Sky</li>
+               <li class="song-button" data-src="music/snow.mp3">Snow</li>
+             </ul>
+           </li>
+           <li class="category">
+             <div class="category-title">
+               <img src="icons/Fighter.png" width="100%" />
+               <p>Battle</p>
+             </div>
+             <ul>
+               <li class="song-button" data-src="music/combat.mp3">Bandits</li>
+               <li class="song-button" data-src="music/dragon.mp3">Dragons</li>
+               <li class="song-button" data-src="music/Goblin Fight.mp3">Goblins</li>
+               <li class="song-button" data-src="music/giants.mp3">Giants</li>
+               <li class="song-button" data-src="music/water-battle.mp3">Water</li>
+               <li class="song-button" data-src="music/Orcs.mp3">Orcs</li>
+             </ul>
+           </li>
+         </ul>
+         <ul class="rt-column">
+           <li class="category">
+             <div class="category-title">
+               <img src="icons/Bard.png" width="100%" />
+               <p>Tavern</p>
+             </div>
+             <ul>
+               <li class="song-button" data-src="music/cozy-tavern.mp3">Old Glory</li>
+               <li class="song-button" data-src="music/crowded-tavern.mp3">Busy</li>
+               <li class="song-button" data-src="music/lonely-tavern.mp3">Lonely</li>
+               <li class="song-button" data-src="music/cozy-tavern.mp3">Warm</li>
+             </ul>
+           </li>
+           <li class="category">
+             <div class="category-title">
+               <img src="icons/Artificer.png" width="100%" />
+               <p>Town</p>
+             </div>
+             <ul>
+               <li class="song-button" data-src="music/abandoned-town.mp3">Abandoned</li>
+               <li class="song-button" data-src="music/large-town.mp3">Large</li>
+               <li class="song-button" data-src="music/north-village.mp3">North</li>
+               <li class="song-button" data-src="music/quaint-town.mp3">Quaint</li>
+             </ul>
+           </li>
+           <li class="category">
+             <div class="category-title">
+               <img src="icons/Paladin.png" width="100%" />
+               <p>Story</p>
+             </div>
+             <ul>
+               <li class="song-button" data-src="music/drooprook.mp3">Drook</li>
+               <li class="song-button" data-src="music/story-lore.mp3">Epic Quests</li>
+               <li class="song-button" data-src="music/adventures.mp3">Adventures</li>
+               <li class="song-button" data-src="music/Alistaers Welcome.mp3">Alistaer</li>
+             </ul>
+           </li>
+         </ul>
+        </div>
+       </div>
+     </div>
     </nav>
     <div class="content">
 
       <!-- STORY SECTION -->
       <div id="story-anchor" class="story container">
         <h1>Story</h1>
-        <div class="checklist container">
+        <!-- <div class="checklist-container">
           <button class="detail-accordion" data-target="accord-checklist"><h2>Campaign Checklist</h2></button>
           <div id="accord-checklist" class="campaign-checklist">
             <h3>Waterdeep</h3>
@@ -109,250 +184,44 @@
             <label class="checklist-item"><input type="checkbox" /> Confront Imyrith and Save all of Fae-run | <strong
                 class="color-alt1">Level Up!</strong></label>
           </div>
-        </div>
+        </div> -->
         <div class="sessions">
           <!-- SESSION 1 -->
-          <button class="detail-accordion" data-target="sesh1">
-            <h2>Session 1 | <strong>Storm King's Thunder</strong></h2>
-          </button>
+          <button class="detail-accordion" data-target="sesh1"><h2>06.24.23 | Session 1</h2></button>
           <div id="sesh1" class="session accordion-info">
-            <h3>06.24.23</h3>
-            <div class="session-notes">
-              <h3>Notes - Rule updates</h3>
-              <dl>
-                <dt>Table Talk</dt>
-                <dd>Above table talk at a minimum please. Please try and keep all discussions in character if related to
-                  story and actions (not if its a rule question). 'Critical Role play' as much as possible. This WILL
-                  affect gameplay.
-                  <br /><br />For example, if your talking about whether you're going to attack someone or kill them
-                  after - you better whisper and roll stealth cause they may have heard you...<br /><br /><i>This is in
-                    an effort to produce individual character decisions and character development rather than herd
-                    mentality.</i>
-                </dd>
-                <dt>Long Rests</dt>
-                <dd>Long Rests are going to be more difficult. You need to have ample conditions to take a long rest.
-                  Otherwise, a short rest will be necessary. This means walls and lodging or guard shifts if in the
-                  wilderness with somewhere where you can get 8 hours of sleep. I will be having a difficulty level for
-                  where you choose to set up camp that you wont be aware of. The night brings interesting creatures.
-                  Also, if you choose to have someone stand guard, they dont get the benefits of a rest. If you choose
-                  to people to stand guard, they get the beneifts of a short rest only.<br /><br /><i>This is in an
-                    effort to
-                    bring awareness to surroundings and danger, make your headstrong pushes in to battle more critical,
-                    as well as add more critical decision making and bring short rests and those classes/races with
-                    resting perks value up.</i></dd>
-                <dt>Travel Time</dt>
-                <dd>Travel is going to be more vital. Depending on how you are going to get somewhere we will not just
-                  skip over weeks of travel. We may montage long travel periods but most travel will be in game ot an
-                  extent.<br /><br /><i>This is in an effort to add more random encounters have more interesting and
-                    unique situations with your surroundings happen. Lets learn more about the Sword Coast together!</i>
-                </dd>
-                <dt>Birthday Crit</dt>
-                <dd>When its your birthday you have one critical roll to use within the next two sessions.</li>
-              </dl>
-            </div>
-            <div class="setting-notes">
-              <h3>Notes - Setting Details</h3>
-              <p>We are in the same setting as our previous campaign but roughly 100 years in the future. Your former
-                characters were not much heard of as they dissapeared upon exploring wave echo cave and never returned
-                with the exception of stories past down from a few adventurers long before this time. About 400 years
-                ago, A Rudolph Van Richten and his protege, Ezmerelda, wrote a "guide to Ravenloft" which mentioned
-                individuals matching your missing adventurers but have not been heard from again.</p>
-              <p>In this beginning, I'm going to give a large intro to set the scene and get us started. It will give us
-                a lot of details of fae'run and the lore within.</p>
-              <p>I will then illustrate a setting for your characters. When I give you the floor, please describe your
-                character followed by a little role play of what your character does or says before I continue on.</p>
-            </div>
-            <div class="prologue">
-              <h3>Prologue</h3>
-              <p>The Sword Coast, a land of vast beauty and diverse cultures, stretches along the western shores of
-                Faerûn
-                in the Forgotten Realms. Its cities and towns teem with life, bustling with adventurers seeking glory,
-                riches, and the thrill of daring quests. Yet, beyond the surface, shadows stir, and the winds carry
-                whispers of impending change.</p>
-              <p>Amidst this coastline, the factions of the realm maneuver in the shadows, each with their own
-                agenda. Many factions including, The Lords' Alliance, a coalition of influential cities and leaders,
-                seeks to uphold order and
-                rally the forces of good and justice. The Harpers, a clandestine organization with eyes and ears in
-                every
-                corner, strive to uncover secrets and protect the innocent. The Zhentarim, enigmatic and inscrutable,
-                manipulate events for their own gain but in what they believe is good for the realms. And many others
-                working deep in the shadows or for the good of fae'run.</p>
-              <p>In the celestial realm, the gods watch over their domains. Temples and shrines
-                dedicated to these deities stand as beacons of hope, offering solace to those seeking divine
-                intervention.
-                From the stalwart Helm, guardian of the innocent, to Tymora, lady luck herself, the gods'
-                influence shapes the destinies of mortals.</p>
-              <p>The Sword Coast, however, is not merely a realm of factions and divine influence. Mighty dragons,
-                majestic and fearsome, soar through the skies, their presence a testament to their power. Ogres,
-                Bugbears and goblins, lurk in murky corners. Dwarves, Elves, and elementals all make their presence
-                known. Some creatures are
-                benevolent, bestowing wisdom or aid upon those they deem worthy. Others, driven by greed and aggression,
-                leave a trail of destruction in their wake. Legends speak of ancient artifacts, imbued with
-                extraordinary power, hidden within treacherous dungeons or guarded by formidable foes.</p>
-              <p>In present day on the sword coast, Rumors have begun to circulate, like ripples in a pond, speaking of
-                mysterious rumblings in the depths of
-                the wilds. Hushed voices speak of colossal beings, their presence felt in the tremors of the earth and
-                the
-                distant echoes of thunderous footsteps. But the nature and purpose of these massive figures remain
-                shrouded in uncertainty.</p>
-              <p>As these whispers spread, fear tinges the air, and the people of the Sword Coast find themselves on the
-                edge of anticipation. The ground quivers with each passing day, leaving villages and settlements on
-                alert,
-                uncertain of what the future may hold.</p>
-              <p>And so, as destiny weaves its tapestry, your paths converge. United by a common purpose, you find
-                yourselves drawn into a journey that will lead you across the breadth of the Sword Coast. From the
-                bustling streets of Waterdeep, the City of Splendors, to the ancient ruins of Neverwinter, and even to
-                the
-                untamed wilderness of the Savage Frontier, your adventure will take you to both familiar and unknown
-                territories.</p>
-              <p>With each step you take, you will encounter allies and adversaries, face trials and tribulations, and
-                uncover the secrets that lie within the realm. The Sword Coast awaits, a canvas for your heroic exploits
-                and a crucible for your character's growth. The fate of the realms rests in your hands, and the choices
-                you make will shape the course of this world.</p>
-              <p>Prepare yourselves, valiant adventurers, for an extraordinary odyssey through the Sword Coast. The
-                stage
-                is set, the curtain rises, and your epic quest begins.</p>
-              <hr />
-              <h3>Character Intros</h3>
-              <h4>Yeldon and Celeste</h4>
-              <p>As the sun dawns, casting a warm golden glow over the landscape, the High Road stretches south of
-                Waterdeep, meandering through the northern reaches of the region. The road cuts a path through dense
-                forests, where towering trees create a canopy overhead, dappling the path with patches of sunlight. A
-                gentle breeze rustles through the leaves, carrying with it the earthy fragrance of moss and wildflowers.
-              </p>
-              <p>In the growing light, a camp is set up by the roadside, nestled amidst the towering trees. A crackling
-                campfire sends flickering flames into the decreasing darkness, casting dancing shadows upon the gnarled
-                tree trunks. The surrounding forest comes alive with the symphony of chirping birds and the occasional
-                rustle of unseen creatures moving through the underbrush.</p>
-              <p>A short stout man walks along the High Road, their eyes widen in surprise at the sight of the campsite
-                and its lone inhabitant gathering their belongings. Standing tall and well-built, the figure exudes
-                strength and resilience. Silver dreaded hair cascades down her back, contrasting with shaved sides,
-                giving her a striking Viking-like appearance. Her honey-gold eyes hold a sense of determination and an
-                unyielding spirit.</p>
-              <p>Curiosity piqued, the man stops in their tracks, studying the camp from a distance. The small glasses
-                perched upon their nose amplify their inquisitive gaze. Their elegant red hat adds a touch of whimsy to
-                their gnomish appearance, as if the wild nature of the surroundings has inspired their own sense of
-                adventure.</p>
-              <p>The High Road becomes the crossroads where these two individuals' paths intersect, the gnome's journey
-                momentarily halted by the presence of the solitary barbarian. It holds the promise of adventure,
-                companionship, and the chance for these disparate souls to find their respective places in a world
-                filled with mystery and possibilities.</p>
-              <p>Tristan and Alec, the floor is yours...</p>
-              <hr />
-              <p>Will you both roll a perception check for me?</p>
-              <p>+ 10 - A sudden pause in your conversation arrives with a sense of worry and curiousity, as you notice
-                in the tree tops a head of you a few small subtle smoke plumes. Not far down the road, towards your
-                destination of waterdeep, a sense of danger and destruction appears in the sky.</p>
-              <hr />
-              <h4>Althea and Anthony</h4>
-              <p>The Grey's Glory, known to the locals as "Old Glory", aptly named for the Frost Giant Harshnag's
-                adventuring company who notoriously saved the city a time or two, a renowned tavern nestled within the
-                heart of Waterdeep, exudes warmth and merriment. The sign that hangs above the door is only a picture of
-                a giant's head wearing a skull of a dragon like a hat.</p>
-              <p>As you step through its weathered wooden door, the aroma of spiced ale and hearth-cooked meals
-                wafts through the air, inviting you to indulge in the comforts of this bustling establishment.</p>
-              <p>Inside, the tavern is a symphony of sights and sounds. The crackling fire casts dancing shadows on the
-                rough-hewn stone walls, while the soft glow of flickering candles bathes the room in a warm, amber
-                light.
-                The low hum of lively conversation and merry laughter fills the air, intermingling with the gentle
-                strumming of a bard's lute, creating an inviting melody that weaves through the tapestry of voices.</p>
-              <p>In the center of the tavern, an almost shrine of sorts. A fountain ordained with the statues of the
-                Legendary Adventuring Company Force Grey, The namesake of this fine establishment, including the same
-                wyrmskull wearing ginat from the sign. The pool below filled with many of
-                copper tossed in at the hopes of luck from ol' Harshnag himself.</p>
-              <p>Amidst the boisterous crowd, you spot a venerable human woman adorned in black hooded robes, seated at
-                a
-                corner table near the hearth. Her weathered face, etched with lines of experience, radiates an air of
-                quiet contemplation. She sits with a straight posture, her presence both serene and commanding. The
-                flickering candlelight catches the glint of her focused eyes, hinting at a hidden strength that lies
-                within her aging frame. Clad in simple yet well-worn robes, she emanates an aura of wisdom and
-                resilience.</p>
-              <p>Her gaze drifts toward the bar, where she sees a large humanoid figure with blue-ish skin, ignoring an
-                animated conversation with a group of patron to left of his barstool. Towering above the crowd, his
-                impressive stature
-                bears the unmistakable traits of his orcish lineage, juxtaposed with an air of refinement and curiosity.
-                His deep, cobalt eyes glimmer with a hunger for knowledge, betraying the depths of his intellect and the
-                endless pursuit of arcane mastery. Dressed in scholarly robes, he carries an air of grace that defies
-                his
-                brutish origins.</p>
-              <p>Melissa and Anthony... the floor is yours.</p>
-              <hr />
-              <p>A couple things happen in this surrounding bar that peak your interest. A small fight breaks out over a
-                few coins and a cheated card but quickly gets handled. A begging woman with curly dirty brown hair
-                [BELDORA] stumbles weakily around the tavern asking for a few coin - "can you spare just a copper or two
-                sir, I dont ask for much". And a Tall dark skinned man comes briskly into the front door in urgency. The room grows silent for a minute and then picks back up in conversation.</p>
-              <p>The man, wearing dark blue robes and some strong sturdy leather armor with some solid iron pauldrins, a gold badge adorns his lapel. His age shows in his beard and crow's feet but no wear else as he is well built with soft eyes. He approaches the bar with haste</p>
-              <p>Roll perception, anthony with advantage</p>
-              <p>This is the conversation you hear:<br/>
-                <p>Liam: "Markham! Long time old friend!"<br/>Markham: "Liam FallBright. It has been some time. You look well."<br/> They shake. <br/> Liam: "You as well! The Pauldrins! Wow! What brings you all the way from Bryn shander? That's quite a journey!"<br/>M: "Ah. No Liam. Not bryn shander". He flashes him his badge.<br/> L: "SHERIFF Markham Southwell!" The bar gets a little quiet now as eyes shift toward the bar. Liam relies his mistake. "of Triboar!" He says a little more loudly and the bar returns to its normal banter.<br/>Markham smirks. L: "the question still stands, friend. what brings you to the deep?"<br/>M: "Nightstone."<br/>L:"Of course! Semile. How is your sister?"<br/> M: "Thats what I'm trying to find out. Have you not heard the..." he looks around. "Huge Rumors?"<br/> L:"M this is the Glory." He points at the fountain. "If it involves the larger than life, we've heard..." a moment aof realization comes across his face. "...ah. nightstone...what can I do."<br/> M: "I need some hands. I can't do this on my own." L: "Hence your visit the the Glory." He pauses. L:"*Whistles* Alright, Glory!" everyone starts pounding Fists on the table. A clear ritual of this tavern. "What say you? A short journey to nightstone for ol' markham here."<br/> The bar is silent. Liam with a quisitive look.<br/>"Are yall lot deaf or am 
-                  "  </p>
-              </p>
-              <hr />
-              <h4>Nightstone</h4>
-              <p>As you approach Nightstone, you find the village nestled within a natural moat-like river
-                that flows around its perimeter, acting as a protective barrier. The river's gentle current glistens
-                under the sun, encircling the settlement like a liquid moat. A wooden palisade stands tall, outlining
-                the boundaries of the village, and through its gaps, one can catch glimpses of a windmill, a tall
-                steeple, and several imposing buildings that rise above the humble homes.</p>
-
-              <p>The gate, once an imposing barrier, now creaks ominously in the wind, as if whispering tales of the
-                chaos that unfolded. Beyond the gate, the main thoroughfare is eerily quiet, a ghostly stillness that
-                permeates the abandoned homes and buildings. Broken shutters flap eerily in the breeze, and a sense of
-                unease settles upon anyone who ventures further into the heart of Nightstone.</p>
-
-              <p>The town square, once a bustling center of activity, is now hauntingly empty. The remnants of shattered
-                windows glimmer with shards of glass, mirroring the shattered hopes of the town's former inhabitants.
-                Adjacent to the square stands a bell tower, its spire reaching towards the heavens. The tolling of the
-                bell reverberates through the air, its sound piercing the silence that otherwise envelopes the village.
-                Its constant ringing adds a disconcerting layer to the atmosphere, as if it is a beckoning call or a
-                warning of the danger that still lingers nearby. Nightstone, once a picturesque haven, has transformed into a ghostly remnant of its former self.</p>
-
-              <p>A lowered drawbridge spans the moat, providing access to the village. Two sturdy stone watchtowers
-                flank the open gap in the palisade, standing as silent sentinels, remnants of a once vigilant defense.
-                South of the village, isolated and elevated, a cone-shaped hill rises with a flat top. Perched atop this
-                hill, a partially collapsed stone keep commands a commanding view of the entire settlement. The keep,
-                its walls crumbling and timeworn, stands enclosed by a weathered wooden wall.</p>
-              <p>The bridge that once connected the keep to the village, a vital lifeline between the two, has suffered
-                the ravages of the previous conflict. A large gap from a fallen boulder spans the middle of the bridge, separating the two land masses. Its broken sections hang precariously, a
-                testament to the hardships endured. Though damaged, it serves as a poignant reminder of the
-                village's recent destruction and the challenges that lie ahead.</p>
-            </div>
+            <h3>Prologue</h3>
+            <p>The Sword Coast, a land of vast beauty and diverse cultures, stretches along the western shores of Faerûn in the Forgotten Realms. Its cities and towns teem with life, bustling with adventurers seeking glory, riches, and the thrill of daring quests. Yet, beyond the surface, shadows stir, and the winds carry whispers of impending change.</p>
+            <p>Amidst this coastline, the factions of the realm maneuver in the shadows, each with their own agenda. Many factions including, The Lords' Alliance, a coalition of influential cities and leaders, seeks to uphold order and rally the forces of good and justice. The Harpers, a clandestine organization with eyes and ears in every corner, strive to uncover secrets and protect the innocent. The Zhentarim, enigmatic and inscrutable, manipulate events for their own gain but in what they believe is good for the realms. And many others working deep in the shadows or for the good of fae'run.</p>
+            <p>In the celestial realm, the gods watch over their domains. Temples and shrines dedicated to these deities stand as beacons of hope, offering solace to those seeking divine intervention. From the stalwart Helm, guardian of the innocent, to Tymora, lady luck herself, the gods' influence shapes the destinies of mortals.</p>
+            <p>The Sword Coast, however, is not merely a realm of factions and divine influence. Mighty dragons, majestic and fearsome, soar through the skies, their presence a testament to their power. Ogres, Bugbears and goblins, lurk in murky corners. Dwarves, Elves, and elementals all make their presence known. Some creatures are benevolent, bestowing wisdom or aid upon those they deem worthy. Others, driven by greed and aggression, leave a trail of destruction in their wake. Legends speak of ancient artifacts, imbued with extraordinary power, hidden within treacherous dungeons or guarded by formidable foes.</p>
+            <p>In present day on the sword coast, Rumors have begun to circulate, like ripples in a pond, speaking of mysterious rumblings in the depths of the wilds. Hushed voices speak of colossal beings, their presence felt in the tremors of the earth and the distant echoes of thunderous footsteps. But the nature and purpose of these massive figures remain shrouded in uncertainty.</p>
+            <p>As these whispers spread, fear tinges the air, and the people of the Sword Coast find themselves on the edge of anticipation. The ground quivers with each passing day, leaving villages and settlements on alert, uncertain of what the future may hold.</p>
+            <p>And so, as destiny weaves its tapestry, your paths converge. United by a common purpose, you find yourselves drawn into a journey that will lead you across the breadth of the Sword Coast. From the bustling streets of Waterdeep, the City of Splendors, to the ancient ruins of Neverwinter, and even to the untamed wilderness of the Savage Frontier, your adventure will take you to both familiar and unknown territories.</p>
+            <p>With each step you take, you will encounter allies and adversaries, face trials and tribulations, and uncover the secrets that lie within the realm. The Sword Coast awaits, a canvas for your heroic exploits and a crucible for your character's growth. The fate of the realms rests in your hands, and the choices you make will shape the course of this world.</p>
+            <p>Prepare yourselves, valiant adventurers, for an extraordinary odyssey through the Sword Coast. The stage is set, the curtain rises, and your epic quest begins.</p>
           </div>
           <!-- SESSION 2 -->
-          <button class="detail-accordion" data-target="sesh2">
-            <h2>Session 2 | <strong>Guardians for Nightstone</strong></h2>
-          </button>
+          <button class="detail-accordion" data-target="sesh2"><h2>07.09.23 | Session 2</h2></button>
           <div id="sesh2" class="session accordion-info">
-            <h3>07.09.23</h3>
-            <div class="session-notes">
-              <h3>Notes</h3>
-              <p>Anthony... I'm Sorry but Alec was right. I looked over the campaign and had to reevaluate coinage here. Barovia was different because of the made up loot was based on my prices but here I need to be true to DND economy. RETCON: Markham offered you 6 Gold for the journey. 12 for talking him up. (thats roughly, 1200 bucks) </p>
-            </div>
-              <div>
-                <h3>Previously on DND...</h3>
-                <p>In our latest session, our adventurers found themselves on the High Road, a path leading from Nightstone to Waterdeep. Yelton, a clever and curious gnome wizard, crossed paths with Celeste, a formidable and enigmatic aasimar barbarian. Intrigued by a plume of smoke in the distance, they decided to investigate its source.</p>
-                <p>Meanwhile, in the renowned Grey's Glory Tavern in Waterdeep, named after the famous Harshnag's Adventuring Company Force Grey, Durk, a half-orc wizard, and Sister Althea, a wise and compassionate old human monk, overheard a conversation between Liam Fallbright, the Dragonborn bartender, and Markham Southwell, the Sheriff of Triboar. Markham sought assistance in exploring the troubled village of Nightstone, which housed his sister Semile. A group was to convene at the tavern's central fountain the next morning to embark on this perilous journey.</p>
-                <p>As night fell, Durk and Althea departed the tavern, with Althea extending an act of kindness by providing a nourishing meal to a homeless woman. The following morning, they met Markham at the fountain, where negotiations ensued. Durk requested payment, Althea sought an escort for their travels, and Markham agreed to a fee of 8 gold after the completion of the task.</p>
-                <p>The group converged at the entrance to Nightstone, joined by Celeste and Yelton, and under Markham's lead, ventured into the abandoned village. The devastating aftermath of giant attacks became evident, with boulders strewn about, wreaking havoc upon the once-peaceful settlement. A quiet eeiry vibe filled the air of this destroyed village only broken by the sound of a incessant ringing bell coming from the assumed village temple. However, their attention was quickly drawn to the sight of two worgs feasting on a lifeless dog.</p>
-                <p>With newfound determination, our heroes engaged in their first combat encounter, valiantly fighting the worgs and attracting the attention of goblins, who emerged from the ransacked houses. The skirmish was intense, with weapons clashing and spells crackling through the air.</p> 
-                <p>The worgs bit and clawed their way into those that struck them. Markham was mostly able to fend off their attacks while Celeste lost the upperhand (Quite litterally) after falling into a recent excavation site in the middle of the town square. Fighting at a lower vantage point with success, by cutting off the toes of her foe, put her in harm's way as a worg threw her like a ragdoll across the square, knocking her unconcious.</p>
-                <p>Yelton, Durk, and Althea tried their hand at besting the wave of goblin attackers. Yelton held back a goblin with a ray of frost, slowing its approach into the fray. Durk and Althea charged two others and quickly eviscerated the two foes as if they were worthless meat sacks.</p>
-                <p>In the end, two worgs and two goblins fell, while one goblin was captured for further interrogation.</p>
-                <p>Undeterred by the battle's toll, minus a few scratches and a little health potion from Markham to alleviate some of Celeste's ailments, the group continued to explore Nightstone, seeking any sign of evil and hoping to locate Semile, Markham's sister. Sadly, their search led them to Semile's house, where they discovered her lifeless body crushed under a massive boulder. Althea, with the inert goblin in toe, remained by Markham's side as he took a minute to himself, while the rest of the group proceeded to investigate the local inn.</p>
-                <p>Peeking through a dust covered window in the back of the inn, Durk found the kitchen in disarray with another vile creature wreaking havoc in the room. He sent a vocal projection in the room that confused the goblin, he didnt know who or what it was but only that it frightened him and forced him to flee into the awaiting ambush of the adventurers. Trying to make a daring escape, Durk tossed the Gnome Yelton like a sack of flour in an effort to stop his pursuit. Although, sustaining some cuts and bruises on the tumble, Yelton annihilated the poor fleeing monstrosity.</p>
-                <p>Inside the inn, Celeste's keen senses guided her to a dining room, where she discovered a large rock jutting through the ceiling and an ominous crossbow bolt sticking from a goblin's chest pinned to a broken table. As she pondered its origin with curiosity piqued, Celeste called out, and a woman above revealed herself.</p>
-                <p>Returning to the Late Southwell's Residence, Durk presented Althea with belongings recovered from the kitchen goblin's ransacking finding the unconcious goblin returning to the waking world. While Althea attempted to calm the captive goblin, Durk's presence compelled the creature to speak. The goblin, sent by his boss Hark, admitted to pillaging the village on the orders of their leader. He revealed that the villagers sought refuge in nearby caves after a supposed giant attack, giving the goblins free reign to pillage the abandoned settlement.</p>
-                <p>Back upstairs, Celeste and Yelton discovered a barricaded door obstructed by debris. Working together, they cleared the path and encountered Kella Darkhope, accompanied by her loyal flying snake pet, trapped in the bedroom. Yelton's revelation of his own familiar, a whimsical unirabbit struck a chord of familiarity between them.</p>
-                <p>With Kella's rescue and the goblin's revelations, our adventurers reached a momentary pause in their quest. The mysteries of Nightstone deepened, and their determination to uncover the truth grew.</p>
-              </div>
+            <h3>Previously on DND...</h3>
+            <p>In our latest session, our adventurers found themselves on the High Road, a path leading from Nightstone to Waterdeep. Yelton, a clever and curious gnome wizard, crossed paths with Celeste, a formidable and enigmatic aasimar barbarian. Intrigued by a plume of smoke in the distance, they decided to investigate its source.</p>
+            <p>Meanwhile, in the renowned Grey's Glory Tavern in Waterdeep, named after the famous Harshnag's Adventuring Company Force Grey, Durk, a half-orc wizard, and Sister Althea, a wise and compassionate old human monk, overheard a conversation between Liam Fallbright, the Dragonborn bartender, and Markham Southwell, the Sheriff of Triboar. Markham sought assistance in exploring the troubled village of Nightstone, which housed his sister Semile. A group was to convene at the tavern's central fountain the next morning to embark on this perilous journey.</p>
+            <p>As night fell, Durk and Althea departed the tavern, with Althea extending an act of kindness by providing a nourishing meal to a homeless woman. The following morning, they met Markham at the fountain, where negotiations ensued. Durk requested payment, Althea sought an escort for their travels, and Markham agreed to a fee of 8 gold after the completion of the task.</p>
+            <p>The group converged at the entrance to Nightstone, joined by Celeste and Yelton, and under Markham's lead, ventured into the abandoned village. The devastating aftermath of giant attacks became evident, with boulders strewn about, wreaking havoc upon the once-peaceful settlement. A quiet eeiry vibe filled the air of this destroyed village only broken by the sound of a incessant ringing bell coming from the assumed village temple. However, their attention was quickly drawn to the sight of two worgs feasting on a lifeless dog.</p>
+            <p>With newfound determination, our heroes engaged in their first combat encounter, valiantly fighting the worgs and attracting the attention of goblins, who emerged from the ransacked houses. The skirmish was intense, with weapons clashing and spells crackling through the air.</p> 
+            <p>The worgs bit and clawed their way into those that struck them. Markham was mostly able to fend off their attacks while Celeste lost the upperhand (Quite litterally) after falling into a recent excavation site in the middle of the town square. Fighting at a lower vantage point with success, by cutting off the toes of her foe, put her in harm's way as a worg threw her like a ragdoll across the square, knocking her unconcious.</p>
+            <p>Yelton, Durk, and Althea tried their hand at besting the wave of goblin attackers. Yelton held back a goblin with a ray of frost, slowing its approach into the fray. Durk and Althea charged two others and quickly eviscerated the two foes as if they were worthless meat sacks.</p>
+            <p>In the end, two worgs and two goblins fell, while one goblin was captured for further interrogation.</p>
+            <p>Undeterred by the battle's toll, minus a few scratches and a little health potion from Markham to alleviate some of Celeste's ailments, the group continued to explore Nightstone, seeking any sign of evil and hoping to locate Semile, Markham's sister. Sadly, their search led them to Semile's house, where they discovered her lifeless body crushed under a massive boulder. Althea, with the inert goblin in toe, remained by Markham's side as he took a minute to himself, while the rest of the group proceeded to investigate the local inn.</p>
+            <p>Peeking through a dust covered window in the back of the inn, Durk found the kitchen in disarray with another vile creature wreaking havoc in the room. He sent a vocal projection in the room that confused the goblin, he didnt know who or what it was but only that it frightened him and forced him to flee into the awaiting ambush of the adventurers. Trying to make a daring escape, Durk tossed the Gnome Yelton like a sack of flour in an effort to stop his pursuit. Although, sustaining some cuts and bruises on the tumble, Yelton annihilated the poor fleeing monstrosity.</p>
+            <p>Inside the inn, Celeste's keen senses guided her to a dining room, where she discovered a large rock jutting through the ceiling and an ominous crossbow bolt sticking from a goblin's chest pinned to a broken table. As she pondered its origin with curiosity piqued, Celeste called out, and a woman above revealed herself.</p>
+            <p>Returning to the Late Southwell's Residence, Durk presented Althea with belongings recovered from the kitchen goblin's ransacking finding the unconcious goblin returning to the waking world. While Althea attempted to calm the captive goblin, Durk's presence compelled the creature to speak. The goblin, sent by his boss Hark, admitted to pillaging the village on the orders of their leader. He revealed that the villagers sought refuge in nearby caves after a supposed giant attack, giving the goblins free reign to pillage the abandoned settlement.</p>
+            <p>Back upstairs, Celeste and Yelton discovered a barricaded door obstructed by debris. Working together, they cleared the path and encountered Kella Darkhope, accompanied by her loyal flying snake pet, trapped in the bedroom. Yelton's revelation of his own familiar, a whimsical unirabbit struck a chord of familiarity between them.</p>
+            <p>With Kella's rescue and the goblin's revelations, our adventurers reached a momentary pause in their quest. The mysteries of Nightstone deepened, and their determination to uncover the truth grew.</p>
           </div>
           <!-- SESSION 3 -->
-          <button class="detail-accordion" data-target="sesh3">
-            <h2>Session 3 | <strong>Guardians for Nightstone Pt 2</strong></h2>
-          </button>
+          <button class="detail-accordion" data-target="sesh3"><h2>08.07.23 | Session 3</h2></button>
           <div id="sesh3" class="session accordion-info">
-          <h3>08.07.23</h3>
-            <div>
               <h3>Previously on DND...</h3>
               <p>In the realm of Dungeons & Dragons, two distinct paths converge on the High Road, just south of Nightstone and Waterdeep. There, fate brings together Yelton, a brilliant Gnome Wizard with an affinity for arcane mysteries, and Celeste, an imposing Aasimar Barbarian, resembling a Viking warrior with her silver dreaded hair and honey-gold eyes. As they exchange pleasantries, an ominous sight catches their attention—a plume of smoke rising from the direction of Nightstone.</p>
               <p>Curiosity piqued, Yelton and Celeste venture forth to investigate the source of the smoke. Meanwhile, in the bustling city of Waterdeep, a chance encounter occurs between Durk, a Half-Orc disgruntlted Wizard?, and Sister Althea, an elderly kind yet formidable Human Monk. Their paths intertwine at the Grey's Glory, a renowned tavern named after Harshnag's adventuring company "Force Grey."</p>
@@ -363,15 +232,10 @@
               <p>Venturing deeper into the town, the adventurers encounter resistance in the barn, but Durk's tenacity leads them to victory. As they continue, they drive out goblins from the windmill and gather much-needed supplies from a ransacked general store. With newfound strength, they level up in their abilities, a testament to their resilience and unity.</p>
               <p>The party presses on, crossing the broken bridge to reach the town keep, guarded by four seemingly timid sentries. The revelation of Lady Nandar's fate, crushed under debris, intensifies their resolve to find the townspeople who might have sought refuge in the dripping caves nearby.</p>
               <p>Frustrated by the guards' passivity, the adventurers quickly return to the town square, only to encounter Seven Hooded figures on horseback dragging with them - a Cart built like a cage with a blue Hooded figure with dark orange robes and a woman with dark purple hair both bound. The supposedly leader of the group demanding the presence of Kella Darkhope. The shadows of treachery and mystery loom large over Nightstone, drawing the party further into the heart of an enthralling tale, where secrets and challenges intertwine, and the fate of the realm hangs in the balance.</p>
-            </div>
           </div>
           <!-- SESSION 4 -->
-          <button class="detail-accordion" data-target="sesh4">
-            <h2>Session 4 | <strong>Guardians for Nightstone Pt 3</strong></h2>
-          </button>
+          <button class="detail-accordion" data-target="sesh4"><h2>08.19.23 | Session 4</h2></button>
           <div id="sesh4" class="session accordion-info">
-          <h3>08.19.23</h3>
-          <div>
             <h3>Previously on DND...</h3>
             <p>As the adventurers faced the ominous Seven Hooded figures, their true identities were revealed—they were the Zhentarim, seeking to seize control of the town for their own nefarious purposes. Before the tension could escalate further, chaos ensued as a battle-hardened horde of orcs descended upon the scene, vying to claim the town for themselves. The clash between the Zhentarim and the orc invaders erupted, forcing the party into a precarious situation.</p>
             <p>Among the captives of the Zhentarim were Aspari and Tipp, the other members of the group. The heroes seized a moment of distraction during the skirmish to free themselves from their binds and joined the fray. As the battle raged on, the relentless onslaught of the orcs pushed Althea and Aspari to the brink, but their determination prevailed, and they stood once more to face the threats that surrounded them.</p>
@@ -380,22 +244,27 @@
             <p>With the Zhentarim refusing to leave the town peacefully, a standoff ensued. The group aimed to recover the stolen amulet and return it to its rightful owners, but the bandits were unwilling to relinquish their newfound prize without a fight. Aspari's familiarity with the artifact, combined with Durk's knowledge, sparked the adventurers' determination to reclaim the amulet and put an end to the chaos that had befallen the once-peaceful town of Nightstone.</p>
             <p>The stage is set for a thrilling confrontation, where secrets, power struggles, and dangerous ambitions converge. The heroes find themselves entwined in a web of intrigue that will test their wits, alliances, and strength as they strive to regain control of Nightstone and unravel the enigma of the Amulet of the Planes. As the journey continues, the adventurers must navigate treacherous waters, make difficult choices, and confront their destinies in this gripping tale of adventure and mystery.</p>
           </div>
-          </div>
           <!-- SESSION 5 -->
-          <button class="detail-accordion" data-target="sesh5">
-            <h2>Session 5 | <strong>Guardians for Nightstone Pt 4</strong></h2>
-          </button>
+          <button class="detail-accordion" data-target="sesh5"><h2>09.02.23 | Session 5</h2></button>
           <div id="sesh5" class="session accordion-info">
-          <h3>09.02.23</h3>
-            <div>
-              <h3>Previously on DND...</h3>
-              <p>In the tapestry of your ongoing adventure, dear travelers, the threads of fate continue to weave a tale both bold and intricate. As you trod the path laid out before you, remember the storm-tossed shores of Nightstone and the enigmatic whisperings of giants' destinies.</p>
+            <h3>Previously on DND...</h3>
+            <p>In the tapestry of your ongoing adventure, dear travelers, the threads of fate continue to weave a tale both bold and intricate. As you trod the path laid out before you, remember the storm-tossed shores of Nightstone and the enigmatic whisperings of giants' destinies.</p>
             <p>Facing off against the veiled Zhentarim, your cunning words became a promise to reclaim the village with the rallying strength of its folk. You embarked into the depths of the dripping caves, casting light into the darkness to reveal the secrets that hid beneath. There, you confronted ogres and goblins in the dim underground expanse, their malevolent presence offering naught but the taste of battle.</p>
             <p>The dance of combat played out within the cave's maw. Blades clashed, spells whirled, and the ogre's unsuspected mud bath was turned into a rather ungraceful skirmish. Despite challenges, you prevailed, though not without cost, as Aspari's resolve wavered under a volley of arrows.</p>
             <p>Seeking respite under the stars, the cave's inhabitants sensed the disturbance. Hark, a goblin leader, orchestrated an assault, yet your prowess denied their victory. Hark, their would-be captor, slipped through your grasp, vanishing into the night.</p>
             <p>Returning to the village's edge, you conversed with Morak, learning more about Nightstone's plight. Giants, giants, and more giants—a tale that has become an unsettling refrain. As you laid bare the cause of your journey, Morak's concern for the village swelled, his willingness to aid you further apparent.</p>
             <p>Amidst your discourse, the tale of the Nightstone itself unfurled. A stone of mysteries, a pebble of shifting planes, an enigma cloaked in legends. With every step, the threads of the tapestry unravel, exposing layers of intrigue and uncertainty. As stars glitter above and the wind carries whispers, your journey presses on, driven by purpose and curiosity, towards destinations unknown.</p>
-            </div>
+          </div>
+          <!-- SESSION 6 -->
+          <button class="detail-accordion" data-target="sesh6"><h2>09.09.23 | Session 6</h2></button>
+          <div id="sesh6" class="session accordion-info">
+            <h3>Previously on DND...</h3>
+            <p>In the ever-evolving journey of your valiant band, dear adventurers, your latest chapter unfolded with both diplomacy and steel. Faced with the conundrum of the Zhentarim and Xobrin's hold over Nightstone, your words and intent fell on ears deaf to reason. As tensions simmered, the decision to surrender weapons for entry laid the foundation for the conflict that would soon unfold.</p>
+            <p>With a lowered drawbridge as the battleground, the clash erupted into a whirlwind of fury. Your collective might, honed through trials past, quickly shattered the resolve of the Zhentarim and Xobrin's forces, leaving you relatively unscathed. Amidst the fray, Celeste's rage took an unexpected turn, her stature expanding to the astonishment of all, herself included.</p>
+            <p>In the aftermath of the battle, the village of Nightstone breathed easier, the shadow of conflict lifted. Grateful, Morak extended his hospitality, offering respite, sustenance, and the embrace of camaraderie. Laughter and merriment followed, culminating in a spirited drinking game that pitted your mettle against one another, with Althea emerging as the victor.</p>
+            <p>As dawn broke on a new day, your sights were set on Triboar. Borrowing Zhentarim horses, you ventured forth, guided by Morak's wisdom. The prospect of unraveling the mysteries of the giants and the stolen Nightstone drove you forward.</p>
+            <p>Yet, fate is a curious mistress, and the path you tread led to a mystical encounter. A cloud-staircase descended, beckoning you skyward. At its zenith, an enigmatic cloud giant awaited, a towering presence cloaked in aloofness. His unexpected reception marked the beginning of an enlightening dialogue, one that would unveil the intricate dance of giants and the shifting balance of power within their realm.</p>
+            <p>With each revelation, the mysteries of giants' ambitions and the fate of the Storm Queen Neri and King Hekaton loomed larger. The threads of the Ordning's collapse wound tighter, drawing you deeper into a web of cosmic intrigue and perilous quest. As you stand upon the precipice of destiny, dear adventurers, the journey continues, with each step echoing through the tapestry of your grand adventure.</p>
           </div>
         </div>
       </div>
@@ -403,502 +272,499 @@
       <!-- PLAYERS -->
       <div id="players-anchor" class="characters container">
         <h1>Players</h1>
-        <!-- ANTHONY -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/Durk.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Durk Whitlock</h3>
-              <h4>Anthony</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">2</span></strong></p>
-              <p>Class: <strong>Wizard</strong></p>
-              <p>Race: <strong>Half Orc</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">10</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion" data-target="details1">Character Details</button>
-            <div id="details1" class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="17"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="10"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
+        <div class="character-list">
+          <!-- ANTHONY -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/Durk.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Durk <span class="sub-name">Whitlock</span></h3>            
+                <h4 class="player">Anthony</h4>
               </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Important Features</h3>
-                  <ul>
-                    <li>Parents attacked by Imyrith</li>
-                    <li>Adoptive Parents James and Betty Whitlock</li>
-                    <li>Well-known among Members of the Harpers</li>
-                    <li>Doesnt Like using his last name</li>
-                  </ul>
-                </div>
+              <div class="char-traits">
+                <p>Class: <strong>Wizard</strong></p>
+                <p>Race: <strong>Half Orc</strong></p>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- ALEC -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/yelton.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Yelton</h3>
-              <h4>Alec</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Wizard</strong></p>
-              <p>Race: <strong>Gnome</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">11</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion" data-target="details2">Character Details</button>
-            <div id="details2" class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
+            <div class="details">
+              <button class="detail-accordion" data-target="details1">Character Details</button>
+              <div id="details1" class="accordion-info">
+                <div class="perception">
+                  <p>Passive perception</p>
+                  <p class="number">10</p>
                 </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>STR</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="17"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>DEX</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CON</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>INT</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>WIS</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="10"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CHA</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
                 </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="16"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-              </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>Looking for a lost Artifact that is inscribed with Abyssal Runes</li>
-                  </ul>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>Parents attacked by Imyrith</li>
+                      <li>Adoptive Parents James and Betty Whitlock</li>
+                      <li>Well-known among Members of the Harpers</li>
+                      <li>Doesnt Like using his last name</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- JOSH -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/aspari.jpg" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Aspari</h3>
-              <h4>Josh</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Monk</strong></p>
-              <p>Race: <strong>Aasimar</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">13</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion" data-target="details3">Character Details</button>
-            <div id="details3" class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="15"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="16"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="12"></input>
-                  <!---------------------->
-                </div>
+          <!-- ALEC -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/yelton.jpg" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Poc <span class="sub-name">Yelton Frug Gambit Krisnix Verotic Numbo of Clan Folkor</span></h3>
+                <h4 class="player">Alec</h4>
               </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>No features Yet</li>
-                  </ul>
-                </div>
+              <div class="char-traits">
+                <p>Class: <strong>Wizard</strong></p>
+                <p>Race: <strong>Gnome</strong></p>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- MELISSA -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/althea.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Sister Althea Aldure</h3>
-              <h4>Melissa</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Monk</strong></p>
-              <p>Race: <strong>Human Variant</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">13</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion" data-target="details4">Character Details</button>
-            <div id="details4" class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="11"></input>
-                  <!---------------------->
+            <div class="details">
+              <button class="detail-accordion" data-target="details2">Character Details</button>
+              <div id="details2" class="accordion-info">
+                <div class="perception">
+                  <p>Passive perception</p>
+                  <p class="number">11</p>
                 </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="16"></input>
-                  <!---------------------->
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>STR</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>DEX</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CON</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>INT</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>WIS</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CHA</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
                 </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="11"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="16"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="9"></input>
-                  <!---------------------->
-                </div>
-              </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>Demon possessed</li>
-                    <li>From the Church of Suni</li>
-                    <li>Brews her own beer</li>
-                  </ul>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>Looking for a lost Artifact that is inscribed with Abyssal Runes</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- TAMMY -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/tipp.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Tipp</h3>
-              <h4>Tammy</h4>
-            </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Druid</strong></p>
-              <p>Race: <strong>Human</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">15</p>
-              <p>Passive Percepetion</p>
-            </div>
-          </div>
-          <div class="details">
-            <button class="detail-accordion" data-target="details5">Character Details</button>
-            <div id="details5" class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="15"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="16"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="17"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="8"></input>
-                  <!---------------------->
-                </div>
+          <!-- JOSH -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/aspari.jpg" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Aspari</h3>
+                <h4 class="player">Josh</h4>
               </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>No features Yet</li>
-                  </ul>
-                </div>
+              <div class="char-traits">
+                <p>Class: <strong>Monk</strong></p>
+                <p>Race: <strong>Aasimar</strong></p>
               </div>
             </div>
+            <div class="details">
+              <button class="detail-accordion" data-target="details3">Character Details</button>
+              <div id="details3" class="accordion-info">
+                <div class="perception">
+                  <p>Passive perception</p>
+                  <p class="number">13</p>
+                </div>
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>STR</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>DEX</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CON</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="15"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>INT</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>WIS</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CHA</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="12"></input>
+                    <!---------------------->
+                  </div>
+                </div>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- TRISTAN -->
-        <div class="character">
-          <img class="fullscreen-image" src="images/celeste.png" width="100%" />
-          <div class="char-info">
-            <div class="char-title">
-              <h3>Celeste</h3>
-              <h4>Tristan</h4>
+          <!-- MELISSA -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/althea.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Sister Althea <span class="sub-name">Aldure</span></h3>
+                <h4 class="player">Melissa</h4>
+              </div>
+              <div class="char-traits">
+                <p>Class: <strong>Monk</strong></p>
+                <p>Race: <strong>Human Variant</strong></p>
+              </div>
             </div>
-            <div class="char-traits">
-              <p>Level: <strong><span class="level">1</span></strong></p>
-              <p>Class: <strong>Barbarian</strong></p>
-              <p>Race: <strong>Aasimar</strong></p>
-            </div>
-            <div class="perception">
-              <p class="number">10</p>
-              <p>Passive Percepetion</p>
+            <div class="details">
+              <button class="detail-accordion" data-target="details4">Character Details</button>
+              <div id="details4" class="accordion-info">
+                <div class="perception">
+                  <p>Passive perception</p>
+                  <p class="number">13</p>
+                </div>
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>STR</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="11"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>DEX</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CON</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>INT</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="11"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>WIS</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CHA</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="9"></input>
+                    <!---------------------->
+                  </div>
+                </div>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>Demon possessed</li>
+                      <li>From the Church of Suni</li>
+                      <li>Brews her own beer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="details">
+          <!-- TAMMY -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/tipp.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Tipp</h3>
+                <h4 class="player">Tammy</h4>
+              </div>
+              <div class="char-traits">
+                <p>Class: <strong>Druid</strong></p>
+                <p>Race: <strong>Human</strong></p>
+              </div>
+            </div>
+            <div class="details">
+              <button class="detail-accordion" data-target="details5">Character Details</button>
+              <div id="details5" class="accordion-info">
+                <div class="perception">
+                  <p>Passive perception</p>
+                  <p class="number">15</p>
+                </div>
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>STR</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>DEX</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="15"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CON</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="16"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>INT</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>WIS</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="17"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CHA</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="8"></input>
+                    <!---------------------->
+                  </div>
+                </div>
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TRISTAN -->
+          <div class="character">
+            <img class="fullscreen-image" src="images/celeste.png" width="100%" />
+            <div class="char-info">
+              <div class="char-title">
+                <h3>Celeste <span class="sub-name">Valdon</span></h3>
+                <h4 class="player">Tristan</h4>
+              </div>
+              <div class="char-traits">
+                <p>Class: <strong>Barbarian</strong></p>
+                <p>Race: <strong>Aasimar</strong></p>
+              </div>
+            </div>
             <button class="detail-accordion" data-target="details6">Character Details</button>
-            <div id="details6" class="accordion-info">
-              <div class="ability-scores">
-                <div class="score-box">
-                  <h5>Strength</h5>
-                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="15"></input>
-                  <!---------------------->
+              <div id="details6" class="accordion-info">
+                <div class="perception">
+                  <p>Passive perception</p>
+                  <p class="number">10</p>
                 </div>
-                <div class="score-box">
-                  <h5>Dexterity</h5>
-                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="13"></input>
-                  <!---------------------->
+                <div class="ability-scores">
+                  <div class="score-box">
+                    <h5>STR</h5>
+                    <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="15"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>DEX</h5>
+                    <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="13"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CON</h5>
+                    <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="14"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>INT</h5>
+                    <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="10"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>WIS</h5>
+                    <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="10"></input>
+                    <!---------------------->
+                  </div>
+                  <div class="score-box">
+                    <h5>CHA</h5>
+                    <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                    <!-- Change This Only -->
+                    <input class="score" value="13"></input>
+                    <!---------------------->
+                  </div>
                 </div>
-                <div class="score-box">
-                  <h5>Constitution</h5>
-                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="14"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Intelligence</h5>
-                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="10"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Wisdom</h5>
-                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="10"></input>
-                  <!---------------------->
-                </div>
-                <div class="score-box">
-                  <h5>Charisma</h5>
-                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
-                  <!-- Change This Only -->
-                  <input class="score" value="13"></input>
-                  <!---------------------->
+                <div class="char-lists">
+                  <div class="list">
+                    <h3>Items</h3>
+                    <ul>
+                      <li>No Items Yet</li>
+                    </ul>
+                  </div>
+                  <div class="list">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>No features Yet</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="char-lists">
-                <div class="list">
-                  <h3>Important Items</h3>
-                  <ul>
-                    <li>No Items Yet</li>
-                  </ul>
-                </div>
-                <div class="list">
-                  <h3>Character Features</h3>
-                  <ul>
-                    <li>No features Yet</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
+        <div class="char-desc-list">
+        
         </div>
       </div>
       <!-- -------- -->
@@ -907,6 +773,15 @@
       <div id="npcs-anchor" class="npc container">
         <h1>NPC's</h1>
         <div class="npc-list">
+          <!-- Markham -->
+          <div class="npc-character">
+            <img class="fullscreen-image" src="images/markham.png" width="100%" />
+            <div class="char-info">
+              <h3>Markham Southwell</h3>
+              <h4>Sheriff of Triboar</h4>
+              <button class="detail-accordion" data-target="markham">Character Details</button>
+            </div>
+          </div>
           <!-- Ember -->
           <div class="npc-character">
             <img class="fullscreen-image" src="images/ember.png" width="100%" />
@@ -918,9 +793,9 @@
           </div>
           <!-- Droop and Rook -->
           <div class="npc-character">
-            <img class="fullscreen-image" src="images/drook.png" width="100%" />
+            <img class="fullscreen-image" src="images/drook.jpg" width="100%" />
             <div class="char-info">
-              <h3>Droop & Rook</h3>
+              <h3>Droop<span class="weight4">&</span>Rook</h3>
               <h4>Traveling Merchants of Curiousities</h4>
               <button class="detail-accordion" data-target="drook">Character Details</button>
             </div>
@@ -934,13 +809,13 @@
               <button class="detail-accordion" data-target="verek">Character Details</button>
             </div>
           </div>
-          <!-- Markham -->
+          <!-- Rhydian Stormscale -->
           <div class="npc-character">
-            <img class="fullscreen-image" src="images/markham.png" width="100%" />
+            <img class="fullscreen-image" src="images/rhydian.jpg" width="100%" />
             <div class="char-info">
-              <h3>Markham Southwell</h3>
-              <h4>Sheriff of Triboar</h4>
-              <button class="detail-accordion" data-target="markham">Character Details</button>
+              <h3>Rhydian Stormscale</h3>
+              <h4>Propietor of the Grand Dame</h4>
+              <button class="detail-accordion" data-target="rhydian">Character Details</button>
             </div>
           </div>
           <!-- Harshnag -->
@@ -1030,7 +905,7 @@
                   </div>
                 </div>
                 <hr>
-                <h3>Character Features</h3>
+                <h3>Features</h3>
                 <p><span class="name">Favored Enemy:</span>Humanoids (Goblins and Orcs)</p>
                 <p><span class="name">Primeval Awareness:</span>Can sense aberrations, celestials, dragons, elementals, fey, fiends, and undead within 1 mile</p>
                 <p><span class="name">Land's Stride:</span>Can move through non-magical difficult terrain without penalty</p>
@@ -1211,9 +1086,13 @@
 
       <!-- MAPS -->
       <div id="maps-anchor" class="maps container">
-        <h1>Maps</h1>
+        <h1>Locations</h1>
         <h2>The Sword Coast</h2>
-        <iframe src="https://www.aidedd.org/atlas/index.php?map=R&l=1"></iframe>
+        <ul><li>Nightstone</li>
+        <li>Yartar</li>
+        <li>Waterdeep</li>
+        <
+        </ul>
       </div>
       <!-- -------- -->
       <!-- MONSTERS -->
@@ -1367,7 +1246,7 @@
                   <p>If the Dragon Fails a saving throw, it can choose to succeed instead.</p>
                   <h3>Legendary Actions</h3>
                   <p>The dragon can take 3 Legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon reagains spent legendary actions at the start of its turn.</p>
-                  <p><span class="name">Detect:</span> The Dragon makes a Wisdom (Percepetion) check.</p>
+                  <p><span class="name">Detect:</span> The Dragon makes a Wisdom (perception) check.</p>
                   <p><span class="name">Tail Attack:</span> The dragon makes a tail attack.</p>
                   <p><span class="name">Wing Attack (Costs 2 Actions):</span> The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 +9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</p>
               </div> 
@@ -1717,6 +1596,66 @@
       <!-- Items -->
       <div id="Items-anchor" class="items container">
         <h1>Items</h1>
+        <div class="zephs-books">
+          <h2>Zeph's Library</h2>
+          <table>
+            <tr>
+              <th width="15%">%</th>
+              <th width="25%">Book</th>
+              <th width="60%">Learning</th>
+            </tr>
+            <tr>
+              <td>1-10</td>
+              <td>Of Small Folk and Their Curious Ways</td>
+              <td>This book is written by Zephyros himself. It is unfinished and recounts his experiences with small folk. It describes how small folk have multiple gods. It talks about small folks mating rituals of spending coin to achieve coitus purposefully not resulting in the baring of children. It has an unhealthy length of content about human foods.</td>
+            </tr>
+            <tr>
+              <td>20-30</td>
+              <td>An Ode to Annam: The All-Father and His Children</td>
+              <td>In this book you learn about Annam the All-Father, the Giant Diety and his 6 favorite kin and his 3...not so favorite. You learn that he established a Giant Ranking, giants call "The Ordning" That follows as such: Storm, Cloud, Frost & Fire, Stone & finally Hill. It mentions that each giant race tend to worship </td>
+            </tr>
+            <tr>
+              <td>30-40</td>
+              <td>Chronicles of the Ordning: A Giant's Perspective</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>40-50</td>
+              <td>The War of A Thousand Years</td>
+              <td>This describes a history of the famous quarrel between Dragons and the Giant Nation of Ostoria. It describes the Dragon's brief peaceful arrival to Toril before chaos and dispute of power. It accounts a few Infamous Battles and Figures through out the realm including Hjurnur Wyrmrever - a notorious Frost Giant single handedly responsible for many dragons deaths before his own death at the hand of an ancient blue dragon, The Vonindod - a Powerful Colossus Construct the Giants used to fight Dragons putting Wyrmrevers body count to shame before its dismantling at the end of the conflict, its pieces scattered among ancient giant factions lost to time. Famous Dragons Tiamat & Garyx and their fight against Annam - the All Father before a truce was formed allowing dragons to keep their territories, and giants theres. But the war only brought a suspicious dismissal of Annam and Tiamats presence to the lands of Toril. Some suspect a part of the agreement - Others a banishment of one or the other and death of the other - the theory is still out.</td>
+            </tr>
+            <tr>
+              <td>50-60</td>
+              <td>Annam's Tears: The Lost Giants of Yore</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>60-70</td>
+              <td>The Skyreach Saga: A History of Cloud Giants</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>70-80</td>
+              <td>Storm Giants: Guardians of the Sea and Sky</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>80-90</td>
+              <td>The Enigmatic Language of Little Ones: Small Folk Speak</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>70-90</td>
+              <td>Halflings and the Culinary Arts: How to Turn Any Meal into Second Breakfast</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>90-100</td>
+              <td>Harshnag: The North's Silent Roar</td>
+              <td>This book details the legendary exploits of Harshnag, a frost giant renowned for his strength and bravery. It delves into his quest for balance and order in a chaotic world. Readers can expect thrilling tales of his battles against giants, dragons, and other formidable foes, as well as his unwavering dedication to preserving the delicate balance of power among the giant races and dedictaion to protecting the circle of life of small folk. It's a captivating read for those interested in the giants' lore and the enigmatic figure of Harshnag.</td>
+            </tr>
+            </table>
+        </div>
         <div class="drooks-list">
           <h2>Droop & Rook</h2>
           <h3>Traveling Merchants of Curiousities</h3>
@@ -1725,88 +1664,161 @@
         <div class="vereks-list">
           <h2>Verek</h2>
           <h3>Peculiar Wares and Essentric Oddities</h3>
-          <iframe src="https://docs.google.com/spreadsheets/d/1-ebS8B3YbTMTr5zShTtb69G-bzS_PLKoSfX7yyRtu8g"></iframe>
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Description</th>
+              <th>Effect</th>
+              <th>Curse</th>
+            </tr>
+            <tr>
+              <td>The Bottomless Quiver</td>
+              <td>This quiver that doesn't ever run out of arrows but watch out for splinters!</td>
+              <td>A quiver that doesn't run out of arrows</td>
+              <td>with aD20 roll by DM on 1-10, Player gets a splinter that deals 1d4 damage per half character levels</td>
+            </tr>
+            <tr>
+              <td>Bag of Unknown Holding</td>
+              <td>BEHOLD! A bag of .....ummm.. holding! *he says suspiciously* A rather small bag of holding I might say... But man does it pack some fun items! Just stick your hand in and see what comes out!</td>
+              <td>If you add something to it, It will be added to the d100 table of items in the bag  and something is spit out instead but everytime you pull something from the bag it adds an item from some surrounding 50ft inventory.  YOu can never know what your pulling out</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Talon of Vacchnor</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Boots of BLINDING Speed!</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>The Skull of Krofis</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>The Beggar's Gem & Locket</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Gomal's Tongue</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Lyre of Lullabies</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Alistaer's Tea Set</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ring of the Grammarian</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>The Skull of Krofis</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Hear'ye Hear'ye</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>All-or-Nothing Coin</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Sword of Sorrows</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Champion’s Belt</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Haunted Doll</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Droop and Rook's Jar o' Bees</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Lens of Straight Creepin</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Mockingbird Gum</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ring of Pointing</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Coin of Almost Certainty</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Unlimited Pasta Pass</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Plastic Sheriff Badge</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Phone-a-Friend Scrying Bones</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+        </table>
         </div>
       </div>
       <!-- -------- -->
-
-      <!-- MUSIC -->
-      <div id="music-anchor" class="music container">
-        <h1>Music</h1>
-        <div class="music-list">
-          <ul class="lt-column">
-            <li class="category">
-              <div class="category-title">
-                <img src="icons/Artificer.png" width="100%" />
-                <p>Travel</p>
-              </div>
-              <ul>
-                <li class="song-button" data-src="music/Camp at Night.mp3">Camp</li>
-                <li class="song-button" data-src="music/DrippingCaves.mp3">Caves</li>
-                <li class="song-button" data-src="music/dungeon.mp3">Dungeon</li>
-                <li class="song-button" data-src="music/forest.mp3">Forest</li>
-                <li class="song-button" data-src="music/high-road.mp3">High Road</li>
-                <li class="song-button" data-src="music/thesea.mp3">Sea</li>
-                <li class="song-button" data-src="music/Sky Castle.mp3">Sky</li>
-                <li class="song-button" data-src="music/snow.mp3">Snow</li>
-              </ul>
-            </li>
-            <li class="category">
-              <div class="category-title">
-                <img src="icons/Fighter.png" width="100%" />
-                <p>Battle</p>
-              </div>
-              <ul>
-                <li class="song-button" data-src="music/combat.mp3">Bandits</li>
-                <li class="song-button" data-src="music/dragon.mp3">Dragons</li>
-                <li class="song-button" data-src="music/Goblin Fight.mp3">Goblins</li>
-                <li class="song-button" data-src="music/giants.mp3">Giants</li>
-                <li class="song-button" data-src="music/water-battle.mp3">Water</li>
-                <li class="song-button" data-src="music/Orcs.mp3">Orcs</li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="rt-column">
-            <li class="category">
-              <div class="category-title">
-                <img src="icons/Bard.png" width="100%" />
-                <p>Tavern</p>
-              </div>
-              <ul>
-                <li class="song-button" data-src="music/cozy-tavern.mp3">Old Glory</li>
-                <li class="song-button" data-src="music/crowded-tavern.mp3">Busy</li>
-                <li class="song-button" data-src="music/lonely-tavern.mp3">Lonely</li>
-                <li class="song-button" data-src="music/cozy-tavern.mp3">Warm</li>
-              </ul>
-            </li>
-            <li class="category">
-              <div class="category-title">
-                <img src="icons/Artificer.png" width="100%" />
-                <p>Town</p>
-              </div>
-              <ul>
-                <li class="song-button" data-src="music/abandoned-town.mp3">Abandoned</li>
-                <li class="song-button" data-src="music/large-town.mp3">Large</li>
-                <li class="song-button" data-src="music/north-village.mp3">North</li>
-                <li class="song-button" data-src="music/quaint-town.mp3">Quaint</li>
-              </ul>
-            </li>
-            <li class="category">
-              <div class="category-title">
-                <img src="icons/Paladin.png" width="100%" />
-                <p>Story</p>
-              </div>
-              <ul>
-                <li class="song-button" data-src="music/drooprook.mp3">Drook</li>
-                <li class="song-button" data-src="music/story-lore.mp3">Epic Quests</li>
-                <li class="song-button" data-src="music/adventures.mp3">Adventures</li>
-                <li class="song-button" data-src="music/Alistaers Welcome.mp3">Alistaer</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <hr />
-      </div>
     </div>
   </main>
   <!-- -------- -->

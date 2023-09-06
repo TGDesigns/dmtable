@@ -1,7 +1,7 @@
 // Active class
 $(document).ready(function() {
-  $("#top-nav ul lia ").click(function () {
-      $("#top-nav ul li a").removeClass("active");
+  $("#top-nav ul li").click(function () {
+      $("#top-nav ul li").removeClass("active");
       $(this).addClass("active");   
   });
 });
