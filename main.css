@@ -451,6 +451,26 @@ iframe {
 .maps h2 {
   margin-bottom: 2rem;
 }
+.maps .detail-accordion {
+  display: block;
+  background-color: #8F7E4F;
+  font-size: .8rem;
+  margin: .5rem;
+  padding: .8rem;
+  width: fit-content; 
+}
+.maps .accordion-info {
+  padding: 1rem;
+}
+.maps .accordion-info h4 {
+  margin-bottom: 1rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+.maps .accordion-info p {
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
 
 /* MONSTERS */
 .monster-list {
