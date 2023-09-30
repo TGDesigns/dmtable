@@ -16,6 +16,7 @@ h1, h2, h3 {
   font-family: 'Barlow Condensed', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
+  color: #1C2022;
 }
 
 h1 {
@@ -325,6 +326,7 @@ iframe {
 }
 .detail-accordion h2 {
   display: inline-block;
+  color: #1C2022
 }
 .detail-accordion::after {
   content: "\f078";
