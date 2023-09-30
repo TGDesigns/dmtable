@@ -326,7 +326,7 @@ iframe {
 }
 .detail-accordion h2 {
   display: inline-block;
-  color: #1C2022
+  color: #1C2022 !important;
 }
 .detail-accordion::after {
   content: "\f078";
