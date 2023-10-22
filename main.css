@@ -150,7 +150,10 @@ iframe {
 .story p {
   padding-bottom: 1rem;
 }
-
+.story-flex{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 .campaign-checklist {
   display: none;
   margin-top: 1em;
@@ -179,6 +182,9 @@ iframe {
 }
 .campaign-checklist label input[type=checkbox]:checked {
   background-color: #1C2022;
+}
+.sessions-flex {
+  display: none;
 }
 .sessions {
   display: flex;
@@ -685,7 +691,7 @@ content: none;
 .music-list .lt-column .category ul, .music-list .rt-column .category ul {
   columns: 2;
 }
-.music-list .lt-column .category ul .song-button, .music-list .rt-column .category ul .song-button {
+.music-list .lt-column .category ul .song-button, .music-list .rt-column .category ul .song-button, .map-button {
   font-size: 0.8rem;
   padding: 0.4rem 1rem 0.3rem;
   margin-bottom: 0.8rem;

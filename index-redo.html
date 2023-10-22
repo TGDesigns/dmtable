@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DND Cheets</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+  <main>
+    <nav class="top-nav" id="top-nav">
+      <ul id="dnd-links">
+         <li class="active"><a href="#story-anchor">Story</a></li>
+         <li><a href="#players-anchor">Players</a></li>
+         <li><a href="#npcs-anchor">NPC's</a></li>
+         <li><a href="#maps-anchor">Locations</a></li>
+         <li><a href="#monsters-anchor">Monsters</a></li>
+         <li><a href="#Encounters-anchor">Encounters</a></li>
+         <li><a href="#Items-anchor">Items</a></li>
+      </ul>
+      <div class="music-container">
+         <div class="music-player">
+             <button id="songName" class="detail-accordion" data-target="musiclist">No Song</button>
+             <audio id="audio-player" controls loop>
+                 Your browser does not support the audio element.
+             </audio>
+        </div>
+        <div class="accordion-info" id="musiclist">
+         <div class="music-list">
+          <ul class="lt-column">
+            <li class="category">
+              <div class="category-title">
+                <img src="icons/Artificer.png" width="100%" />
+                <p>Travel</p>
+              </div>
+              <ul>
+                <li class="song-button" data-src="music/Camp at Night.mp3">Camp</li>
+                <li class="song-button" data-src="music/DrippingCaves.mp3">Caves</li>
+                <li class="song-button" data-src="music/dungeon.mp3">Dungeon</li>
+                <li class="song-button" data-src="music/forest.mp3">Forest</li>
+                <li class="song-button" data-src="music/high-road.mp3">High Road</li>
+                <li class="song-button" data-src="music/thesea.mp3">Sea</li>
+                <li class="song-button" data-src="music/Sky Castle.mp3">Sky</li>
+                <li class="song-button" data-src="music/snow.mp3">Snow</li>
+              </ul>
+            </li>
+            <li class="category">
+              <div class="category-title">
+                <img src="icons/Fighter.png" width="100%" />
+                <p>Battle</p>
+              </div>
+              <ul>
+                <li class="song-button" data-src="music/combat.mp3">Bandits</li>
+                <li class="song-button" data-src="music/dragon.mp3">Dragons</li>
+                <li class="song-button" data-src="music/Goblin Fight.mp3">Goblins</li>
+                <li class="song-button" data-src="music/giants.mp3">Giants</li>
+                <li class="song-button" data-src="music/water-battle.mp3">Water</li>
+                <li class="song-button" data-src="music/Orcs.mp3">Orcs</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="rt-column">
+            <li class="category">
+              <div class="category-title">
+                <img src="icons/Bard.png" width="100%" />
+                <p>Tavern</p>
+              </div>
+              <ul>
+                <li class="song-button" data-src="music/cozy-tavern.mp3">Old Glory</li>
+                <li class="song-button" data-src="music/crowded-tavern.mp3">Busy</li>
+                <li class="song-button" data-src="music/lonely-tavern.mp3">Lonely</li>
+                <li class="song-button" data-src="music/cozy-tavern.mp3">Warm</li>
+              </ul>
+            </li>
+            <li class="category">
+              <div class="category-title">
+                <img src="icons/Artificer.png" width="100%" />
+                <p>Town</p>
+              </div>
+              <ul>
+                <li class="song-button" data-src="music/abandoned-town.mp3">Abandoned</li>
+                <li class="song-button" data-src="music/large-town.mp3">Large</li>
+                <li class="song-button" data-src="music/north-village.mp3">North</li>
+                <li class="song-button" data-src="music/quaint-town.mp3">Quaint</li>
+              </ul>
+            </li>
+            <li class="category">
+              <div class="category-title">
+                <img src="icons/Paladin.png" width="100%" />
+                <p>Story</p>
+              </div>
+              <ul>
+                <li class="song-button" data-src="music/drooprook.mp3">Drook</li>
+                <li class="song-button" data-src="music/story-lore.mp3">Epic Quests</li>
+                <li class="song-button" data-src="music/adventures.mp3">Adventures</li>
+                <li class="song-button" data-src="music/Alistaers Welcome.mp3">Alistaer</li>
+              </ul>
+            </li>
+          </ul>
+         </div>
+        </div>
+      </div>
+    </nav>
+    <div id="players-anchor" class="characters container">
+      <h1>Players</h1>
+      <div class="character-list">
+        <!-- ANTHONY -->
+        <div class="character">
+          <img class="fullscreen-image" src="images/Durk.png" width="100%" />
+          <div class="char-info">
+            <div class="char-title">
+              <h3>Durk <span class="sub-name">Whitlock</span></h3>            
+              <h4 class="player">Anthony</h4>
+            </div>
+            <div class="char-traits">
+              <p>Class: <strong>Wizard</strong></p>
+              <p>Race: <strong>Half Orc</strong></p>
+            </div>
+          </div>
+          <div class="details">
+            <button class="detail-accordion" data-target="details1">Character Details</button>
+            <div id="details1" class="accordion-info">
+              <div class="perception">
+                <p>Passive perception</p>
+                <p class="number">10</p>
+              </div>
+              <div class="ability-scores">
+                <div class="score-box">
+                  <h5>STR</h5>
+                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="17"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>DEX</h5>
+                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="12"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CON</h5>
+                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="14"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>INT</h5>
+                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="14"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>WIS</h5>
+                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="10"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CHA</h5>
+                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="8"></input>
+                  <!---------------------->
+                </div>
+              </div>
+              <div class="char-lists">
+                <div class="list">
+                  <h3>Items</h3>
+                  <ul>
+                    <li>No Items Yet</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>Parents attacked by Imyrith</li>
+                    <li>Adoptive Parents James and Betty Whitlock</li>
+                    <li>Well-known among Members of the Harpers</li>
+                    <li>Doesnt Like using his last name</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ALEC -->
+        <div class="character">
+          <img class="fullscreen-image" src="images/yelton.jpg" width="100%" />
+          <div class="char-info">
+            <div class="char-title">
+              <h3>Poc <span class="sub-name">Yelton Frug Gambit Krisnix Verotic Numbo of Clan Folkor</span></h3>
+              <h4 class="player">Alec</h4>
+            </div>
+            <div class="char-traits">
+              <p>Class: <strong>Wizard</strong></p>
+              <p>Race: <strong>Gnome</strong></p>
+            </div>
+          </div>
+          <div class="details">
+            <button class="detail-accordion" data-target="details2">Character Details</button>
+            <div id="details2" class="accordion-info">
+              <div class="perception">
+                <p>Passive perception</p>
+                <p class="number">11</p>
+              </div>
+              <div class="ability-scores">
+                <div class="score-box">
+                  <h5>STR</h5>
+                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="8"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>DEX</h5>
+                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="14"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CON</h5>
+                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="12"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>INT</h5>
+                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="16"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>WIS</h5>
+                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="12"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CHA</h5>
+                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="14"></input>
+                  <!---------------------->
+                </div>
+              </div>
+              <div class="char-lists">
+                <div class="list">
+                  <h3>Items</h3>
+                  <ul>
+                    <li>No Items Yet</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>Looking for a lost Artifact that is inscribed with Abyssal Runes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- JOSH -->
+        <div class="character">
+          <img class="fullscreen-image" src="images/aspari.jpg" width="100%" />
+          <div class="char-info">
+            <div class="char-title">
+              <h3>Aspari</h3>
+              <h4 class="player">Josh</h4>
+            </div>
+            <div class="char-traits">
+              <p>Class: <strong>Monk</strong></p>
+              <p>Race: <strong>Aasimar</strong></p>
+            </div>
+          </div>
+          <div class="details">
+            <button class="detail-accordion" data-target="details3">Character Details</button>
+            <div id="details3" class="accordion-info">
+              <div class="perception">
+                <p>Passive perception</p>
+                <p class="number">13</p>
+              </div>
+              <div class="ability-scores">
+                <div class="score-box">
+                  <h5>STR</h5>
+                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="8"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>DEX</h5>
+                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="14"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CON</h5>
+                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="15"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>INT</h5>
+                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="8"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>WIS</h5>
+                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="16"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CHA</h5>
+                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="12"></input>
+                  <!---------------------->
+                </div>
+              </div>
+              <div class="char-lists">
+                <div class="list">
+                  <h3>Items</h3>
+                  <ul>
+                    <li>No Items Yet</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>No features Yet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MELISSA -->
+        <div class="character">
+          <img class="fullscreen-image" src="images/althea.png" width="100%" />
+          <div class="char-info">
+            <div class="char-title">
+              <h3>Sister Althea <span class="sub-name">Aldure</span></h3>
+              <h4 class="player">Melissa</h4>
+            </div>
+            <div class="char-traits">
+              <p>Class: <strong>Monk</strong></p>
+              <p>Race: <strong>Human Variant</strong></p>
+            </div>
+          </div>
+          <div class="details">
+            <button class="detail-accordion" data-target="details4">Character Details</button>
+            <div id="details4" class="accordion-info">
+              <div class="perception">
+                <p>Passive perception</p>
+                <p class="number">13</p>
+              </div>
+              <div class="ability-scores">
+                <div class="score-box">
+                  <h5>STR</h5>
+                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="11"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>DEX</h5>
+                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="16"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CON</h5>
+                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="14"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>INT</h5>
+                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="11"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>WIS</h5>
+                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="16"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CHA</h5>
+                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="9"></input>
+                  <!---------------------->
+                </div>
+              </div>
+              <div class="char-lists">
+                <div class="list">
+                  <h3>Items</h3>
+                  <ul>
+                    <li>No Items Yet</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>Demon possessed</li>
+                    <li>From the Church of Suni</li>
+                    <li>Brews her own beer</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAMMY -->
+        <div class="character">
+          <img class="fullscreen-image" src="images/tipp.png" width="100%" />
+          <div class="char-info">
+            <div class="char-title">
+              <h3>Tipp</h3>
+              <h4 class="player">Tammy</h4>
+            </div>
+            <div class="char-traits">
+              <p>Class: <strong>Druid</strong></p>
+              <p>Race: <strong>Human</strong></p>
+            </div>
+          </div>
+          <div class="details">
+            <button class="detail-accordion" data-target="details5">Character Details</button>
+            <div id="details5" class="accordion-info">
+              <div class="perception">
+                <p>Passive perception</p>
+                <p class="number">15</p>
+              </div>
+              <div class="ability-scores">
+                <div class="score-box">
+                  <h5>STR</h5>
+                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="8"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>DEX</h5>
+                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="15"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CON</h5>
+                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="16"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>INT</h5>
+                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="8"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>WIS</h5>
+                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="17"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CHA</h5>
+                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="8"></input>
+                  <!---------------------->
+                </div>
+              </div>
+              <div class="char-lists">
+                <div class="list">
+                  <h3>Items</h3>
+                  <ul>
+                    <li>No Items Yet</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>No features Yet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TRISTAN -->
+        <div class="character">
+          <img class="fullscreen-image" src="images/celeste.png" width="100%" />
+          <div class="char-info">
+            <div class="char-title">
+              <h3>Celeste <span class="sub-name">Valdon</span></h3>
+              <h4 class="player">Tristan</h4>
+            </div>
+            <div class="char-traits">
+              <p>Class: <strong>Barbarian</strong></p>
+              <p>Race: <strong>Aasimar</strong></p>
+            </div>
+          </div>
+          <button class="detail-accordion" data-target="details6">Character Details</button>
+            <div id="details6" class="accordion-info">
+              <div class="perception">
+                <p>Passive perception</p>
+                <p class="number">10</p>
+              </div>
+              <div class="ability-scores">
+                <div class="score-box">
+                  <h5>STR</h5>
+                  <p class="strength ability-modifier" data-target=".strength-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="15"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>DEX</h5>
+                  <p class="dexterity ability-modifier" data-target=".dexterity-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="13"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CON</h5>
+                  <p class="constitution ability-modifier" data-target=".constitution-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="14"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>INT</h5>
+                  <p class="intelligence ability-modifier" data-target=".intelligence-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="10"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>WIS</h5>
+                  <p class="wisdom ability-modifier" data-target=".wisdom-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="10"></input>
+                  <!---------------------->
+                </div>
+                <div class="score-box">
+                  <h5>CHA</h5>
+                  <p class="charisma ability-modifier" data-target=".charisma-skills">0</p>
+                  <!-- Change This Only -->
+                  <input class="score" value="13"></input>
+                  <!---------------------->
+                </div>
+              </div>
+              <div class="char-lists">
+                <div class="list">
+                  <h3>Items</h3>
+                  <ul>
+                    <li>No Items Yet</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>No features Yet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="char-desc-list">
+      
+      </div>
+    </div> 
+  </main>
+  <!-- -------- -->
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
+  </main>
+</body>
+</html>
